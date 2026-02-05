@@ -619,7 +619,7 @@
       const cartHtml = data.sections?.[sectionId];
       if (cartHtml) {
         console.log('Using HTML from add response');
-        updateCartDrawerAndOpen(cartHtml, sectionId);
+        updateCartDrawerAndOpen(cartHtml, sectionId, data);
       } else {
         console.log('No section HTML in response, fetching separately');
         return fetchAndOpenCartDrawer();
@@ -653,7 +653,8 @@
       
       const cartHtml = data.sections?.[sectionId];
       if (cartHtml) {
-        updateCartDrawerAndOpen(cartHtml, sectionId);
+        const parsedState = (items && items.length) ? { id: items[0].id, quantity: 1 } : {};
+        updateCartDrawerAndOpen(cartHtml, sectionId, parsedState);
       } else {
         return fetchAndOpenCartDrawer();
       }
@@ -662,36 +663,43 @@
     });
   }
 
-  function updateCartDrawerAndOpen(html, sectionId) {
+  function updateCartDrawerAndOpen(html, sectionId, parsedState) {
     const cartDrawer = document.querySelector('cart-drawer');
     if (!cartDrawer) {
       console.log('No cart-drawer element found');
       return;
     }
     
-    // Parse HTML and update cart drawer content
+    const state = parsedState || {};
+    
+    if (typeof cartDrawer.purchaseHandler === 'function') {
+      const parsedDoc = new DOMParser().parseFromString(html, 'text/html');
+      cartDrawer.purchaseHandler(parsedDoc, state).catch(function(err) {
+        console.error('Cart drawer purchaseHandler error:', err);
+        openCartDrawer();
+      });
+      return;
+    }
+    
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, 'text/html');
-    const newContent = doc.querySelector('cart-drawer');
-    
+    const newContent = doc.querySelector('cart-drawer') || doc.querySelector('[id^="shopify-section"]');
     if (newContent) {
       cartDrawer.innerHTML = newContent.innerHTML;
     }
-    
-    // Open cart drawer
     openCartDrawer();
   }
 
   function fetchAndOpenCartDrawer() {
     const cartDrawer = document.querySelector('cart-drawer');
-    const sectionId = cartDrawer?.dataset?.sectionId || 'cart-drawer';
+    const sectionId = cartDrawer ? (cartDrawer.dataset.sectionId || 'cart-drawer') : 'cart-drawer';
     
-    return fetch('/?sections=' + sectionId)
-      .then(response => response.json())
-      .then(sections => {
+    return fetch('/?sections=' + encodeURIComponent(sectionId))
+      .then(function(response) { return response.json(); })
+      .then(function(sections) {
         const html = sections[sectionId];
         if (html) {
-          updateCartDrawerAndOpen(html, sectionId);
+          updateCartDrawerAndOpen(html, sectionId, {});
         }
       });
   }
