@@ -543,14 +543,15 @@
         
         const items = state.selectedAccessories.map(acc => ({
           id: parseInt(acc.variantId, 10),
-          quantity: 1
+          quantity: 1,
+          properties: { 'Bundle': 'Build Your Own' }
         }));
         
-        console.log('Adding items to cart:', items);
+        console.log('Adding bundle to cart:', items);
         
         addMultipleToCart(items).then((response) => {
           console.log('Cart response:', response);
-          showCartNotification(items.length + ' items added to cart!');
+          showCartNotification(items.length + ' items added as bundle!');
           
           // Reset checkboxes
           elements.accessoryCheckboxes.forEach(cb => cb.checked = false);
