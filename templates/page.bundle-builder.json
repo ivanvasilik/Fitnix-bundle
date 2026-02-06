@@ -11,6 +11,7 @@
   "sections": {
     "page": {
       "type": "page",
+      "disabled": true,
       "settings": {
         "color_scheme": "default",
         "container_size": "xsmall",
@@ -19,9 +20,58 @@
         "section_spacing_top": 96,
         "section_spacing_bottom": 96
       }
+    },
+    "bundle_builder_TPmNbt": {
+      "type": "bundle-builder",
+      "name": "Bundle Builder",
+      "settings": {
+        "step1_heading": "Choose Your Olympus Grip",
+        "step1_subtitle": "Step 1: Select your device. Accessories come next",
+        "step1_bottom_text": "Portable handheld gym with access to 800+ exercises and 250+ workouts.",
+        "already_have_text": "Already have the Olympus Grip?",
+        "already_have_link_text": "Shop accessories compatible with both Classic and SMART",
+        "classic_image": "shopify://shop_images/Image8_2x_bc0defb0-ee9f-4755-9240-44455c01116f.png",
+        "classic_title": "Olympus Grip Classic",
+        "classic_price": "$69",
+        "classic_features": "Ready to ship\nFully mechanical training\nPortable gym",
+        "classic_button_text": "Shop Classic",
+        "classic_badge": "",
+        "classic_product": "",
+        "smart_image": "shopify://shop_images/Live_Workout_Mockup_be6b3e2f-f746-493f-bf37-27125107688d.webp",
+        "smart_title": "Olympus Grip SMART",
+        "smart_price": "$99",
+        "smart_features": "Pre-order\nTracks push/pull force for reps\nWireless connection to phone",
+        "smart_button_text": "Pre-Order SMART",
+        "smart_badge": "Pre-order",
+        "smart_product": "",
+        "step2_heading": "Step 2: Choose Your Accessories",
+        "step2_subtitle": "Accessories work with both Olympus Grip Classic and SMART",
+        "path1_title": "Build Your Own (A la Carte)",
+        "path1_label": "",
+        "path1_features": "Choose accessories individually\nMaximum flexibility",
+        "path2_title": "Ready-Made Kits (Curated)",
+        "path2_label": "",
+        "path2_features": "Pre-configured for specific goals\nBest value and fastest setup",
+        "step2a_heading": "Build Your Own (A La Carte)",
+        "step2a_subtitle": "Select accessories using checkboxes. Add all selections at once.",
+        "step2a_btn_text": "Add Selected to Cart",
+        "classic_accessories": [
+          "loop-bands",
+          "olympus-grip-blue-backpack",
+          "olympus-grip®-double-workout-advantage™",
+          "premium-package",
+          "olympus-grip-standard-package"
+        ],
+        "smart_accessories": [],
+        "step2b_heading": "Ready Made Kits",
+        "step2b_subtitle": "Choose one curated kit. Each kit includes a different number of accessories",
+        "classic_kits": [],
+        "smart_kits": []
+      }
     }
   },
   "order": [
-    "page"
+    "page",
+    "bundle_builder_TPmNbt"
   ]
 }
