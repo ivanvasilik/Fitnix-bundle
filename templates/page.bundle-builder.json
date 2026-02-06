@@ -69,8 +69,13 @@
         ],
         "step2b_heading": "Ready Made Kits",
         "step2b_subtitle": "Choose one curated kit. Each kit includes a different number of accessories",
-        "classic_kits": [],
-        "smart_kits": []
+        "classic_kits": [
+          "best-exercise-classic-bundle-1",
+          "complete-system-kit"
+        ],
+        "smart_kits": [
+          "strap-resistance-kit"
+        ]
       }
     }
   },
