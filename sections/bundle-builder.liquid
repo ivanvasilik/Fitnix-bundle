@@ -216,18 +216,18 @@
       </div>
       
       <div class="bundle-path-grid">
-        
-        <!-- BUILD YOUR OWN -->
-        <div class="bundle-path-card" data-path="build-your-own">
+
+          <!-- READY-MADE KITS -->
+        <div class="bundle-path-card" data-path="ready-made-kits">
           <div class="bundle-path-card__content">
-            {% if path1_label != blank %}
-              <span class="bundle-path-card__label">{{ path1_label }}</span>
+            {% if path2_label != blank %}
+              <span class="bundle-path-card__label">{{ path2_label }}</span>
             {% endif %}
-            <h3 class="bundle-path-card__title">{{ path1_title | default: 'Build Your Own (A la Carte)' }}</h3>
+            <h3 class="bundle-path-card__title">{{ path2_title | default: 'Ready-Made Kits (Curated)' }}</h3>
             
-            {% if path1_features != blank %}
+            {% if path2_features != blank %}
               <ul class="bundle-path-card__features">
-                {%- assign features_array = path1_features | newline_to_br | split: '<br />' -%}
+                {%- assign features_array = path2_features | newline_to_br | split: '<br />' -%}
                 {% for feature in features_array %}
                   {% assign feature_trimmed = feature | strip %}
                   {% if feature_trimmed != blank %}
@@ -244,17 +244,17 @@
           </div>
         </div>
         
-        <!-- READY-MADE KITS -->
-        <div class="bundle-path-card" data-path="ready-made-kits">
+        <!-- BUILD YOUR OWN -->
+        <div class="bundle-path-card" data-path="build-your-own">
           <div class="bundle-path-card__content">
-            {% if path2_label != blank %}
-              <span class="bundle-path-card__label">{{ path2_label }}</span>
+            {% if path1_label != blank %}
+              <span class="bundle-path-card__label">{{ path1_label }}</span>
             {% endif %}
-            <h3 class="bundle-path-card__title">{{ path2_title | default: 'Ready-Made Kits (Curated)' }}</h3>
+            <h3 class="bundle-path-card__title">{{ path1_title | default: 'Build Your Own (A la Carte)' }}</h3>
             
-            {% if path2_features != blank %}
+            {% if path1_features != blank %}
               <ul class="bundle-path-card__features">
-                {%- assign features_array = path2_features | newline_to_br | split: '<br />' -%}
+                {%- assign features_array = path1_features | newline_to_br | split: '<br />' -%}
                 {% for feature in features_array %}
                   {% assign feature_trimmed = feature | strip %}
                   {% if feature_trimmed != blank %}
