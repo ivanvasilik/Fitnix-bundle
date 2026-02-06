@@ -123,9 +123,13 @@
                 {%- assign features_array = classic_features | newline_to_br | split: '<br />' -%}
                 {% for feature in features_array %}
                   {% assign feature_trimmed = feature | strip %}
-                  {% if feature_trimmed != blank %}
-                    <li>{{ feature_trimmed }}</li>
-                  {% endif %}
+                    {% if feature_trimmed contains '$' %}
+                      <li class="smart_classic_price">
+                        {{ feature_trimmed }}
+                      </li>
+                    {% else %}
+                      <li>{{ feature_trimmed }}</li>
+                    {% endif %}
                 {% endfor %}
               </ul>
             {% endif %}
