@@ -174,8 +174,8 @@
                   {% assign feature_trimmed = feature | strip %}
                   {% if feature_trimmed != blank %}
                     {% if feature_trimmed contains '$' %}
-                      <li>
-                        <strong>{{ feature_trimmed }}</strong>
+                      <li class="smart_classic_price">
+                        {{ feature_trimmed }}
                       </li>
                     {% else %}
                       <li>{{ feature_trimmed }}</li>
