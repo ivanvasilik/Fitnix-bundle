@@ -93,6 +93,26 @@
         }
       }
     {% endfor %}
+    .cart-drawer__bundle-group {
+      margin-bottom: 1rem;
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      background: rgba(0,0,0,0.02);
+    }
+    .cart-drawer__bundle-title {
+      padding: 0.75rem 1rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      background: rgba(0,0,0,0.05);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .cart-drawer__bundle-items .cart-item {
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+    .cart-drawer__bundle-items .cart-item:last-child {
+      border-bottom: none;
+    }
   {% endstyle %}
 {%- endcapture -%}
 
@@ -783,9 +803,30 @@
                                 method='post'
                                 id='CartDrawerForm'
                               >
+                                {%- assign in_bundle_group = false -%}
                                 {%- for item in cart.items -%}
-                                  {% render 'cart-item', item: item, img_ratio: options.img_ratio %}
+                                  {%- assign item_bundle = item.properties.Bundle -%}
+                                  {%- if item_bundle != blank -%}
+                                    {%- unless in_bundle_group -%}
+                                      {%- assign in_bundle_group = true -%}
+                                      <div class='cart-drawer__bundle-group' data-bundle-name='{{ item_bundle | escape }}'>
+                                        <div class='cart-drawer__bundle-title'>{{ item_bundle }}</div>
+                                        <div class='cart-drawer__bundle-items'>
+                                    {%- endunless -%}
+                                    {% render 'cart-item', item: item, img_ratio: options.img_ratio %}
+                                  {%- else -%}
+                                    {%- if in_bundle_group -%}
+                                      {%- assign in_bundle_group = false -%}
+                                      {%- echo '</div>' -%}
+                                      {%- echo '</div>' -%}
+                                    {%- endif -%}
+                                    {% render 'cart-item', item: item, img_ratio: options.img_ratio %}
+                                  {%- endif -%}
                                 {%- endfor -%}
+                                {%- if in_bundle_group -%}
+                                  {%- echo '</div>' -%}
+                                  {%- echo '</div>' -%}
+                                {%- endif -%}
                               </form>
                             {%- endif -%}
                           </cart-drawer-items-block>
