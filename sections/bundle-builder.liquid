@@ -16,7 +16,6 @@
   endcomment
   assign classic_image = section.settings.classic_image
   assign classic_title = section.settings.classic_title
-  assign classic_price = section.settings.classic_price
   assign classic_features = section.settings.classic_features
   assign classic_button_text = section.settings.classic_button_text
   assign classic_badge = section.settings.classic_badge
@@ -118,7 +117,6 @@
           
           <div class="bundle-grip-card__content">
             <h3 class="bundle-grip-card__title">{{ classic_title | default: 'Olympus Grip Classic' }}</h3>
-            <p class="bundle-grip-card__price">{{ classic_price | default: '$69' }}</p>
             
             {% if classic_features != blank %}
               <ul class="bundle-grip-card__features">
@@ -890,12 +888,6 @@ document.addEventListener('DOMContentLoaded', function() {
       "id": "classic_title",
       "label": "Classic Title",
       "default": "Olympus Grip Classic"
-    },
-    {
-      "type": "text",
-      "id": "classic_price",
-      "label": "Classic Price",
-      "default": "$69"
     },
     {
       "type": "textarea",
