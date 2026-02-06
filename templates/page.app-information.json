@@ -1,0 +1,483 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "xsmall",
+        "show_heading": true,
+        "add_side_paddings": true,
+        "section_spacing_top": 96,
+        "section_spacing_bottom": 96
+      }
+    },
+    "image_banner_xwyLBr": {
+      "type": "image-banner",
+      "settings": {
+        "color_scheme": "default",
+        "enable_background_around_container": false,
+        "container_size": "full-screen",
+        "desktop_ratio": 0.6,
+        "mobile_ratio": 1.6,
+        "desktop_img": "shopify://shop_images/Hero_Mockup.jpg",
+        "desktop_overlay_opacity": 0,
+        "mobile_overlay_opacity": 0,
+        "caption": "",
+        "title": "",
+        "heading_size": "h2",
+        "text": "",
+        "body_size": "body3",
+        "desktop_content_position": "align-items:center;justify-content:center;",
+        "desktop_content_align": "center",
+        "content_max_width": 528,
+        "content_spacing": 116,
+        "mobile_content_position": "align-items:center;justify-content:center;",
+        "mobile_content_align": "center",
+        "desktop_content_background": "none",
+        "mobile_content_background": "none",
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "solid",
+        "extra_btn_text": "",
+        "extra_btn_url": "",
+        "extra_btn_style": "solid",
+        "disable_lazy_loading": false,
+        "add_side_paddings": true,
+        "section_spacing_top": 0,
+        "section_spacing_bottom": 0
+      }
+    },
+    "multicolumn_W4E3kw": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_with_icon_63rLYb": {
+          "type": "column_with_icon",
+          "settings": {
+            "icon": "discount-outline",
+            "custom_icon_image": "shopify://shop_images/Exercise.png",
+            "icon_size": 64,
+            "title": "Guided Workouts",
+            "text": "<p>Guided workouts tempo by telling users what exercise to perform and how many reps and sets to conduct.</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_with_icon_6WHkAB": {
+          "type": "column_with_icon",
+          "settings": {
+            "icon": "discount-outline",
+            "custom_icon_image": "shopify://shop_images/Objectives.png",
+            "icon_size": 64,
+            "title": "Performance Goals",
+            "text": "<p>Our App provides flexible objectives by allowing users to target workout time or reps.</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_with_icon_36nJL3": {
+          "type": "column_with_icon",
+          "settings": {
+            "icon": "discount-outline",
+            "custom_icon_image": "shopify://shop_images/Sound.png",
+            "icon_size": 64,
+            "title": "Audio Feedback",
+            "text": "<p>Audio option announces when to perform the next exercise, interval, set or rep.</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_with_icon_63rLYb",
+        "column_with_icon_6WHkAB",
+        "column_with_icon_36nJL3"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "desktop_layout": "grid",
+        "mobile_layout": "grid",
+        "title": "",
+        "heading_size": "h5",
+        "text": "",
+        "body_size": "body3",
+        "content_alignment": "center",
+        "column_heading_size": "h6",
+        "column_body_size": "body4",
+        "column_alignment": "center",
+        "desktop_columns": 3,
+        "desktop_space_between_cards": 24,
+        "desktop_content_spacing": 24,
+        "mobile_space_between_cards": 16,
+        "mobile_content_spacing": 24,
+        "show_column_background": false,
+        "show_navigation_on_hover": true,
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "outline",
+        "autoplay_mode": "disabled",
+        "autoplay_interval": 3,
+        "add_side_paddings": true,
+        "section_spacing_top": 80,
+        "section_spacing_bottom": 80
+      }
+    },
+    "images_with_text_XEp4mx": {
+      "type": "images-with-text",
+      "blocks": {
+        "image_VjptcH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Live_Workout_Mockup.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_VjptcH"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "content_layout": "left",
+        "image_layout": "collage",
+        "img_ratio": 0.7,
+        "rotate_images": false,
+        "icon": "none",
+        "subheading": "",
+        "heading": "Live Workout Dashboard",
+        "heading_size": "h2",
+        "body": "<p>Like a trainer, guides your through a workout and provides live feedback on your progress.</p>",
+        "body_size": "body3",
+        "content_alignment": "left",
+        "desktop_content_width": 360,
+        "first_button_text": "",
+        "first_button_link": "",
+        "first_button_style": "solid",
+        "second_button_text": "",
+        "second_button_link": "",
+        "second_button_style": "solid",
+        "add_side_paddings": true,
+        "section_spacing_top": 20,
+        "section_spacing_bottom": 20
+      }
+    },
+    "images_with_text_T6taqe": {
+      "type": "images-with-text",
+      "blocks": {
+        "image_RD76mJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Live_Workout.jpg"
+          }
+        },
+        "image_b9Rm6K": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Virtual_Trainer_b20ac96c-d8c9-4457-af3c-7ea052f1632d.gif"
+          }
+        }
+      },
+      "block_order": [
+        "image_RD76mJ",
+        "image_b9Rm6K"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "content_layout": "right",
+        "image_layout": "collage",
+        "img_ratio": 0.7,
+        "rotate_images": false,
+        "icon": "none",
+        "subheading": "",
+        "heading": "Fitness Trainer Function",
+        "heading_size": "h2",
+        "body": "<p>The Fitness Trainer function on our app shows you the optimal way to perform every exercise ensuring a more fluid and safer workout.</p>",
+        "body_size": "body3",
+        "content_alignment": "left",
+        "desktop_content_width": 360,
+        "first_button_text": "",
+        "first_button_link": "",
+        "first_button_style": "solid",
+        "second_button_text": "",
+        "second_button_link": "",
+        "second_button_style": "solid",
+        "add_side_paddings": true,
+        "section_spacing_top": 20,
+        "section_spacing_bottom": 20
+      }
+    },
+    "multicolumn_iCpKUq": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_TEPaYA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Virtual_Trainer_b20ac96c-d8c9-4457-af3c-7ea052f1632d.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_tTMTTH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Tailored_Exercise_Plan.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_TEPaYA",
+        "column_tTMTTH"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "desktop_layout": "grid",
+        "mobile_layout": "grid",
+        "title": "",
+        "heading_size": "h5",
+        "text": "",
+        "body_size": "body3",
+        "content_alignment": "center",
+        "column_heading_size": "h6",
+        "column_body_size": "body4",
+        "column_alignment": "center",
+        "desktop_columns": 2,
+        "desktop_space_between_cards": 11,
+        "desktop_content_spacing": 9,
+        "mobile_space_between_cards": 9,
+        "mobile_content_spacing": 7,
+        "show_column_background": false,
+        "show_navigation_on_hover": true,
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "outline",
+        "autoplay_mode": "disabled",
+        "autoplay_interval": 3,
+        "add_side_paddings": true,
+        "section_spacing_top": 20,
+        "section_spacing_bottom": 20
+      }
+    },
+    "multicolumn_tryTXy": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_with_icon_ECrhnf": {
+          "type": "column_with_icon",
+          "settings": {
+            "icon": "plus",
+            "icon_size": 64,
+            "title": "800+ Exercises",
+            "text": "<p>Our App shows you how to perform over 600 exercises from beginner to expert level - every calisthenic exercise imaginable.</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_with_icon_yXkyrw": {
+          "type": "column_with_icon",
+          "settings": {
+            "icon": "arrow-right",
+            "icon_size": 64,
+            "title": "Strength Progression",
+            "text": "<p>Once you master an exercise, the app suggests a more challenging exercise to foster improvement and development.</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_with_icon_benbDd": {
+          "type": "column_with_icon",
+          "settings": {
+            "icon": "refresh",
+            "icon_size": 64,
+            "title": "Wildcard Integration",
+            "text": "<p>Workouts never gets old. At user's discretion, random exercise or workouts can be added to the workout plan.</p>",
+            "link_text": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_with_icon_ECrhnf",
+        "column_with_icon_yXkyrw",
+        "column_with_icon_benbDd"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "desktop_layout": "grid",
+        "mobile_layout": "grid",
+        "title": "Smart App Features",
+        "heading_size": "h5",
+        "text": "",
+        "body_size": "body3",
+        "content_alignment": "center",
+        "column_heading_size": "h6",
+        "column_body_size": "body4",
+        "column_alignment": "center",
+        "desktop_columns": 3,
+        "desktop_space_between_cards": 24,
+        "desktop_content_spacing": 24,
+        "mobile_space_between_cards": 16,
+        "mobile_content_spacing": 24,
+        "show_column_background": false,
+        "show_navigation_on_hover": true,
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "outline",
+        "autoplay_mode": "disabled",
+        "autoplay_interval": 3,
+        "add_side_paddings": true,
+        "section_spacing_top": 80,
+        "section_spacing_bottom": 80
+      }
+    },
+    "image_banner_nGn6cL": {
+      "type": "image-banner",
+      "settings": {
+        "color_scheme": "default",
+        "enable_background_around_container": false,
+        "container_size": "full-screen",
+        "desktop_ratio": 0.5,
+        "mobile_ratio": 1.6,
+        "desktop_img": "shopify://shop_images/History_8f5cfb79-8d66-4ace-aeea-3a923e4c1c13.jpg",
+        "desktop_overlay_opacity": 0,
+        "mobile_overlay_opacity": 0,
+        "caption": "",
+        "title": "",
+        "heading_size": "h2",
+        "text": "",
+        "body_size": "body3",
+        "desktop_content_position": "align-items:center;justify-content:center;",
+        "desktop_content_align": "center",
+        "content_max_width": 528,
+        "content_spacing": 116,
+        "mobile_content_position": "align-items:center;justify-content:center;",
+        "mobile_content_align": "center",
+        "desktop_content_background": "none",
+        "mobile_content_background": "none",
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "solid",
+        "extra_btn_text": "",
+        "extra_btn_url": "",
+        "extra_btn_style": "solid",
+        "disable_lazy_loading": false,
+        "add_side_paddings": true,
+        "section_spacing_top": 0,
+        "section_spacing_bottom": 0
+      }
+    },
+    "rich_text_bdxwFq": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_qnRg3e": {
+          "type": "caption",
+          "settings": {
+            "caption": "Our App Keeps Track So You Don't Have To!"
+          }
+        },
+        "heading_wFwNLe": {
+          "type": "heading",
+          "settings": {
+            "title": "Gym Log Feature",
+            "heading_size": "display3"
+          }
+        },
+        "text_t4mCqr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At the interval level and workout level it measures the calories you burn, the number of repetitions, sets, intervals, and exercises you complete. Historical data can be tracked over time with trend graphs. Data can be filtered by best workout and day, grand total workout balance.</p>",
+            "text_2": "",
+            "text_3": "",
+            "body_size": "body3"
+          }
+        }
+      },
+      "block_order": [
+        "caption_qnRg3e",
+        "heading_wFwNLe",
+        "text_t4mCqr"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "enable_background_around_container": false,
+        "container_size": "page-width",
+        "content_align": "center",
+        "add_side_paddings": true,
+        "section_spacing_top": 64,
+        "section_spacing_bottom": 64
+      }
+    },
+    "image_banner_PPpaiX": {
+      "type": "image-banner",
+      "settings": {
+        "color_scheme": "default",
+        "enable_background_around_container": false,
+        "container_size": "large",
+        "desktop_ratio": 1.1,
+        "mobile_ratio": 1.1,
+        "desktop_img": "shopify://shop_images/Comparison_Table_2x_df502639-4933-463e-b3b9-437c6e94aaeb.png",
+        "desktop_overlay_opacity": 0,
+        "mobile_overlay_opacity": 0,
+        "caption": "",
+        "title": "",
+        "heading_size": "h2",
+        "text": "",
+        "body_size": "body3",
+        "desktop_content_position": "align-items:center;justify-content:center;",
+        "desktop_content_align": "center",
+        "content_max_width": 528,
+        "content_spacing": 116,
+        "mobile_content_position": "align-items:center;justify-content:center;",
+        "mobile_content_align": "center",
+        "desktop_content_background": "none",
+        "mobile_content_background": "none",
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "solid",
+        "extra_btn_text": "",
+        "extra_btn_url": "",
+        "extra_btn_style": "solid",
+        "disable_lazy_loading": false,
+        "add_side_paddings": true,
+        "section_spacing_top": 0,
+        "section_spacing_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "page",
+    "image_banner_xwyLBr",
+    "multicolumn_W4E3kw",
+    "images_with_text_XEp4mx",
+    "images_with_text_T6taqe",
+    "multicolumn_iCpKUq",
+    "multicolumn_tryTXy",
+    "image_banner_nGn6cL",
+    "rich_text_bdxwFq",
+    "image_banner_PPpaiX"
+  ]
+}

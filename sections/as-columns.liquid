@@ -1,0 +1,83 @@
+{{ 'as-columns.css' | asset_url | stylesheet_tag }}
+
+<div class="as-columns__cont page-width">
+  <div class="as-columns__cap">
+    <h2 class="as-columns__title">{{ section.settings.heading }}</h2>
+
+    {% if section.settings.subheading != blank %}
+      <p class="as-columns__subheading">{{ section.settings.subheading }}</p>
+    {% endif %}
+  </div>
+
+  {% assign columns = section.blocks | where: 'type', 'column' %}
+  {% if columns.size > 0 %}
+    <div class="as-columns__grid">
+      {% for block in section.blocks %}
+        {% if block.type == 'column' %}
+          <div class="as-columns__item">
+            <div class="as-columns__item-cap">
+              <div class="as-columns__item-title">{{ block.settings.title }}</div>
+              <div class="as-columns__item-desc">{{ block.settings.description }}</div>
+            </div>
+            <div class="as-columns__item-list">{{ block.settings.list }}</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if section.settings.body != blank %}
+    <div class="as-columns__body">{{ section.settings.body }}</div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "AS Columns",
+  "tag": "section",
+  "class": "as-columns",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "body",
+      "label": "Body"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "richtext",
+          "id": "list",
+          "label": "List of Links"
+        }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Column" }]
+}
+{% endschema %}

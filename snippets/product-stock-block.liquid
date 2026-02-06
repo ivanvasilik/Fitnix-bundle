@@ -1,0 +1,93 @@
+{%- liquid
+  assign inventory_threshhold = block.settings.inventory_threshhold
+  assign text_when_many_in_stock = block.settings.text_when_many_in_stock
+  assign text_when_few_in_stock = block.settings.text_when_few_in_stock
+  assign show_inventory_status = block.settings.show_inventory_status
+  assign show_inventory_counter = block.settings.show_inventory_counter
+  assign color_inventory_label = block.settings.color_inventory_label
+-%}
+
+<product-block
+  style='display: block;'
+  id='product-stock-{{ product.id }}-{{ sectionId }}'
+  class='block-{{ block.id }}'
+  {{ block.shopify_attributes }}
+>
+  <div
+    id='product-stock-inner-{{ product.id }}-{{ sectionId }}'
+  >
+    {%- for variant in product.variants -%}
+      {%- liquid
+        assign level = 'high'
+        assign current_variant = variant
+        assign variant_stock_size = current_variant.inventory_quantity
+
+        if current_variant.available == false
+          assign level = 'zero'
+        elsif variant_stock_size < inventory_threshhold
+          assign level = 'low'
+        endif
+      -%}
+      <template data-product-block-template='{{ variant.id }}'>
+        <div
+          class='product-stock product-stock--{{ level }} {% if show_inventory_status == 'only_when_inventroy_low' and level == 'high' and current_variant.available %}hidden{% endif %}'
+          data-product-block-item
+        >
+          <div class='product-stock__icon-wrapper'>
+            <div class='product-stock__icon'></div>
+          </div>
+
+          <span class='product-stock__label heading-font-family {% if color_inventory_label == true %} product-stock__label--colored {% endif %}'>
+            {%- if current_variant.available -%}
+              {% if show_inventory_counter %}
+                {{ 'product.store_front.stock.label_with_counter' | t: count: variant_stock_size }}
+              {%- elsif variant_stock_size < inventory_threshhold -%}
+                {{ text_when_few_in_stock }}
+              {%- else -%}
+                {{ text_when_many_in_stock }}
+              {%- endif -%}
+            {%- else -%}
+              {{ 'product.store_front.stock.out_of_stock' | t }}
+            {%- endif -%}
+          </span>
+        </div>
+      </template>
+    {%- endfor -%}
+    {%- liquid
+      assign level = 'high'
+      assign current_variant = product.selected_or_first_available_variant
+      assign variant_stock_size = current_variant.inventory_quantity
+
+      if current_variant.available == false
+        assign level = 'zero'
+      elsif variant_stock_size < inventory_threshhold
+        assign level = 'low'
+      endif
+    -%}
+
+    <div data-product-block-container>
+      <div
+        class='product-stock product-stock--{{ level }} {% if show_inventory_status == 'only_when_inventroy_low' and level == 'high' and current_variant.available %}hidden{% endif %}'
+        data-product-block-item
+      >
+        <div class='product-stock__icon-wrapper'>
+          <div class='product-stock__icon'></div>
+        </div>
+
+        <span class='product-stock__label heading-font-family {% if color_inventory_label == true %} product-stock__label--colored {% endif %}'>
+          {%- if current_variant.available -%}
+            {% if show_inventory_counter %}
+              {{ 'product.store_front.stock.label_with_counter' | t: count: variant_stock_size }}
+            {%- elsif variant_stock_size < inventory_threshhold -%}
+              {{ text_when_few_in_stock }}
+            {%- else -%}
+              {{ text_when_many_in_stock }}
+            {%- endif -%}
+          {%- else -%}
+            {{ 'product.store_front.stock.out_of_stock' | t }}
+          {%- endif -%}
+        </span>
+      </div>
+    </div>
+  </div>
+</product-block>

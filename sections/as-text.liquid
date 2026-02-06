@@ -1,0 +1,97 @@
+<section class="as-transparent-heading section-{{ section.id }}-padding">
+  <div class="as-heading-wrapper page-width">
+    {% if section.settings.heading != blank %}
+      <h2 class="as-heading-title">
+        {{ section.settings.heading }}
+      </h2>
+    {% endif %}
+
+    {% if section.settings.subheading != blank %}
+      <p class="as-heading-subtitle">
+        {{ section.settings.subheading }}
+      </p>
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "AS Transparent Heading",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "default": 80,
+      "min": 0,
+      "max": 160,
+      "step": 8
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "default": 72,
+      "min": 0,
+      "max": 160,
+      "step": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "AS Transparent Heading"
+    }
+  ]
+}
+{% endschema %}
+
+{% style %}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  .as-transparent-heading {
+    background: transparent;
+    text-align: center;
+  }
+
+  .as-heading-title {
+    font-size: 48px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .as-heading-subtitle {
+    font-size: 20px;
+    letter-spacing: -1px;
+     color: #fff;
+    max-width: 660px;
+    font-weight: 300;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  @media (max-width: 768px) {
+    .as-heading-title {
+      font-size: 30px;
+    }
+
+    .as-heading-subtitle {
+      font-size: 16px;
+    }
+  }
+{% endstyle %}

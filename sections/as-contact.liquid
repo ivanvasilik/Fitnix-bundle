@@ -1,0 +1,216 @@
+{{ 'as-contact.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="as-contact-wrapper">
+  <div class="as-contact container--large container--with-aside-paddings">
+    <h2 class="as-contact__title">{{ section.settings.heading }}</h2>
+
+    <p class="as-contact__subtitle">{{ section.settings.subheading }}</p>
+
+    <form method="post" action="/contact#contact_form" id="contact_form" class="as-contact__form">
+      <input type="hidden" name="form_type" value="contact">
+      <input type="hidden" name="utf8" value="✓">
+
+      <div class="as-contact__grid">
+        {% for block in section.blocks %}
+          {% if block.type == 'field' %}
+            <div class="as-contact__field {% if block.settings.type == 'radio' %} as-contact__field--radio{% endif %} {% if block.settings.is_full == true %} as-input-full{% endif %}">
+              {% if section.settings.show_labels == true %}
+                <label class="as-contact__label" for="{{ block.settings.name }}">
+                  {{- block.settings.label -}}
+                  {%- if block.settings.is_required -%}
+                    <span class="as-contact__required-symbol">*</span>
+                  {%- endif -%}
+                </label>
+              {% endif %}
+
+              {% if block.settings.type == 'textarea' %}
+                <textarea
+                  name="{{ block.settings.name }}"
+                  class="as-textarea"
+                  placeholder="{{ block.settings.placeholder }}"
+                  rows="5"
+                ></textarea>
+              {% elsif block.settings.type == 'radio' %}
+                {% assign values = block.settings.values | json | remove_first: '"' | remove_last: '"' | split: '\n' %}
+                {% if values.size > 0 %}
+                  <div class="as-contact__radio-group">
+                    {% for value in values %}
+                      {% assign correct_value = value | replace: '\/', '/' %}
+                      <div class="as-contact__radio-item">
+                        <input
+                          class="as-contact__radio-input"
+                          type="radio"
+                          id="{{ correct_value }}"
+                          name="{{ block.settings.name }}"
+                          value="{{ correct_value }}"
+                          {% if forloop.index == 1 %}
+                            checked
+                          {% endif %}
+                        >
+                        <label class="as-contact__radio-label" for="{{ correct_value }}">
+                          {{- correct_value -}}
+                        </label>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+
+              {% else %}
+                <input
+                  type="{{ block.settings.type }}"
+                  name="{{ block.settings.name }}"
+                  class="as-input"
+                  placeholder="{{ block.settings.placeholder }}"
+                  {% if section.settings.is_required == true %}
+                    required
+                  {% endif %}
+                >
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      {% render 'as-button',
+        text: section.settings.btn_label,
+        is_btn: true,
+        type: 'submit',
+        class: 'as-button-submit as-button--min',
+        primary: true
+      %}
+    </form>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom Contact Form (AS)",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Contact Form"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Connect with the Fitnix Team"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_labels",
+      "label": "Show Labels?",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "btn_label",
+      "label": "Btn Submit Text",
+      "default": "Submit"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "field",
+      "name": "Field",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "placeholder",
+          "label": "Placeholder"
+        },
+        {
+          "type": "select",
+          "id": "type",
+          "label": "Type",
+          "options": [
+            {
+              "value": "text",
+              "label": "Text"
+            },
+            {
+              "value": "email",
+              "label": "Email"
+            },
+            {
+              "value": "textarea",
+              "label": "Textarea"
+            },
+            {
+              "value": "radio",
+              "label": "Radio"
+            }
+          ],
+          "default": "text"
+        },
+        {
+          "type": "checkbox",
+          "id": "is_required",
+          "label": "Is Required?",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "is_full",
+          "label": "Is Full?",
+          "default": false
+        },
+        {
+          "id": "values",
+          "type": "textarea",
+          "label": "List of Values (one item per line)",
+          "visible_if": "{{ block.settings.type == 'radio' }}"
+        }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Field" }]
+}
+{% endschema %}

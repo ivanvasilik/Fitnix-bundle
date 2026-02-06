@@ -1,0 +1,169 @@
+{{ 'as-blocks.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .adv {
+    --gap: {{ section.settings.gap | default: 16 }}px;
+  }
+
+  .adv__card {
+    {% if section.settings.align_items != blank %}
+      align-items: {{ section.settings.align_items }};
+    {% endif %}
+    {% if section.settings.text_align != blank %}
+      text-align: {{ section.settings.text_align }};
+    {% endif %}
+  }
+
+  @media (max-width: 768px) {
+    .adv__grid {
+      --cols: {{ section.settings.columns_mobile | default: 1 }};
+    }
+  }
+</style>
+
+<div id="section-{{ section.id }}" class="adv">
+  <div class="adv__container {{ section.settings.container_class }}">
+    {% if section.settings.heading or section.settings.subheading %}
+      <div class="adv__cap adv__cap--center">
+        {% if section.settings.heading != blank %}
+          <h1 class="adv__title">{{ section.settings.heading }}</h1>
+        {% endif %}
+        {% if section.settings.subheading != blank %}
+          <p class="adv__subtitle">{{ section.settings.subheading }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="adv__grid" style="--cols: {{ section.settings.columns | default: 3 }};">
+      {% for block in section.blocks %}
+        <div
+          class="adv__card"
+          {{ block.shopify_attributes }}
+          style="--radius: {{ section.settings.radius | default: 12 }}px;"
+        >
+          <div class="adv__icon">
+            {% if block.settings.icon_image %}
+              <img
+                class="adv__svg-img"
+                src="{{ block.settings.icon_image | image_url }}"
+                alt="{{ block.settings.title | escape }}"
+                loading="lazy"
+              >
+            {% endif %}
+          </div>
+
+          {% if block.settings.title %}
+            <h3 class="adv__heading">{{ block.settings.title }}</h3>
+          {% endif %}
+
+          {% if block.settings.text != blank %}
+            <div class="adv__text">{{ block.settings.text }}</div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    {% if section.settings.bottom_image %}
+      <div class="adv__bottom-image-wrap">
+        <img
+          class="adv__bottom-image"
+          src="{{ section.settings.bottom_image | image_url: width: 2000 }}"
+          alt="section bottom image"
+          loading="lazy"
+        >
+      </div>
+    {% endif %}
+    {% if section.settings.cta_text != blank %}
+      {% render 'as-button',
+        text: section.settings.cta_text,
+        url: '#contact_form',
+        primary: true,
+        class: 'as-button--min'
+      %}
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "AS — Advantages grid",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "container_class",
+      "label": "Container Class",
+      "default": "page-width",
+      "info": "page-width \\ page-width--large"
+    },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Intelligent Strength. Measurable Progress" },
+    { "type": "text", "id": "subheading", "label": "Subheading" },
+    { "type": "range", "id": "columns", "label": "Columns", "min": 1, "max": 4, "step": 1, "default": 3 },
+    {
+      "type": "range",
+      "id": "columns_mobile",
+      "label": "Columns (mobile)",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 1
+    },
+    { "type": "range", "id": "gap", "label": "Gap", "min": 10, "max": 40, "step": 2, "default": 16 },
+    {
+      "type": "image_picker",
+      "id": "bottom_image",
+      "label": "Bottom image"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Button text",
+      "default": "Watch the 2-Minute Demo"
+    }
+  ],
+
+  "blocks": [
+    {
+      "type": "adv",
+      "name": "Advantage",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Icon image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Made with Love"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "Description"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link (optional)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "AS Advantages",
+      "blocks": [{ "type": "adv" }, { "type": "adv" }, { "type": "adv" }]
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  #contact_form {
+    scroll-margin-top: 200px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+</style>

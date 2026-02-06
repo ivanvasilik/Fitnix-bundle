@@ -1,0 +1,120 @@
+.as-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.32);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.as-fullscreen-video-banner {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+  color: white;
+}
+
+.as-video-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.as-video-element,
+.as-video-iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.as-video-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  background: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.as-video-logo {
+  width: 110px;
+  margin: 0 auto 18px;
+}
+
+.as-video-heading {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 auto;
+  max-width: 900px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 16px;
+}
+
+.as-video-subtext {
+  font-size: 2.4rem;
+  max-width: 810px;
+  margin: 0 auto;
+  opacity: 0.9;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 32px;
+}
+
+@media (max-width: 2400px) {
+  .as-fullscreen-video-banner {
+    height: 70vh;
+  }
+}
+@media (max-width: 1650px) {
+  .as-fullscreen-video-banner {
+    height: 750px;
+  }
+}
+@media (max-width: 1200px) {
+  .as-fullscreen-video-banner {
+    max-height: 555px;
+  }
+}
+/* MOBILE */
+@media (max-width: 768px) {
+  .as-fullscreen-video-banner {
+    max-height: 430px;
+  }
+  .as-video-heading {
+    font-size: 2.75rem;
+  }
+  .as-video-subtext {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 638px) {
+  .as-fullscreen-video-banner {
+    max-height: 459px;
+  }
+  .as-video-element,
+  .as-video-iframe {
+    width: 160%;
+  }
+}
+@media (max-width: 510px) {
+  .as-fullscreen-video-banner {
+    max-height: 459px;
+  }
+  .as-video-element,
+  .as-video-iframe {
+    width: 280%;
+  }
+}

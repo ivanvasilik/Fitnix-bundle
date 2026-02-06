@@ -1,0 +1,137 @@
+{{ 'as-video-with-top-text.css' | asset_url | stylesheet_tag }}
+{% liquid
+  assign youtube_url = section.settings.youtube_url | strip
+  assign video_id = ''
+
+  if youtube_url contains 'youtu.be/'
+    assign video_id = youtube_url | split: 'youtu.be/' | last | split: '?' | first
+  elsif youtube_url contains 'watch?v='
+    assign video_id = youtube_url | split: 'v=' | last | split: '&' | first
+  else
+    assign video_id = youtube_url
+  endif
+
+  assign youtube_thumb = 'https://img.youtube.com/vi/' | append: video_id | append: '/maxresdefault.jpg'
+%}
+
+<div class="as-video-block__cont as-video-block__cont--{{ section.settings.variant }} page-width">
+  <div class="as-video-block__cap">
+    <h2 class="as-video-block__title">{{ section.settings.title }}</h2>
+
+    {% if section.settings.subheading != blank %}
+      <p class="as-video-block__desc">{{ section.settings.subheading }}</p>
+    {% endif %}
+  </div>
+
+  <div
+    class="as-video-container"
+    data-youtube-wrapper
+    {% if video_id != blank %}
+      data-youtube-id="{{ video_id }}"
+    {% endif %}
+  >
+    <img
+      loading="lazy"
+      src="{{ youtube_thumb }}"
+      class="as-video-poster"
+      data-video-poster
+      alt="Video thumbnail"
+    >
+
+    <button class="as-video-play-btn" type="button">
+      <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" rx="50" fill="white" fill-opacity="0.4"/>
+        <path d="M65.6815 45.5883C66.482 46.014 67.1516 46.6494 67.6185 47.4266C68.0855 48.2037 68.3321 49.0933 68.3321 49.9999C68.3321 50.9066 68.0855 51.7961 67.6185 52.5733C67.1516 53.3505 66.482 53.9859 65.6815 54.4116L44.3282 66.0233C40.8898 67.8949 36.6665 65.4616 36.6665 61.6133V38.3883C36.6665 34.5383 40.8898 32.1066 44.3282 33.9749L65.6815 45.5883Z" fill="white"/>
+      </svg>
+    </button>
+
+    <div class="as-video-youtube-embed" data-youtube-embed></div>
+  </div>
+
+  {% if section.settings.body != blank %}
+    <p class="as-video-block__body">{{ section.settings.body }}</p>
+  {% endif %}
+
+  {% if section.settings.variant == 'ambassador' %}
+    <div class="as-video-block__extra">
+      <div class="as-video-block__extra-title">Interested in working with Fitnix?</div>
+      {% render 'as-button', text: 'Become a Partner', url: '#contact_form', primary: true %}
+    </div>
+  {% endif %}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('[data-youtube-wrapper]').forEach(function (wrapper) {
+      var videoId = wrapper.getAttribute('data-youtube-id');
+      if (!videoId) return;
+
+      var poster = wrapper.querySelector('[data-video-poster]');
+      var playBtn = wrapper.querySelector('.as-video-play-btn');
+      var embed = wrapper.querySelector('[data-youtube-embed]');
+
+      function startVideo() {
+        if (!embed.innerHTML.trim()) {
+          var iframe = document.createElement('iframe');
+          iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&mute=0&rel=0';
+          iframe.allow = 'autoplay; encrypted-media';
+          iframe.allowFullscreen = true;
+          embed.appendChild(iframe);
+        }
+        wrapper.classList.add('playing');
+      }
+
+      playBtn.addEventListener('click', startVideo);
+      poster.addEventListener('click', startVideo);
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "AS YouTube Video",
+  "tag": "section",
+  "class": "as-video-block",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "youtube_url",
+      "label": "YouTube video URL",
+      "default": "https://www.youtube.com/watch?v=S0agRTNR9cI"
+    },
+    {
+      "type": "text",
+      "id": "body",
+      "label": "Body"
+    },
+    {
+      "type": "select",
+      "id": "variant",
+      "label": "Section Variant",
+      "options": [
+        {
+          "value": "ces",
+          "label": "CES"
+        },
+        {
+          "value": "ambassador",
+          "label": "Ambassador"
+        }
+      ],
+      "default": "ces"
+    }
+  ],
+  "presets": [{ "name": "AS YouTube Video" }]
+}
+{% endschema %}

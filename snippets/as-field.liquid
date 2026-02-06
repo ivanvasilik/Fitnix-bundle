@@ -1,0 +1,38 @@
+{% assign field_type = field_type | default: 'input' %}
+
+<div class="as-field as-field--{{ field_width }} {% if field_type == 'textarea' %}as-field--area{% endif %}">
+  <{{ field_type }}
+    class="as-field__input"
+    {% if autocomplete != blank %}
+      autocomplete="{{ autocomplete }}"
+    {% endif %}
+    {% if field_type == 'input' and type %}
+      type="{{ type | default: 'text' }}"
+    {% endif %}
+    id="{{ id }}"
+    name="{{ name }}"
+    {% if maxlength > 0 %}
+      maxlength="{{ maxlength }}"
+    {% endif %}
+    {% if value %}
+      value="{{ value }}"
+    {% endif %}
+    {% if spellcheck %}
+      spellcheck="{{ spellcheck }}"
+    {% endif %}
+    {% if autocapitalize %}
+      autocapitalize="{{ autocapitalize }}"
+    {% endif %}
+    placeholder="{{ label }}"
+    {% if required %}
+      required
+    {% endif %}
+    {% if field_type == 'textarea' and rows %}
+      rows="{{ rows }}"
+    {% endif %}
+  ></{{ field_type }}>
+  {% if field_type == 'textarea' and maxlength > 0 %}
+    <div class="as-field__counter"><span>0</span>/{{ maxlength }}</div>
+  {% endif %}
+  {% comment %} <label class="as-field__label" for="{{ id }}">{{ label }}</label> {% endcomment %}
+</div>

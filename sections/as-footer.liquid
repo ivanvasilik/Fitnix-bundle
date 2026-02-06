@@ -1,0 +1,134 @@
+<section class="as-footer-clean">
+  <div class="as-footer-clean__container container--large container--with-aside-paddings">
+    <img
+      src="{{ 'logo-footer.png' | file_url }}"
+      alt="Fitnix Logo"
+      class="as-footer-logo"
+    >
+
+    {% if section.settings.tagline %}
+      <p class="as-footer-clean__tagline">
+        {{ section.settings.tagline }}
+      </p>
+    {% endif %}
+
+    {% if section.settings.show_divider %}
+      <div class="as-footer-clean__divider"></div>
+    {% endif %}
+
+    {% if section.settings.copyright %}
+      <p class="as-footer-clean__copyright">
+        {{ section.settings.copyright }}
+      </p>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  .as-footer-clean {
+    padding: 80px 0;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    z-index: 3;
+  }
+
+  .as-footer-clean__container {
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 24px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+  .as-footer-logo {
+    max-width: 163px;
+  }
+
+  .as-footer-clean__logo {
+    width: auto;
+    max-width: 220px;
+    margin: 0 auto 32px;
+    display: block;
+  }
+
+  .as-footer-clean__tagline {
+    font-size: 2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .as-footer-clean__divider {
+    width: 100%;
+    height: 2px;
+    background: #f0f0f0;
+    opacity: 0.8;
+    border-radius: 4px;
+  }
+
+  .as-footer-clean__copyright {
+    font-size: 1.6rem;
+    opacity: 0.7;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  @media (max-width: 768px) {
+    .as-footer-clean {
+      padding: 60px 0;
+    }
+
+    .as-footer-clean__tagline {
+      font-size: 18px;
+    }
+
+    .as-footer-clean__copyright {
+      font-size: 13px;
+    }
+    .as-footer-logo {
+      max-width: 140px;
+    }
+  }
+  @media (max-width: 360px) {
+    .as-footer-logo {
+      max-width: 112px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "AS — Clean Footer",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Footer logo"
+    },
+    {
+      "type": "text",
+      "id": "tagline",
+      "label": "Tagline",
+      "default": "Push forward — stronger and smarter with the Olympus Grip."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_divider",
+      "label": "Show divider line",
+      "default": true
+    },
+    {
+      "type": "textarea",
+      "id": "copyright",
+      "label": "Copyright text",
+      "default": "© Fitnix LLC — Protected by U.S. Utility Patents, Design Patents, and Registered Trademarks."
+    }
+  ],
+  "presets": [
+    {
+      "name": "AS Clean Footer"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,23 @@
+{% assign tag = 'a' %}
+{% if is_btn %}
+  {% assign tag = 'button' %}
+{% endif %}
+
+<{{ tag }}
+  {% if id %}
+    id="{{ id }}"
+  {% endif %}
+  {% if target %}
+    target="{{ target }}"
+  {% endif %}
+  {% if is_btn %}
+    type="{% if type %}{{ type }}{% else %}button{% endif %}"
+  {% else %}
+    href="{{ url }}"
+  {% endif %}
+  class="as-button {% if primary %}as-button--primary{% endif %} {% if is_light %}as-button--light{% endif %} {% if class %}{{ class }}{% endif %}{% unless text %} as-button--no-text{% endunless %}"
+>
+  {% if text -%}
+    <span class="as-button__text">{{- text -}}</span>
+  {%- endif %}
+</{{ tag }}>

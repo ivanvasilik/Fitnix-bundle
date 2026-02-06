@@ -1,0 +1,83 @@
+{{ 'as-steps.css' | asset_url | stylesheet_tag }}
+
+<div class="as-steps__cont page-width">
+  <div class="as-steps__cap">
+    <h3 class="as-steps__title">{{ section.settings.heading }}</h3>
+    <p class="as-steps__subtitle">{{ section.settings.subheading }}</p>
+  </div>
+
+  {% assign steps = section.blocks | where: 'type', 'step' %}
+  {% if steps.size > 0 %}
+    <div class="as-steps__grid">
+      {% for block in section.blocks %}
+        {% if block.type == 'step' %}
+          <div class="as-steps__item">
+            <div class="as-steps__item-index">{{ forloop.index }}</div>
+            <div class="as-steps__item-title">{{ block.settings.title }}</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "AS Info",
+  "tag": "section",
+  "class": "as-steps",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "position",
+      "label": "Image Position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "text",
+      "id": "body",
+      "label": "Body"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Step" }]
+}
+{% endschema %}

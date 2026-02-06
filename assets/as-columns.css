@@ -1,0 +1,121 @@
+.as-columns {
+  padding: 80px 0 72px;
+}
+
+.as-columns__cont {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.as-columns__cap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 20px;
+}
+
+.as-columns__title {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.as-columns__subheading,
+.as-columns__body {
+  margin: 0;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.as-columns__body {
+  max-width: 912px;
+}
+
+.as-columns__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 0;
+}
+
+.as-columns__item {
+  border-right: 1.5px solid rgba(147, 157, 184, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0 20px;
+}
+
+.as-columns__item:nth-child(3n) {
+  border-right: none;
+}
+
+.as-columns__item-cap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.as-columns__item-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+.as-columns__item-desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.as-columns__item-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: start;
+}
+
+.as-columns__item-list li {
+  color: #e7e7e7;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.as-columns__item-list li:before {
+  content: "";
+  display: flex;
+  width: 12px;
+  height: 12px;
+  min-width: 12px;
+  min-height: 12px;
+  border-radius: 100%;
+  background-color: #b8c3e1;
+}

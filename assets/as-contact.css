@@ -1,0 +1,179 @@
+.as-contact-wrapper {
+  width: 100%;
+  padding: 80px 0 72px;
+  text-align: center;
+}
+
+.as-contact__title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.as-contact__subtitle {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 50px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.as-contact__form {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.as-contact__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .as-contact__grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .as-input-full {
+    grid-column: span 1 !important;
+  }
+}
+
+.as-input,
+.as-textarea {
+  width: 100%;
+  padding: 18px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #939db833;
+  color: #fff;
+  font-weight: 200;
+  font-size: 17px;
+  outline: none;
+  resize: none;
+}
+
+.as-input::placeholder,
+.as-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.as-input-full {
+  grid-column: span 2;
+  resize: none;
+}
+/* ===== FIX CHROME AUTOFILL ===== */
+input.as-input:-webkit-autofill,
+input.as-input:-webkit-autofill:hover,
+input.as-input:-webkit-autofill:focus,
+textarea.as-textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #939db833 inset !important;
+  box-shadow: 0 0 0px 1000px #939db833 inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+.as-contact-wrapper .as-button {
+  justify-self: center;
+}
+
+.as-contact__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.as-contact__field--radio {
+  gap: 16px;
+}
+
+.as-contact__label,
+.as-contact__required-symbol {
+  color: #ffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.1;
+  text-align: start;
+}
+
+.as-contact__required-symbol {
+  color: #db2326;
+}
+
+.as-contact__radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.as-contact__radio-input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.as-contact__radio-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.as-contact__radio-label {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  position: relative;
+  padding-left: 30px; /* Space for the box */
+  cursor: pointer;
+  display: inline-block;
+}
+
+.as-contact__radio-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px; /* Square edges like a checkbox */
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.as-contact__radio-label::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 10px;
+  border: solid #003466;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) scale(0);
+  transition: transform 0.2s ease;
+}
+
+.as-contact__radio-input:checked + .as-contact__radio-label::before {
+  background-color: #fff;
+}
+
+.as-contact__radio-input:checked + .as-contact__radio-label::after {
+  transform: rotate(45deg) scale(1);
+}
+
+@media (max-width: 768px) {
+  .as-contact__title {
+    font-size: 2.75rem;
+  }
+  .as-contact__subtitle {
+    font-size: 1.75rem;
+  }
+}

@@ -1,0 +1,88 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-1": {
+          "type": "logo_with_text",
+          "settings": {
+            "logo_img": "shopify://shop_images/output-onlinepngtools_1_9bbe26d1-79b6-4e30-82a7-769da8a446f0.png",
+            "logo_width": 70,
+            "title": "",
+            "heading_size": "caption2",
+            "text": "<p>Fitnix LLC is a fitness technology company that designs innovative equipment to make exercise easier, more accessible, and available anytime, anywhere. We believe that physical activity builds confidence, reduces stress, and enhances both mental and physical performance.</p>",
+            "body_size": "body4"
+          }
+        },
+        "footer-3": {
+          "type": "social_media",
+          "settings": {
+            "title": "Follow Us",
+            "heading_size": "caption2",
+            "text": "<p>Connect with a thriving community transforming their fitness journeys.  </p><p>Push forward stronger and smarter with the Olympus Grip! </p>",
+            "body_size": "body4"
+          }
+        },
+        "footer-2": {
+          "type": "menu",
+          "settings": {
+            "menu": "footer",
+            "body_size": "body4",
+            "title": "Additional Info",
+            "heading_size": "caption2"
+          }
+        },
+        "footer-4": {
+          "type": "subscribe",
+          "disabled": true,
+          "settings": {
+            "title": "Subscribe",
+            "heading_size": "caption2",
+            "text": "<p>Gain access to exclusive workouts and promotions.</p>",
+            "body_size": "body4",
+            "input_style": "solid",
+            "show_signup_checkbox": false,
+            "signup_checkbox_text": "I agree to the consent rules"
+          }
+        }
+      },
+      "block_order": [
+        "footer-1",
+        "footer-3",
+        "footer-2",
+        "footer-4"
+      ],
+      "settings": {
+        "color_scheme": "secondary",
+        "enable_background_around_container": false,
+        "container_size": "full-screen",
+        "desktop_column_count": "4",
+        "enable_border": false,
+        "bottom_bar": "main-menu",
+        "show_payment_icons": true,
+        "copyright_text": "",
+        "enable_follow_on_shop": true,
+        "show_language_selector": true,
+        "show_currency_selector": true,
+        "show_policy_links": true,
+        "add_side_paddings": true,
+        "section_spacing_top": 0,
+        "section_spacing_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

@@ -1,0 +1,450 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "ces",
+  "sections": {
+    "as_hero_video_ces": {
+      "type": "as-hero-video-ces",
+      "settings": {
+        "heading": "Partner With Fitnix",
+        "subtext": "We collaborate with coaches, clinicians, and performance professionals to bring data-driven training to real clients",
+        "cta_text": "Become a Partner",
+        "cta_link": "https://www.youtube.com/watch?v=S0agRTNR9cI",
+        "youtube_url": "https://www.youtube.com/watch?v=S0agRTNR9cI"
+      }
+    },
+    "as_advantages_grid_tzGM7e": {
+      "type": "as-blocks",
+      "blocks": {
+        "adv_1": {
+          "type": "adv",
+          "settings": {
+            "icon_image": "shopify://shop_images/Background_Border.png",
+            "title": "Portable Design",
+            "text": "Train anywhere, from home to outdoors."
+          }
+        },
+        "adv_2": {
+          "type": "adv",
+          "settings": {
+            "icon_image": "shopify://shop_images/Background_Border_1.png",
+            "title": "Smart Sensors",
+            "text": "Dual strain gauges measure real push/pull force."
+          }
+        },
+        "adv_3": {
+          "type": "adv",
+          "settings": {
+            "icon_image": "shopify://shop_images/Background_Border_2.png",
+            "title": "Connected App",
+            "text": "Tracks reps, real-time force, total training volume, & progress."
+          }
+        }
+      },
+      "block_order": [
+        "adv_1",
+        "adv_2",
+        "adv_3"
+      ],
+      "custom_css": [
+        ".adv__subtitle {font-size:2.4rem;}"
+      ],
+      "name": "AS Advantages",
+      "settings": {
+        "container_class": "page-width",
+        "heading": "Strength. Data. </br>Better Outcomes.",
+        "subheading": "Olympus Grip SMART measures real force, turning everyday training, rehab, and conditioning into measurable performance",
+        "bottom_image": "shopify://shop_images/image_9.png",
+        "cta_text": ""
+      }
+    },
+    "as_columns": {
+      "type": "as-columns",
+      "blocks": {
+        "col_1": {
+          "type": "column",
+          "settings": {
+            "title": "Olympus Weight™",
+            "description": "Total applied force over time",
+            "list": "<ul><li>Cumulative force applied across an entire workout</li><li>Think: mileage for calisthenics</li></ul>"
+          }
+        },
+        "col_2": {
+          "type": "column",
+          "settings": {
+            "title": "Olympus Rep Weight™",
+            "description": "Cumulative max force per rep",
+            "list": "<ul><li>The maximum force achieved in each rep</li><li>Reflects total intensity applied across a workout, not just rep count</li></ul>"
+          }
+        },
+        "col_3": {
+          "type": "column",
+          "settings": {
+            "title": "Rep Weight Average",
+            "description": "Average force per rep",
+            "list": "<ul><li>Average force applied across all reps in a session</li><li>Highlights effort consistency, fatigue, and progression quality</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "col_1",
+        "col_2",
+        "col_3"
+      ],
+      "settings": {
+        "heading": "Olympus Metrics — Measuring Real Strength",
+        "subheading": "A universal measurement system built on real applied force, enabling comparable strength and workload tracking across all movement types.",
+        "body": "Measured live during training and aggregated over time to support coaching decisions and outcomes."
+      }
+    },
+    "as_video_with_top_text": {
+      "type": "as-video-with-top-text",
+      "custom_css": [
+        ".as-video-block .as-video-block__desc {font-size:2.4rem;max-width:768px;margin:0 auto;}"
+      ],
+      "settings": {
+        "title": "See the Olympus Grip</br>SMART in Action",
+        "subheading": "How real force measurement changes everyday training, rehab, and performance",
+        "youtube_url": "https://www.youtube.com/watch?v=765jOY6qf0Y",
+        "body": "Watch how Olympus Grip SMART captures applied force in real time during everyday training movements",
+        "variant": "ambassador"
+      }
+    },
+    "as_features": {
+      "type": "as-features",
+      "blocks": {
+        "feat_1": {
+          "type": "feat",
+          "settings": {
+            "title": "Physical therapists & rehab professionals",
+            "icon": "shopify://shop_images/search_icon_f8470b28-d14d-46d5-abbb-5544a30463c6.png"
+          }
+        },
+        "feat_2": {
+          "type": "feat",
+          "settings": {
+            "title": "Strength & conditioning coaches and trainers",
+            "icon": "shopify://shop_images/search_icon_f8470b28-d14d-46d5-abbb-5544a30463c6.png"
+          }
+        },
+        "feat_3": {
+          "type": "feat",
+          "settings": {
+            "title": "Gym owners & facility directors",
+            "icon": "shopify://shop_images/search_icon_f8470b28-d14d-46d5-abbb-5544a30463c6.png"
+          }
+        },
+        "feat_4": {
+          "type": "feat",
+          "settings": {
+            "title": "Performance educators",
+            "icon": "shopify://shop_images/search_icon_f8470b28-d14d-46d5-abbb-5544a30463c6.png"
+          }
+        }
+      },
+      "block_order": [
+        "feat_1",
+        "feat_2",
+        "feat_3",
+        "feat_4"
+      ],
+      "settings": {
+        "heading": "Who This Is For",
+        "subheading": "Built for professionals who work with real clients, real data, and real outcomes",
+        "image": "shopify://shop_images/feat_photo_1.webp",
+        "body": "Partnerships are built around real client use, measurable outcomes, and shared success. Partners may earn from deployments within their own client base."
+      }
+    },
+    "as_info": {
+      "type": "as-info",
+      "settings": {
+        "heading": "Olympus Grip SMART is built through real-world use with coaches, clinics, and performance professionals — not guesswork."
+      }
+    },
+    "as_features_2": {
+      "type": "as-features",
+      "blocks": {
+        "feat_1": {
+          "type": "feat",
+          "settings": {
+            "title": "Use Olympus Grip SMART in real sessions to generate measurable outcomes",
+            "icon": "shopify://shop_images/checkmark_icon_0cc5f825-f9aa-426d-8ad9-766e5eee1c00.png"
+          }
+        },
+        "feat_2": {
+          "type": "feat",
+          "settings": {
+            "title": "Share structured product feedback and insights",
+            "icon": "shopify://shop_images/checkmark_icon_0cc5f825-f9aa-426d-8ad9-766e5eee1c00.png"
+          }
+        },
+        "feat_3": {
+          "type": "feat",
+          "settings": {
+            "title": "Contribute to case learnings and outcomes",
+            "icon": "shopify://shop_images/checkmark_icon_0cc5f825-f9aa-426d-8ad9-766e5eee1c00.png"
+          }
+        },
+        "feat_4": {
+          "type": "feat",
+          "settings": {
+            "title": "Collaborate on product refinement",
+            "icon": "shopify://shop_images/checkmark_icon_0cc5f825-f9aa-426d-8ad9-766e5eee1c00.png"
+          }
+        }
+      },
+      "block_order": [
+        "feat_1",
+        "feat_2",
+        "feat_3",
+        "feat_4"
+      ],
+      "settings": {
+        "heading": "We Partner With Purpose",
+        "subheading": "A collaboration built around real use, feedback, and refinement",
+        "image": "shopify://shop_images/photo.png",
+        "position": "left"
+      }
+    },
+    "as_advantages_grid_tzGM": {
+      "type": "as-blocks",
+      "blocks": {
+        "adv_1": {
+          "type": "adv",
+          "settings": {
+            "icon_image": "shopify://shop_images/clock.svg",
+            "title": "Early access to <br/>Olympus Grip SMART"
+          }
+        },
+        "adv_2": {
+          "type": "adv",
+          "settings": {
+            "icon_image": "shopify://shop_images/box.svg",
+            "title": "Complimentary pilot units <br/>(for select partners)"
+          }
+        },
+        "adv_3": {
+          "type": "adv",
+          "settings": {
+            "icon_image": "shopify://shop_images/tag.svg",
+            "title": "Partner-only <br/>pricing"
+          }
+        },
+        "adv_4": {
+          "type": "adv",
+          "settings": {
+            "icon_image": "shopify://shop_images/rocket.svg",
+            "title": "Priority onboarding & roadmap access"
+          }
+        },
+        "adv_5": {
+          "type": "adv",
+          "settings": {
+            "icon_image": "shopify://shop_images/circles.svg",
+            "title": "Case studies and product co-development"
+          }
+        },
+        "adv_6": {
+          "type": "adv",
+          "settings": {
+            "icon_image": "shopify://shop_images/hands.svg",
+            "title": "Partner Revenue Opportunities"
+          }
+        }
+      },
+      "block_order": [
+        "adv_1",
+        "adv_2",
+        "adv_3",
+        "adv_4",
+        "adv_5",
+        "adv_6"
+      ],
+      "custom_css": [
+        ".adv__subtitle {font-size:2.4rem;}",
+        ".adv__heading {font-size: 2rem;font-weight:500;}",
+        ".adv__card{background: rgba(147, 157, 184, 0.10); border: none; padding: 40px 20px;}"
+      ],
+      "name": "AS Advantages",
+      "settings": {
+        "heading": "What Partners Receive",
+        "subheading": "We’re seeking collaborators who can help expand the Olympus<br>Grip SMART ecosystem.",
+        "bottom_image": "shopify://shop_images/What_Partners_Receive.webp",
+        "cta_text": ""
+      }
+    },
+    "as_steps": {
+      "type": "as-steps",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "title": "Apply using the <br/>form below"
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "title": "We review for <br/>professional fit"
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "title": "If selected: pilot access or partner pricing"
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "title": "Deploy, measure, collaborate"
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ],
+      "settings": {
+        "heading": "How to Become a Partner",
+        "subheading": "A simple, selective process built for long-term collaboration"
+      }
+    },
+    "as-form": {
+      "type": "as-contact",
+      "blocks": {
+        "field_1": {
+          "type": "field",
+          "settings": {
+            "label": "First name",
+            "name": "contact[first_name]",
+            "placeholder": "First name",
+            "type": "text",
+            "is_required": true,
+          }
+        },
+        "field_2": {
+          "type": "field",
+          "settings": {
+            "label": "Last name",
+            "name": "contact[last_name]",
+            "placeholder": "Last name",
+            "type": "text",
+            "is_required": true,
+          }
+        },
+        "field_3": {
+          "type": "field",
+          "settings": {
+            "name": "contact[email]",
+            "label": "Enter your email",
+            "placeholder": "Enter your email",
+            "type": "email",
+            "is_full": false,
+            "is_required": true,
+          }
+        },
+        "field_4": {
+          "type": "field",
+          "settings": {
+            "label": "City / State",
+            "name": "contact[city]",
+            "placeholder": "City / State",
+            "type": "text",
+            "is_full": false,
+            "is_required": true,
+          }
+        },
+        "field_5": {
+          "type": "field",
+          "settings": {
+            "label": "Company / Role",
+            "name": "contact[company]",
+            "placeholder": "Company / Role",
+            "type": "text",
+            "is_full": false,
+            "is_required": true,
+          }
+        },
+        "field_6": {
+          "type": "field",
+          "settings": {
+            "label": "Number of active clients",
+            "name": "contact[number]",
+            "placeholder": "Enter number",
+            "type": "text",
+            "is_full": false,
+            "is_required": true,
+          }
+        },
+        "field_7": {
+          "type": "field",
+          "settings": {
+            "label": "How would you use Olympus Grip SMART?",
+            "name": "contact[body]",
+            "placeholder": "Enter text",
+            "type": "textarea",
+            "is_full": true,
+            "is_required": true,
+          }
+        },
+        "field_8": {
+          "type": "field",
+          "settings": {
+            "label": "I'am interested in:",
+            "name": "contact[interested_in]",
+            "placeholder": "",
+            "type": "radio",
+            "is_full": true,
+            "is_required": false,
+            "values": "Pilot partnership (complimentary units)\nPartner pricing (discounted units)\nFacility / program deployment",
+          }
+        },
+      },
+      "block_order": [
+        "field_1",
+        "field_2",
+        "field_3",
+        "field_4",
+        "field_5",
+        "field_6",
+        "field_7",
+        "field_8",
+      ],
+      "settings": {
+        "heading": "Apply to Become a Fitnix Partner",
+        "subheading": "Submit the form below and our team will follow up if there’s a fit",
+        "btn_label": "Apply for Partnership",
+        "show_labels": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "as_footer_clean": {
+      "type": "as-footer",
+      "settings": {}
+    }
+  },
+  "order": [
+    "as_hero_video_ces",
+    "as_advantages_grid_tzGM7e",
+    "as_columns",
+    "as_video_with_top_text",
+    "as_features",
+    "as_info",
+    "as_features_2",
+    "as_advantages_grid_tzGM",
+    "as_steps",
+    "as-form",
+    "as_footer_clean"
+  ]
+}

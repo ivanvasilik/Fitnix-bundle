@@ -1,0 +1,161 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "xsmall",
+        "show_heading": true,
+        "add_side_paddings": true,
+        "section_spacing_top": 96,
+        "section_spacing_bottom": 96
+      }
+    },
+    "images_with_text_QBLCaF": {
+      "type": "images-with-text",
+      "blocks": {
+        "image_9ynYcB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/OG_User_Guide_2x_6bd43bf4-7d7f-4177-8b4a-56414cf8a0e3.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_9ynYcB"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "page-width",
+        "content_layout": "left",
+        "image_layout": "collage",
+        "img_ratio": 1,
+        "rotate_images": false,
+        "icon": "none",
+        "subheading": "INSTRUCTIONS",
+        "heading": "Olympus Grip V1.0 User Guide PDF",
+        "heading_size": "h2",
+        "body": "<p>The User Guide tells you how to safely operate the Olympus Grip and all its accessories.</p>",
+        "body_size": "body3",
+        "content_alignment": "left",
+        "desktop_content_width": 360,
+        "first_button_text": "Download",
+        "first_button_link": "https://cdn.shopify.com/s/files/1/0611/9836/8944/files/Olympus_Grip_V1.0_User_Guide.pdf?v=1684952735",
+        "first_button_style": "solid",
+        "second_button_text": "",
+        "second_button_link": "",
+        "second_button_style": "solid",
+        "add_side_paddings": true,
+        "section_spacing_top": 48,
+        "section_spacing_bottom": 80
+      }
+    },
+    "multicolumn_8JWrrB": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_w6H47T": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/t2-uFakKTO4-HD.jpg",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.7,
+            "title": "",
+            "text": "",
+            "link_text": "Watch Video",
+            "link_url": "https://www.youtube.com/watch?v=t2-uFakKTO4"
+          }
+        },
+        "column_fJJPx8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/hz7sJv2SNh8-HD.jpg",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.7,
+            "title": "",
+            "text": "",
+            "link_text": "Watch Video",
+            "link_url": "https://www.youtube.com/watch?v=hz7sJv2SNh8"
+          }
+        },
+        "column_H7F84H": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/5Wz6OkQOPLE-HD.jpg",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.7,
+            "title": "",
+            "text": "",
+            "link_text": "Watch Video",
+            "link_url": "https://www.youtube.com/watch?v=5Wz6OkQOPLE"
+          }
+        },
+        "column_h6FtLP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/d1donFkEOsY-HD.jpg",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.7,
+            "title": "",
+            "text": "",
+            "link_text": "Watch Video",
+            "link_url": "https://www.youtube.com/watch?v=d1donFkEOsY"
+          }
+        }
+      },
+      "block_order": [
+        "column_w6H47T",
+        "column_fJJPx8",
+        "column_H7F84H",
+        "column_h6FtLP"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "page-width",
+        "desktop_layout": "grid",
+        "mobile_layout": "grid",
+        "title": "Helpful Instructional Videos",
+        "heading_size": "h3",
+        "text": "",
+        "body_size": "body3",
+        "content_alignment": "center",
+        "column_heading_size": "h6",
+        "column_body_size": "body4",
+        "column_alignment": "center",
+        "desktop_columns": 2,
+        "desktop_space_between_cards": 11,
+        "desktop_content_spacing": 15,
+        "mobile_space_between_cards": 16,
+        "mobile_content_spacing": 10,
+        "show_column_background": false,
+        "show_navigation_on_hover": true,
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "outline",
+        "autoplay_mode": "disabled",
+        "autoplay_interval": 3,
+        "add_side_paddings": true,
+        "section_spacing_top": 80,
+        "section_spacing_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "page",
+    "images_with_text_QBLCaF",
+    "multicolumn_8JWrrB"
+  ]
+}

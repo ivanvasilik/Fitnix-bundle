@@ -1,0 +1,97 @@
+{{ 'as-features.css' | asset_url | stylesheet_tag }}
+
+<div class="as-features__cont page-width">
+  <div class="as-features__cap">
+    <h3 class="as-features__title">{{ section.settings.heading }}</h3>
+    <p class="as-features__subtitle">{{ section.settings.subheading }}</p>
+  </div>
+
+  <div class="as-features__main">
+    <div class="as-features__info" style="{% if section.settings.position == 'left' %}order:1;{% endif %}">
+      {% assign feats = section.blocks | where: 'type', 'feat' %}
+      {% if feats.size > 0 %}
+        <div class="as-features__list">
+          {% for block in section.blocks %}
+            {% if block.type == 'feat' %}
+              <div class="as-features__item">
+                <div class="as-features__item-icon"><img src="{{ block.settings.icon | image_url }}" alt="Icon"></div>
+                <div class="as-features__item-title">{{ block.settings.title }}</div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if section.settings.body != blank %}
+        <div class="as-features__body">{{ section.settings.body }}</div>
+      {% endif %}
+    </div>
+    <div class="as-features__image"><img src="{{ section.settings.image | image_url }}" alt="Feature Image"></div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "AS Info",
+  "tag": "section",
+  "class": "as-features",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "position",
+      "label": "Image Position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "text",
+      "id": "body",
+      "label": "Body"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feat",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Feature" }]
+}
+{% endschema %}

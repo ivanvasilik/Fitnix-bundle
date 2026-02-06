@@ -1,0 +1,130 @@
+.as-video-block {
+  text-align: center;
+  padding: 80px 0 72px;
+  color: #fff;
+}
+.as-video-block__cont {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.as-video-block__cont.as-video-block__cont--ambassador {
+  gap: 20px;
+}
+
+.as-video-block__cap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.as-video-block__cont--ambassador .as-video-block__cap {
+  gap: 16px;
+}
+
+.as-video-block__title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -1px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.as-video-block__desc,
+.as-video-block__body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  opacity: 0.85;
+}
+
+.as-video-block__extra {
+  padding-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.as-video-block__extra-title {
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.as-video-container {
+  /* max-width: 1100px; */
+  margin: auto;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+
+.as-video-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: none;
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.as-video-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  z-index: 4;
+}
+
+.as-video-youtube-embed {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.as-video-youtube-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.as-video-container.playing .as-video-poster,
+.as-video-container.playing .as-video-play-btn {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .as-video-block {
+    padding: 32px 0 48px;
+  }
+  .as-video-block__title {
+    font-size: 2.5rem;
+  }
+  .as-video-play-btn {
+    width: 80px;
+    height: 80px;
+    font-size: 36px;
+  }
+  .as-video-block__desc,
+  .as-video-block__body {
+    font-size: 1.75rem;
+  }
+  .as-video-container {
+    border-radius: 0;
+    min-height: 380px;
+  }
+}

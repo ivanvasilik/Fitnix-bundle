@@ -1,0 +1,19 @@
+<div class='page-card {{ class }}'>
+  <a
+    class='page-card__link unstyled-link'
+    href='{{ page.url }}'
+    aria-label='{{ page.title | strip_html | escape }}'
+  ></a>
+  <div class='shape shape--{{ img_ratio }} {% if img_ratio contains 'fit' %} shape--fit {% endif %}'>
+    <div class='page-card__inner shape__target-image'>
+      {% if with_small_icon %}
+        {% render 'icon-pack', icon: 'page', class: 'page-card__icon' %}
+      {% else %}
+        {% render 'icon-pack', icon: 'page', class: 'page-card__icon page-card__icon--large' %}
+      {% endif %}
+    </div>
+  </div>
+  <div class='page-card__info'>
+    <div class='page-card__title'>{{ page.title }}</div>
+  </div>
+</div>

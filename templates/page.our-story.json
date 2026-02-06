@@ -1,0 +1,225 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "xsmall",
+        "show_heading": true,
+        "add_side_paddings": true,
+        "section_spacing_top": 96,
+        "section_spacing_bottom": 96
+      }
+    },
+    "image_banner_Lc6kga": {
+      "type": "image-banner",
+      "settings": {
+        "color_scheme": "custom-1",
+        "enable_background_around_container": false,
+        "container_size": "page-width",
+        "desktop_ratio": 0.4,
+        "mobile_ratio": 1.6,
+        "desktop_img": "shopify://shop_images/Dog_2x_f79a3584-6642-4003-ae07-a5f7a3405971.png",
+        "desktop_overlay_opacity": 20,
+        "mobile_overlay_opacity": 20,
+        "caption": "",
+        "title": "Origin Story",
+        "heading_size": "h2",
+        "text": "",
+        "body_size": "body3",
+        "desktop_content_position": "align-items:center;justify-content:center;",
+        "desktop_content_align": "center",
+        "content_max_width": 528,
+        "content_spacing": 116,
+        "mobile_content_position": "align-items:center;justify-content:center;",
+        "mobile_content_align": "center",
+        "desktop_content_background": "none",
+        "mobile_content_background": "none",
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "solid",
+        "extra_btn_text": "",
+        "extra_btn_url": "",
+        "extra_btn_style": "solid",
+        "disable_lazy_loading": false,
+        "add_side_paddings": true,
+        "section_spacing_top": 0,
+        "section_spacing_bottom": 0
+      }
+    },
+    "images_with_text_Wbeh3J": {
+      "type": "images-with-text",
+      "blocks": {
+        "image_JUFEVD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/OlypmpusGrip-25.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_JUFEVD"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "page-width",
+        "content_layout": "left",
+        "image_layout": "collage",
+        "img_ratio": 1.1,
+        "rotate_images": false,
+        "icon": "none",
+        "subheading": "",
+        "heading": "“There I was, running in the desert, in the middle of nowhere, with my dog Colby at my side …”",
+        "heading_size": "h4",
+        "body": "<p>That’s the beginning of many of my favorite personal stories. It also describes the circumstances in which the idea of the Olympus Grip was born.<br/><br/>After military service and graduate school, my wife and I moved to Nevada to begin a new life and a family of our own. I soon found that juggling the time demands of work and family life made it very difficult to maintain my personal fitness at the level I had become accustomed to in the military. To help stay in shape, I ran the Las Vegas marathon every year, but came to realize that running was doing nothing to help maintain my upper body and related muscles. I looked to find a solution that would allow me to get an upper body workout while running and perform every calisthenic exercise imaginable outside but could not find anything suitable on the market. I set out to solve this problem. The result is the Olympus Grip, a comprehensive exercise product for all your fitness needs.<br/></p>",
+        "body_size": "body3",
+        "content_alignment": "left",
+        "desktop_content_width": 360,
+        "first_button_text": "",
+        "first_button_link": "",
+        "first_button_style": "solid",
+        "second_button_text": "",
+        "second_button_link": "",
+        "second_button_style": "solid",
+        "add_side_paddings": true,
+        "section_spacing_top": 48,
+        "section_spacing_bottom": 80
+      }
+    },
+    "images_with_text_PXLag4": {
+      "type": "images-with-text",
+      "blocks": {
+        "image_cxtKkz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Chris_2x_afdac1fd-1ac9-48fa-b645-521d51d86388.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_cxtKkz"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "page-width",
+        "content_layout": "right",
+        "image_layout": "collage",
+        "img_ratio": 1.2,
+        "rotate_images": false,
+        "icon": "none",
+        "subheading": "",
+        "heading": "Founder Story",
+        "heading_size": "h4",
+        "body": "<p>The US Army, Ranger, & Airborne Schools, as well as deployments to the Balkans and Iraq where he was awarded the Bronze Star, taught Chris that fitness is an essential part of life because it improves your mental and physical capabilities. After the Army, Chris graduated from the University of Virginia’s Darden Graduate School of Business and earned a CFA and a six sigma blackbelt. He has held corporate finance director level positions at well-known Fortune 100 companies as well as a rapidly growing tech start-up. Chris started Fitnix LLC to promote the idea that exercise improves physical and mental health. He specifically designed the Olympus Grip to make it easier to exercise in any situation and improve fitness motivation.</p>",
+        "body_size": "body3",
+        "content_alignment": "left",
+        "desktop_content_width": 360,
+        "first_button_text": "",
+        "first_button_link": "",
+        "first_button_style": "solid",
+        "second_button_text": "",
+        "second_button_link": "",
+        "second_button_style": "solid",
+        "add_side_paddings": true,
+        "section_spacing_top": 48,
+        "section_spacing_bottom": 80
+      }
+    },
+    "images_with_text_6WXm9X": {
+      "type": "images-with-text",
+      "blocks": {
+        "image_mq3rgt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/spartan_fire_pit_vernon_nj_sep_30_2022.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_mq3rgt"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "page-width",
+        "content_layout": "left",
+        "image_layout": "collage",
+        "img_ratio": 1.3,
+        "rotate_images": false,
+        "icon": "none",
+        "subheading": "",
+        "heading": "\"Proven Effective for the Inventor’s Obstacle Course Training & Alleviating His Elbow Pain\"",
+        "heading_size": "h4",
+        "body": "<p>When the inventor, Chris, created his first working prototype of the Olympus Grip, he was out of shape as a result of a leg injury that had recently healed and a long history of Golfer’s Elbow pain.<br/><br/>He set a 90 day fitness challenge for himself, which incorporated a set of rules to isolate the impact of the Olympus Grip, which included:<br/><br/>Rule #1: Always use the Olympus Grip while exercising.<br/><br/>Rule #2: No diet changes, protein powders or supplements.<br/><br/>Rule #3: Workout no more than 45 minutes a day (on average)</p>",
+        "body_size": "body3",
+        "content_alignment": "left",
+        "desktop_content_width": 360,
+        "first_button_text": "",
+        "first_button_link": "",
+        "first_button_style": "solid",
+        "second_button_text": "",
+        "second_button_link": "",
+        "second_button_style": "solid",
+        "add_side_paddings": true,
+        "section_spacing_top": 48,
+        "section_spacing_bottom": 80
+      }
+    },
+    "images_with_text_QKYFYR": {
+      "type": "images-with-text",
+      "blocks": {
+        "image_ammrTU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Image22_2x_ff79be33-8acf-4370-bff3-0c21660b789e.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_ammrTU"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "content_layout": "left",
+        "image_layout": "collage",
+        "img_ratio": 1,
+        "rotate_images": false,
+        "icon": "none",
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "body": "<p>During this challenge, Chris discovered that the Olympus Grip’s ergonomically designed handles helped alleviate his wrist and elbow pain which had been a long-standing problem. One week after completing his 90 day challenge, Chris competed in two Spartan Obstacle Course Races. He finished in the top tier of his age group and qualified for the Spartan North American Championships. For Chris, there was no question that the Olympus Grip was instrumental in his success.</p>",
+        "body_size": "body3",
+        "content_alignment": "left",
+        "desktop_content_width": 360,
+        "first_button_text": "Shop Now",
+        "first_button_link": "shopify://products/olympus-grip®-double-workout-advantage™",
+        "first_button_style": "solid",
+        "second_button_text": "",
+        "second_button_link": "",
+        "second_button_style": "solid",
+        "add_side_paddings": true,
+        "section_spacing_top": 48,
+        "section_spacing_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "page",
+    "image_banner_Lc6kga",
+    "images_with_text_Wbeh3J",
+    "images_with_text_PXLag4",
+    "images_with_text_6WXm9X",
+    "images_with_text_QKYFYR"
+  ]
+}

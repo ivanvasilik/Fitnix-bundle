@@ -1,0 +1,425 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "xsmall",
+        "show_heading": true,
+        "add_side_paddings": true,
+        "section_spacing_top": 96,
+        "section_spacing_bottom": 96
+      }
+    },
+    "images_with_text_wgpXYJ": {
+      "type": "images-with-text",
+      "blocks": {
+        "image_yg8zt8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Image8_2x_80a93e75-9deb-4902-9d19-659e51ae9bf8.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_yg8zt8"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "page-width",
+        "content_layout": "left",
+        "image_layout": "collage",
+        "img_ratio": 1,
+        "rotate_images": false,
+        "icon": "none",
+        "subheading": "800+ Featured Exercises",
+        "heading": "Olympus Grips Programming",
+        "heading_size": "h2",
+        "body": "<p>You can do every calisthenic exercise imaginable with the Olympus Grip!</p>",
+        "body_size": "body3",
+        "content_alignment": "left",
+        "desktop_content_width": 360,
+        "first_button_text": "",
+        "first_button_link": "",
+        "first_button_style": "solid",
+        "second_button_text": "",
+        "second_button_link": "",
+        "second_button_style": "solid",
+        "add_side_paddings": true,
+        "section_spacing_top": 48,
+        "section_spacing_bottom": 80
+      }
+    },
+    "multicolumn_NGA4xB": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_bM3TwW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/04_Robotic_Punch_DB.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_cVLTcy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/02_Russian_Twist_BWR.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_xG9CXf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/01_Hindu_Push_Up_BWR__1.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_TYbHJi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/03_6_Point_Lunge_BWR.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_nL6PHL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/05_OVERHEAD_TRICEP_EXTENSIONS.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_edYxJt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/07_Inverted_Pull-up_STR.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_UVGJB4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/09_Thruster_BND.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_mQ7JyY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/10_Plyometric_Line_JR.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_P93wHQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Dip_STR.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_4ryDF7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Handstand_Push-up_BWR.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_wgjPBE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Suspended_Leg_Split_Push-up_STR.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_6iRDMx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Diagonal_Chop_SR_-_1.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_pUejdh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Traveling_Sit_Out_BWR.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_TijgTc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/11_Walking_Forward_Lunge_BWR.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        },
+        "column_kaaQQQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Overhead_Press_SR.gif",
+            "desktop_image_width": 100,
+            "mobile_image_width": 100,
+            "image_ratio": 0.6,
+            "title": "",
+            "text": "",
+            "link_text": "",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_bM3TwW",
+        "column_cVLTcy",
+        "column_xG9CXf",
+        "column_TYbHJi",
+        "column_nL6PHL",
+        "column_edYxJt",
+        "column_UVGJB4",
+        "column_mQ7JyY",
+        "column_P93wHQ",
+        "column_4ryDF7",
+        "column_wgjPBE",
+        "column_6iRDMx",
+        "column_pUejdh",
+        "column_TijgTc",
+        "column_kaaQQQ"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "page-width",
+        "desktop_layout": "grid",
+        "mobile_layout": "grid",
+        "title": "",
+        "heading_size": "h5",
+        "text": "",
+        "body_size": "body3",
+        "content_alignment": "center",
+        "column_heading_size": "h6",
+        "column_body_size": "body4",
+        "column_alignment": "center",
+        "desktop_columns": 3,
+        "desktop_space_between_cards": 3,
+        "desktop_content_spacing": 3,
+        "mobile_space_between_cards": 8,
+        "mobile_content_spacing": 6,
+        "show_column_background": false,
+        "show_navigation_on_hover": true,
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "outline",
+        "autoplay_mode": "disabled",
+        "autoplay_interval": 3,
+        "add_side_paddings": true,
+        "section_spacing_top": 80,
+        "section_spacing_bottom": 80
+      }
+    },
+    "video_banner_7iLiiz": {
+      "type": "video-banner",
+      "settings": {
+        "color_scheme": "custom-1",
+        "enable_background_around_container": false,
+        "container_size": "page-width",
+        "desktop_ratio": 0.6,
+        "mobile_ratio": 0.7,
+        "youtube_or_vimeo_video": "https://www.youtube.com/watch?v=Po-NjlI1cl4",
+        "video_alt_text": "",
+        "enable_autoplay": false,
+        "enable_controls": true,
+        "enable_looping": false,
+        "mute_video": false,
+        "cover_image": "shopify://shop_images/Po-NjlI1cl4-HD.jpg",
+        "desktop_overlay_opacity": 20,
+        "mobile_overlay_opacity": 20,
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "text": "",
+        "body_size": "body3",
+        "desktop_content_position": "center",
+        "desktop_content_align": "center",
+        "content_width": 528,
+        "content_spacing": 116,
+        "mobile_content_position": "center",
+        "mobile_content_align": "center",
+        "disable_lazy_loading": false,
+        "add_side_paddings": true,
+        "section_spacing_top": 20,
+        "section_spacing_bottom": 20
+      }
+    },
+    "video_banner_tp8cwH": {
+      "type": "video-banner",
+      "settings": {
+        "color_scheme": "custom-1",
+        "enable_background_around_container": false,
+        "container_size": "full-screen",
+        "desktop_ratio": 0.6,
+        "mobile_ratio": 0.7,
+        "youtube_or_vimeo_video": "https://youtu.be/2Dh5VWp7U_Y?si=9QhTusaofqkAO4gG",
+        "video_alt_text": "",
+        "enable_autoplay": false,
+        "enable_controls": true,
+        "enable_looping": false,
+        "mute_video": false,
+        "cover_image": "shopify://shop_images/2Dh5VWp7U_Y-HD.jpg",
+        "desktop_overlay_opacity": 20,
+        "mobile_overlay_opacity": 20,
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "text": "",
+        "body_size": "body3",
+        "desktop_content_position": "center",
+        "desktop_content_align": "center",
+        "content_width": 528,
+        "content_spacing": 116,
+        "mobile_content_position": "center",
+        "mobile_content_align": "center",
+        "disable_lazy_loading": false,
+        "add_side_paddings": true,
+        "section_spacing_top": 20,
+        "section_spacing_bottom": 20
+      }
+    },
+    "images_with_text_zdDPgg": {
+      "type": "images-with-text",
+      "blocks": {
+        "image_GRErmX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Exercise_Guide_Mockup.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_GRErmX"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "content_layout": "left",
+        "image_layout": "collage",
+        "img_ratio": 1.3,
+        "rotate_images": false,
+        "icon": "none",
+        "subheading": "AVAILABLE FOR FREE",
+        "heading": "Exercise Guide",
+        "heading_size": "h2",
+        "body": "<p>This is a snapshot of 28 exercises out of over 800 exercises you can perform with the Olympus Grip. These exercises are chosen to give you a simple glimpse of the many different types of exercises you can perform with the Olympus Grip. Visit our App to learn more about other exercises and workouts you can perform. Users can also learn additional information about each of these exercises on the App.</p>",
+        "body_size": "body3",
+        "content_alignment": "left",
+        "desktop_content_width": 360,
+        "first_button_text": "Download Free Guide",
+        "first_button_link": "https://drive.google.com/file/d/1Me6aYGP9NI2u6ASbWi9C3oyVDYaspVR4/view",
+        "first_button_style": "solid",
+        "second_button_text": "",
+        "second_button_link": "",
+        "second_button_style": "solid",
+        "add_side_paddings": true,
+        "section_spacing_top": 48,
+        "section_spacing_bottom": 80
+      }
+    }
+  },
+  "order": [
+    "page",
+    "images_with_text_wgpXYJ",
+    "multicolumn_NGA4xB",
+    "video_banner_7iLiiz",
+    "video_banner_tp8cwH",
+    "images_with_text_zdDPgg"
+  ]
+}

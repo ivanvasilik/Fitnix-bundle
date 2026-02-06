@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16505811997"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    >
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'AW-16505811997');
+    </script>
+    <!-- Reddit Pixel -->
+    <script>
+      !(function (w, d) {
+        if (!w.rdt) {
+          var p = (w.rdt = function () {
+            p.sendEvent ? p.sendEvent.apply(p, arguments) : p.callQueue.push(arguments);
+          });
+          p.callQueue = [];
+          var t = d.createElement('script');
+          (t.src = 'https://www.redditstatic.com/ads/pixel.js'), (t.async = !0);
+          var s = d.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(t, s);
+        }
+      })(window, document);
+      rdt('init', 'a2_fx3dk02b6yb8');
+      rdt('track', 'PageVisit');
+    </script>
+    <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
+    <!-- End Reddit Pixel -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="{{ settings.default_color_scheme }}">
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+    {%- endif -%}
+    {% render 'meta-tags' %}
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+
+    <title>
+      {{ page_title }}
+      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
+    </title>
+
+    {% render 'css-variables' %}
+    {{ 'bundle.js' | asset_url | preload_tag: as: 'script' }}
+    {{ 'bundle.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'as-button.css' | asset_url | stylesheet_tag: preload: true }}
+    {% render 'fonts' %}
+    {{ content_for_header }}
+
+    <style>
+      html,
+      body {
+        min-height: 100%;
+        background: linear-gradient(180deg, #0b1a33 40%, #0f2853 80%, #133a7a 90%) !important;
+        background-repeat: no-repeat !important;
+        background-size: 100% 100% !important;
+      }
+
+      main#MainContent,
+      .shopify-section,
+      .section-template,
+      .content,
+      .page-width {
+        background: transparent !important;
+      }
+
+      .page-width,
+      .page-width--large {
+        max-width: 1310px;
+        padding: 0 1.5rem;
+        margin: 0 auto;
+      }
+
+      .page-width--large {
+        max-width: 1360px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .page-width,
+        .page-width--large {
+          padding: 0 5rem;
+        }
+      }
+    </style>
+
+    {% if request.path == '/pages/ces' %}
+      <style>
+        .klaviyo-form,
+        div[class*='klaviyo-form'],
+        div[class*='kl-private-reset-css'],
+        div[class*='klaviyo'] {
+          display: none !important;
+          visibility: hidden !important;
+          opacity: 0 !important;
+          pointer-events: none !important;
+        }
+      </style>
+    {% endif %}
+
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = 'https://www.clarity.ms/tag/' + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, 'clarity', 'script', 'qqre35r9q9');
+    </script>
+  </head>
+  <body
+    class="color-{{ settings.default_color_scheme }} round-level-{{ settings.round_level }} {% if settings.round_level != "0" %} round-style {% endif %}"
+    style="overflow: auto !important; overflow-x: auto !important;"
+  >
+    <a id="SkipContent" class="visually-hidden skip-to-content-link btn btn--lg btn--solid" href="#MainContent">
+      {{ 'accessibility.skip_to_text' | t }}
+    </a>
+
+    {% sections 'popup-group' %}
+
+    <main id="MainContent">
+      {{ content_for_layout }}
+    </main>
+
+    {%- render 'dialog-components' -%}
+    {%- render 'interface-controls' -%}
+    {%- render 'page-overlays' -%}
+
+    <div id="Portal"></div>
+    {%- render 'inject-routes' -%}
+    {%- render 'save-global-data-in-global-scope' -%}
+    <script>
+      window.lazySizesConfig = window.lazySizesConfig || {};
+      window.lazySizesConfig.loadMode = 1;
+    </script>
+
+    <script src="{{ 'bundle.js' | asset_url }}" defer="defer"></script>
+    <div class="page-bg-vector page-bg-vector--mobile">
+      <img src="{{ 'pattern-bg.png' | asset_url }}" alt="">
+    </div>
+
+    <div class="page-bg-vector page-bg-vector--desktop">
+      <img src="{{ 'pattern-bg.png' | asset_url }}" alt="">
+    </div>
+  </body>
+</html>
+
+<style>
+  .page-bg-vector {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .page-bg-vector img {
+    width: 100%;
+    max-height: 380px;
+    display: block;
+  }
+  .page-bg-vector--desktop {
+    display: none;
+  }
+
+  @media (min-width: 1700px) {
+    .page-bg-vector--mobile {
+      display: none;
+    }
+    .page-bg-vector--desktop {
+      display: block;
+    }
+    .page-bg-vector img {
+      width: 100%;
+      height: auto;
+      max-height: 460px;
+      display: block;
+    }
+  }
+  @media (max-width: 768px) {
+    .page-bg-vector img {
+      width: 100%;
+      min-height: 358px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+</style>

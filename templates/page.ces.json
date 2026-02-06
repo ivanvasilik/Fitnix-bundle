@@ -1,0 +1,220 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "layout": "ces",
+  "sections": {
+    "as_hero_video_ces": {
+      "type": "as-hero-video-ces",
+      "settings": {
+        "heading": "Strength. Data. Performance.<br>All in one grip.",
+        "subtext": "The Olympus Grip SMART is the world's first portable, sensor-integrated calisthenic trainer that quantifies every push and pull — giving you measurable strength anywhere you go.",
+        "cta_text": "Watch the 2-Minute Demo",
+        "cta_link": "https://www.youtube.com/watch?v=S0agRTNR9cI",
+        "youtube_url": "https://www.youtube.com/watch?v=S0agRTNR9cI"
+      }
+    },
+    "as_video_with_top_text": {
+      "type": "as-video-with-top-text",
+      "settings": {
+        "title": "See the Olympus Grip SMART in Action",
+        "subheading": "Watch this 2-minute video to see how it changes the way you train.",
+        "youtube_url": "https://www.youtube.com/watch?v=765jOY6qf0Y"
+      }
+    },
+    "as_advantages_grid_tzGM7e": {
+      "type": "as-blocks",
+      "blocks": {
+        "adv_9AcUwV": {
+          "type": "adv",
+          "settings": {
+            "icon_image": "shopify://shop_images/Background_Border.png",
+            "title": "Portable Design",
+            "text": "Train anywhere, from home to outdoors."
+          }
+        },
+        "adv_Qaj6fk": {
+          "type": "adv",
+          "settings": {
+            "icon_image": "shopify://shop_images/Background_Border_1.png",
+            "title": "Smart Sensors",
+            "text": "Dual strain gauges measure real push/pull force."
+          }
+        },
+        "adv_6kJE6P": {
+          "type": "adv",
+          "settings": {
+            "icon_image": "shopify://shop_images/Background_Border_2.png",
+            "title": "Connected App",
+            "text": "Tracks reps, real-time force, total training volume, progress over time."
+          }
+        }
+      },
+      "block_order": [
+        "adv_9AcUwV",
+        "adv_Qaj6fk",
+        "adv_6kJE6P"
+      ],
+      "name": "AS Advantages",
+      "settings": {
+        "heading": "Intelligent Strength & Measurable Progress",
+        "subheading": "",
+        "bottom_image": "shopify://shop_images/image_9.png",
+        "cta_text": ""
+      }
+    },
+    "as_feature_section": {
+      "type": "as-photo-text",
+      "settings": {
+        "heading": "Redefining What Strength<br>Training Measures",
+        "subheading": "Most fitness tools measure movement — step counts, motion patterns, or exercise logs. Olympus Grip SMART measures actual load, capturing the real force you apply across hundreds of calisthenic and resistance exercises.",
+        "image": "shopify://shop_images/photo.png",
+        "bottom_text": "Finally, strength training has a metric as universal as steps, miles, or heart rate — but built for muscular performance."
+      }
+    },
+    "as_advantages_grid_tzGM": {
+      "type": "as-blocks",
+      "blocks": {
+        "adv_9AcUwV": {
+          "type": "adv",
+          "settings": {
+            "icon_image": "shopify://shop_images/Frame.png",
+            "title": "Strategic Growth Partners",
+            "text": "Companies equipped to accelerate sales, distribution, marketing, or large-scale deployment of Olympus Grip SMART."
+          }
+        },
+        "adv_Qaj6fk": {
+          "type": "adv",
+          "settings": {
+            "icon_image": "shopify://shop_images/Frame_1.png",
+            "title": "Distribution & Retail Partners",
+            "text": "Gyms, specialty retailers, wellness providers, and wholesalers looking for innovative strength-tracking solutions."
+          }
+        },
+        "adv_6kJE6P": {
+          "type": "adv",
+          "settings": {
+            "icon_image": "shopify://shop_images/Frame_2.png",
+            "title": "Capital Partners (VC & Angels)",
+            "text": "Investors aligned with long-term hardware/software growth who bring more than funding —  expertise, networks, and operational support."
+          }
+        }
+      },
+      "block_order": [
+        "adv_9AcUwV",
+        "adv_Qaj6fk",
+        "adv_6kJE6P"
+      ],
+      "custom_css": [
+        ".adv__card{background: #1C345C; border: none; padding: 40px 24px;}",
+        ".adv__bottom-image-wrap {display:none;}"
+      ],
+      "name": "AS Advantages",
+      "settings": {
+        "heading": "Partner with Fitnix",
+        "subheading": "We’re seeking collaborators who can help expand the Olympus<br>Grip SMART ecosystem.",
+        "bottom_image": "shopify://shop_images/image_9.png",
+        "cta_text": "Let’s Connect"
+      }
+    },
+    "as-text": {
+      "type": "as-text",
+      "settings": {
+        "heading": "Partnership Opportunities",
+        "subheading": "Interested in partnering with Fitnix? Submit your contact information below and we’ll send you our full investor deck."
+      }
+    },
+    "as-form": {
+      "type": "as-contact",
+      "blocks": {
+        "field_1": {
+          "type": "field",
+          "settings": {
+            "label": "First name",
+            "name": "contact[first_name]",
+            "placeholder": "First name",
+            "type": "text",
+            "is_required": true,
+          }
+        },
+        "field_2": {
+          "type": "field",
+          "settings": {
+            "label": "Last name",
+            "name": "contact[last_name]",
+            "placeholder": "Last name",
+            "type": "text",
+            "is_required": true,
+          }
+        },
+        "field_3": {
+          "type": "field",
+          "settings": {
+            "name": "contact[email]",
+            "label": "Enter your email",
+            "placeholder": "Enter your email",
+            "type": "email",
+            "is_full": true,
+            "is_required": true,
+          }
+        },
+        "field_4": {
+          "type": "field",
+          "settings": {
+            "label": "Company / Role",
+            "name": "contact[company]",
+            "placeholder": "Company / Role",
+            "type": "text",
+            "is_full": true,
+            "is_required": true,
+          }
+        },
+        "field_5": {
+          "type": "field",
+          "settings": {
+            "label": "Message",
+            "name": "contact[body]",
+            "placeholder": "Message",
+            "type": "textarea",
+            "is_full": true,
+            "is_required": true,
+          }
+        },
+      },
+      "block_order": [
+        "field_1",
+        "field_2",
+        "field_3",
+        "field_4",
+        "field_5",
+      ],
+      "settings": {
+        "heading": "Contact Form",
+        "subheading": "Connect with the Fitnix Team",
+        "show_labels": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "as_footer_clean": {
+      "type": "as-footer",
+      "settings": {}
+    }
+  },
+  "order": [
+    "as_hero_video_ces",
+    "as_video_with_top_text",
+    "as_advantages_grid_tzGM7e",
+    "as_feature_section",
+    "as_advantages_grid_tzGM",
+    "as-text",
+    "as-form",
+    "as_footer_clean"
+  ]
+}

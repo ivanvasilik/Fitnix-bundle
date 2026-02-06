@@ -1,0 +1,132 @@
+.adv {
+  padding: 80px 0 72px;
+}
+
+.adv__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.adv__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #0c1d3a;
+  color: #333333;
+  padding: 40px 26px;
+  border: 1px solid #939db880;
+  transition: box-shadow 0.2s ease;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.adv__bottom-image-wrap {
+  width: 100%;
+}
+
+.adv__bottom-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.adv__text p {
+  margin: 0;
+  color: #e7e7e7;
+}
+
+.adv__container {
+  /* max-width: 1200px; */
+  /* margin: auto; */
+}
+
+.adv__cap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 0 20px;
+}
+
+.adv__cap--center {
+  text-align: center;
+}
+
+.adv__subtitle {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: -1px;
+  max-width: 912px;
+  margin: 0 auto;
+  /* opacity: 0.85; */
+}
+
+.adv__grid {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+}
+
+@media (max-width: 700px) {
+  .adv__grid {
+    --cols: 1 !important;
+  }
+}
+
+.adv__icon {
+  margin-bottom: 22px;
+  width: 88px;
+  height: 88px;
+  display: grid;
+  place-items: center;
+  align-self: center;
+}
+
+.adv__svg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.adv__heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  margin: 0;
+}
+
+.adv__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #e7e7e7;
+  opacity: 0.85;
+  text-align: center;
+}
+
+.adv__title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: -1px;
+  line-height: 1.16;
+}
+
+@media (max-width: 768px) {
+  .adv__title {
+    font-size: 2.5rem;
+  }
+
+  .adv__text {
+    font-size: 16px;
+  }
+}

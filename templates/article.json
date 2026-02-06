@@ -1,0 +1,69 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "blog-post",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "container_size": "medium",
+            "img_ratio": 0.5
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_author": true,
+            "show_date": true,
+            "show_comment_count": true,
+            "show_share_link": true,
+            "heading_size": "h6"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+            "body_size": "body3"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "settings": {
+            "show_author": true,
+            "show_date": true,
+            "show_share": true,
+            "show_next_and_previous_posts": true,
+            "show_comment_count": true
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "content",
+        "footer"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "xsmall",
+        "show_breadcrumbs": true,
+        "show_background": true,
+        "add_side_paddings": true,
+        "section_spacing_top": 0,
+        "section_spacing_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

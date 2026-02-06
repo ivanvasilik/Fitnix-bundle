@@ -1,0 +1,148 @@
+{{ 'as-hero-video-ces.css' | asset_url | stylesheet_tag }}
+
+<div class="as-fullscreen-video-banner">
+  <div class="as-video-wrapper">
+    <div class="as-video-overlay"></div>
+
+    {%- render 'video-with-alt',
+      class: 'as-video-element',
+      video: section.settings.shopify_video,
+      autoplay: true,
+      loop: true,
+      controls: false,
+      muted: true,
+      loading: 'eager'
+    -%}
+
+    {% if section.settings.youtube_url != blank %}
+      <iframe
+        id="hero-video"
+        class="as-video-iframe"
+        src="https://www.youtube.com/embed/{{ section.settings.youtube_url | split: 'v=' | last }}?autoplay=1&mute=1&controls=0&loop=0&enablejsapi=1&start=55"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
+    {% endif %}
+  </div>
+
+  <div class="as-video-content page-width">
+    {% if section.settings.logo != blank %}
+      <img src="{{ section.settings.logo | image_url }}" class="as-video-logo" alt="Hero logo">
+    {% endif %}
+
+    {% if section.settings.heading != blank %}
+      <h1 class="as-video-heading">{{ section.settings.heading }}</h1>
+    {% endif %}
+
+    {% if section.settings.subtext != blank %}
+      <p class="as-video-subtext">{{ section.settings.subtext }}</p>
+    {% endif %}
+
+    {% if section.settings.cta_text != blank %}
+      {% render 'as-button', text: section.settings.cta_text, url: section.settings.cta_link, primary: true %}
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Fullscreen Video Hero",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Strength. Data. Performance.<br>All In One Grip."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "The Olympus Grip SMART is the world's first portable, sensor-integrated calisthenic trainer that quantifies every push and pull — giving you measurable strength anywhere you go."
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Button text",
+      "default": "Watch the 2-Minute Demo"
+    },
+    {
+      "type": "text",
+      "id": "cta_link",
+      "label": "Button link",
+      "default": "#"
+    },
+    {
+      "type": "video",
+      "id": "shopify_video",
+      "label": "Shopify-hosted video (optional)"
+    },
+    {
+      "type": "text",
+      "id": "youtube_url",
+      "label": "YouTube video URL (watch?v=...)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Fullscreen Video Hero"
+    }
+  ]
+}
+{% endschema %}
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+  let player;
+
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('hero-video', {
+      events: {
+        onReady: onPlayerReady,
+        onStateChange: onPlayerStateChange,
+      },
+    });
+  }
+
+  function onPlayerReady() {
+    player.mute();
+    player.playVideo();
+    player.seekTo(55);
+  }
+
+  function onPlayerStateChange(event) {
+    if (event.data === YT.PlayerState.PLAYING) {
+      setInterval(() => {
+        const t = player.getCurrentTime();
+        if (t >= 68) {
+          // 1:08
+          player.seekTo(55);
+        }
+      }, 300);
+    }
+  }
+  function onPlayerReady() {
+    player.mute();
+    player.playVideo();
+    player.seekTo(55);
+
+    const qualities = ['hd1080', 'hd720', 'large'];
+    let i = 0;
+
+    const interval = setInterval(() => {
+      if (i < qualities.length) {
+        player.setPlaybackQuality(qualities[i]);
+        i++;
+      } else {
+        clearInterval(interval);
+      }
+    }, 500);
+  }
+</script>

@@ -1,0 +1,141 @@
+.as-contact {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.as-contact__title {
+  text-align: left;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+.as-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.as-field {
+  position: relative;
+  width: 100%;
+}
+
+.as-field__input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d1d1;
+  font-size: 15px;
+  color: #111;
+  background-color: #f7f7f7;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.as-field__input:focus {
+  box-shadow: 0 0 0 1px;
+  outline: none;
+}
+
+.as-field__label {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  color: #777;
+  font-size: 15px;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.as-field__input:focus + .as-field__label,
+.as-field__input:not(:placeholder-shown) + .as-field__label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  background: #fff;
+  padding: 0 4px;
+  color: #000;
+}
+
+.as-select {
+  position: relative;
+  grid-column: 1 / -1;
+}
+
+.as-select__select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d1d1;
+  font-size: 15px;
+  color: #777;
+  background-color: #f7f7f7;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23111' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 10px;
+  cursor: pointer;
+}
+
+.as-select__select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.as-select__label {
+  display: none;
+}
+
+.as-select__select option[disabled] {
+  color: #999;
+}
+
+.as-form__actions {
+  margin-top: 1rem;
+}
+
+.as-form__success,
+.as-form__error {
+  margin-bottom: 1rem;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.as-form__success {
+  color: #157347;
+}
+
+.as-form__error {
+  color: #c0392b;
+}
+
+@media (min-width: 750px) {
+  .as-form__fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem 1rem;
+  }
+
+  .as-field--area {
+    grid-column: 1 / -1;
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.as-field__counter {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(0, 100%);
+  font-size: 12px;
+}
+
+select option[disabled][selected] {
+  color: #aaa;
+}

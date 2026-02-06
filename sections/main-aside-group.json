@@ -1,0 +1,108 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "aside",
+  "name": "Aside Group",
+  "sections": {
+    "cart-drawer": {
+      "type": "cart-drawer",
+      "blocks": {
+        "items": {
+          "type": "items",
+          "settings": {}
+        },
+        "8af29191-dec1-42b5-9036-192e1b749009": {
+          "type": "on_side_cart_related",
+          "settings": {
+            "hide_for_empty_cart": true,
+            "hide_on_mobile": false,
+            "color_scheme": "secondary",
+            "enable_color_background": false,
+            "heading": "Enhance your order",
+            "heading_size": "h6",
+            "heading_alignment": "left",
+            "heading_alignment_mobile": "left",
+            "recommendations_type": "manually",
+            "featured_collection": "",
+            "featured_products": [
+              "loop-bands",
+              "jump-rope",
+              "olympus-grip-bag",
+              "olympus-grip-blue-backpack",
+              "olympus-grip-strap",
+              "x-anchor-mount",
+              "tube-bands",
+              "phone-mount"
+            ],
+            "img_ratio": "inherited",
+            "in_cart_related_layout_desktop": "vertical-cards",
+            "in_cart_related_layout": "carousel-with-horizontal-cards",
+            "content_alignment": "left",
+            "cards_to_show": 10,
+            "desktop_space_between_cards": 12,
+            "mobile_space_between_cards": 12,
+            "cards_color_background": false,
+            "show_arrows_on_hover": true,
+            "autoplay_mode": "disabled",
+            "autoplay_interval": 3
+          }
+        },
+        "726aa933-7826-412d-a292-9f29cba62205": {
+          "type": "in_cart_banner",
+          "disabled": true,
+          "settings": {
+            "hide_for_empty_cart": false,
+            "color_scheme": "custom-3",
+            "subheading": "IN-CART",
+            "heading": "Promo banner",
+            "heading_size": "h5",
+            "text": "<p>Tell about upcoming sales, new in, promotions, and more.</p>",
+            "body_size": "body3",
+            "discount_code": "",
+            "content_align": "center",
+            "btn_text": "",
+            "btn_url": "",
+            "btn_style": "solid"
+          }
+        }
+      },
+      "block_order": [
+        "items",
+        "8af29191-dec1-42b5-9036-192e1b749009",
+        "726aa933-7826-412d-a292-9f29cba62205"
+      ],
+      "settings": {
+        "color_scheme": "custom-2",
+        "img_ratio": "square",
+        "show_cart_note": false,
+        "show_taxes_and_shipping_costs": true,
+        "show_currency_code": true,
+        "empty_cart_recommendations_text": "<p>If you don't know where to start, try these amazing collections.</p>",
+        "empty_cart_recommendations_collection_list": [],
+        "empty_cart_recommendations_show_collection_images": true
+      }
+    },
+    "search-sidebar": {
+      "type": "search-sidebar",
+      "settings": {
+        "color_scheme": "default",
+        "img_ratio": "default",
+        "results_per_category": 10,
+        "enable_extended_search": false,
+        "recommendations_title": "Most searched",
+        "recommendations_queries": "party dress\nblue denim\nhandbag\nshirt"
+      }
+    }
+  },
+  "order": [
+    "cart-drawer",
+    "search-sidebar"
+  ]
+}
