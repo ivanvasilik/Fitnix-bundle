@@ -16,6 +16,7 @@
           "type": "image-banner",
           "settings": {
             "color_scheme": "custom-1",
+            "video": "shopify://files/videos/fitnix-hero-workout.mp4",
             "desktop_overlay_opacity": 20,
             "mobile_overlay_opacity": 20,
             "caption": "",
