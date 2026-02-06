@@ -1,0 +1,382 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "show_breadcrumbs_product_title": true,
+        "add_side_paddings": true,
+        "section_spacing_top": 16,
+        "section_spacing_bottom": 0
+      }
+    },
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_size": "sm",
+            "show_tax_status": false,
+            "show_sale_amount_badge": true,
+            "highlight_sale_price": true
+          }
+        },
+        "promo_banner": {
+          "type": "promo_banner",
+          "settings": {
+            "color_scheme": "custom-1",
+            "subheading": "BUNDLE & SAVE",
+            "heading": "Everything you need in one kit",
+            "heading_size": "caption2",
+            "text": "<p>Pre-configured bundle at a discounted price. See description below for full details on what's included and how much you save.</p>",
+            "body_size": "body4"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "option_type": "button-outline",
+            "show_swatches": true,
+            "primary_swatch_option_type": "variant-images",
+            "secondary_swatch_option_type": "swatches",
+            "hide_single_value_options": true,
+            "option_name": "",
+            "information_drawer_button_label": "",
+            "text": "",
+            "page": "",
+            "image_width": 60
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "title": "",
+            "heading_size": "caption3",
+            "body_size": "body3",
+            "block_style": "static",
+            "icon": "none",
+            "icon_size": 24
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "enable_pickup_availability": false,
+            "enable_gift_card": false,
+            "show_payment_icons": false,
+            "show_sticky_btn_on_mobile": true,
+            "add_to_cart_btn_style": "solid",
+            "checkout_btn_style": "outline"
+          }
+        },
+        "compatibility_tag": {
+          "type": "information_tag",
+          "settings": {
+            "tag_style": "solid",
+            "heading": "Compatible with Olympus Grip Classic & SMART",
+            "heading_size": "caption3",
+            "body": "<p>Check description for specific compatibility details.</p>",
+            "body_size": "body4",
+            "content_alignment": "left",
+            "icon": "checkmark",
+            "icon_size": 24,
+            "icon_position": "inline",
+            "tag_background_color": "#e9ffcd",
+            "tag_text_color": "#141416",
+            "enable_drawer": false,
+            "drawer_text": "",
+            "drawer_page": "",
+            "drawer_body_size": "body3",
+            "drawer_media_size": 60
+          }
+        },
+        "related_accessories": {
+          "type": "related_products",
+          "settings": {
+            "color_scheme": "primary",
+            "show_background": false,
+            "show_in_quick_view": false,
+            "title": "Complete Your Setup",
+            "heading_size": "h6",
+            "alignment": "left",
+            "product_recommendations_type": "manually",
+            "featured_collection": "",
+            "featured_products": [
+              "loop-bands",
+              "jump-rope",
+              "olympus-grip-bag",
+              "olympus-grip-blue-backpack",
+              "olympus-grip-strap",
+              "phone-mount",
+              "tube-bands",
+              "x-anchor-mount"
+            ],
+            "img_ratio": "inherited",
+            "block_layout": "carousel-with-horizontal-cards",
+            "content_alignment": "left",
+            "products_to_show": 10,
+            "desktop_space_between_cards": 12,
+            "mobile_space_between_cards": 12,
+            "cards_color_background": false,
+            "show_navigation_on_hover": true,
+            "autoplay_mode": "disabled",
+            "autoplay_interval": 3
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "promo_banner",
+        "variant_picker",
+        "description",
+        "buy_buttons",
+        "compatibility_tag",
+        "related_accessories"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "media_to_content_ratio": "fixed",
+        "img_ratio": "square",
+        "layout": "thumbnails-bottom",
+        "desktop_space_between_media": 20,
+        "thumbnails_size": 88,
+        "mobile_layout": "thumbnails-right",
+        "mobile_space_between_media": 20,
+        "show_only_selected_variants": false,
+        "enable_image_zoom": true,
+        "enable_video_autoplay": true,
+        "enable_video_controls": false,
+        "enable_video_looping": true,
+        "scale_video": true,
+        "add_side_paddings": true,
+        "desktop_spacing_top": 32,
+        "desktop_spacing_bottom": 48,
+        "mobile_spacing_top": 12,
+        "mobile_spacing_bottom": 12
+      }
+    },
+    "product-details": {
+      "type": "product-details",
+      "blocks": {
+        "shipping": {
+          "type": "collapsible_row",
+          "settings": {
+            "title": "Shipping Information",
+            "heading_size": "caption2",
+            "icon": "none",
+            "icon_size": 24,
+            "text": "<p>All domestic orders are processed and fulfilled within 3 to 5 business days. For a limited time, we are offering Free Shipping on all US orders. For international orders, standard carrier rates will apply at checkout.</p>",
+            "page": "",
+            "body_size": "body3",
+            "image_width": 100
+          }
+        },
+        "returns": {
+          "type": "collapsible_row",
+          "settings": {
+            "title": "Return Policy",
+            "heading_size": "caption2",
+            "icon": "none",
+            "icon_size": 24,
+            "text": "<p>Fitnix, LLC offer's a 30-day, no-hassle, money-back guarantee, should you not like your product for any reason as long as it is returned in its original packaging without damage.</p>",
+            "page": "",
+            "body_size": "body3",
+            "image_width": 100
+          }
+        },
+        "warranty": {
+          "type": "collapsible_row",
+          "settings": {
+            "title": "Warranty",
+            "heading_size": "caption2",
+            "icon": "none",
+            "icon_size": 24,
+            "text": "<p>Fitnix strives to make you the best product possible. If, for any reason, you are having any problems with your Olympus Grip, please contact us so we can help. We stand behind our product and offer a 365-day limited warranty.</p>",
+            "page": "",
+            "body_size": "body3",
+            "image_width": 100
+          }
+        }
+      },
+      "block_order": [
+        "shipping",
+        "returns",
+        "warranty"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "enable_background_around_container": true,
+        "container_size": "large",
+        "style": "tabs",
+        "expand_first_collapsible_row": false,
+        "add_side_paddings": true,
+        "section_spacing_top": 64,
+        "section_spacing_bottom": 14
+      }
+    },
+    "multicolumn_whygrip": {
+      "type": "multicolumn",
+      "blocks": {
+        "col_versatility": {
+          "type": "column_with_icon",
+          "settings": {
+            "icon": "checkmark",
+            "icon_size": 64,
+            "title": "Versatility",
+            "text": "<p>The Olympus Grip enables users to perform over 800 exercises and stretches, making it suitable for strength, cardio, and flexibility training across all fitness levels.</p>",
+            "link_text": "Shop Now",
+            "link_url": "shopify://collections/all"
+          }
+        },
+        "col_efficiency": {
+          "type": "column_with_icon",
+          "settings": {
+            "icon": "plus",
+            "icon_size": 64,
+            "title": "Efficiency",
+            "text": "<p>The Double Workout Advantage\u2122 combines strength and cardio exercises seamlessly, enabling a total body workout in less time.</p>",
+            "link_text": "Shop Now",
+            "link_url": "shopify://collections/all"
+          }
+        },
+        "col_portability": {
+          "type": "column_with_icon",
+          "settings": {
+            "icon": "briefcase",
+            "icon_size": 64,
+            "title": "Portability",
+            "text": "<p>Designed for both indoor and outdoor use, the Olympus Grip and its app let you train anywhere, from your living room to a mountain peak.</p>",
+            "link_text": "Shop Now",
+            "link_url": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "col_versatility",
+        "col_efficiency",
+        "col_portability"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "desktop_layout": "grid",
+        "mobile_layout": "grid",
+        "title": "Why Olympus Grip?",
+        "heading_size": "h5",
+        "text": "Achieve total body fitness with a versatile, efficient, and portable gym you can take anywhere.",
+        "body_size": "body3",
+        "content_alignment": "center",
+        "column_heading_size": "h6",
+        "column_body_size": "body4",
+        "column_alignment": "center",
+        "desktop_columns": 3,
+        "desktop_space_between_cards": 24,
+        "desktop_content_spacing": 24,
+        "mobile_space_between_cards": 16,
+        "mobile_content_spacing": 24,
+        "show_column_background": false,
+        "show_navigation_on_hover": true,
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "outline",
+        "autoplay_mode": "disabled",
+        "autoplay_interval": 3,
+        "add_side_paddings": true,
+        "section_spacing_top": 80,
+        "section_spacing_bottom": 80
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "full-screen",
+        "title": "Other Kits You Might Like",
+        "heading_size": "h5",
+        "alignment": "center",
+        "product_recommendations_type": "auto",
+        "featured_collection": "",
+        "featured_products": [],
+        "img_ratio": "portrait",
+        "desktop_layout": "carousel",
+        "mobile_layout": "carousel",
+        "product_card_align": "center",
+        "cards_to_show": 18,
+        "desktop_columns": 4,
+        "desktop_space_between_cards": 12,
+        "mobile_space_between_cards": 16,
+        "show_navigation_on_hover": true,
+        "autoplay_mode": "disabled",
+        "autoplay_interval": 3,
+        "add_side_paddings": true,
+        "section_spacing_top": 48,
+        "section_spacing_bottom": 48
+      }
+    },
+    "image_banner_app": {
+      "type": "image-banner",
+      "settings": {
+        "color_scheme": "secondary",
+        "enable_background_around_container": false,
+        "container_size": "full-screen",
+        "desktop_ratio": 0.4,
+        "mobile_ratio": 1.6,
+        "desktop_img": "shopify://shop_images/Hero_Mockup.jpg",
+        "desktop_overlay_opacity": 20,
+        "mobile_overlay_opacity": 20,
+        "caption": "",
+        "title": "Explore Hundreds of Exercises",
+        "heading_size": "h2",
+        "text": "<p>Available with the Olympus Grip App</p>",
+        "body_size": "body3",
+        "desktop_content_position": "align-items:center;justify-content:center;",
+        "desktop_content_align": "center",
+        "content_max_width": 528,
+        "content_spacing": 116,
+        "mobile_content_position": "align-items:center;justify-content:center;",
+        "mobile_content_align": "center",
+        "desktop_content_background": "none",
+        "mobile_content_background": "none",
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "outline",
+        "extra_btn_text": "",
+        "extra_btn_url": "",
+        "extra_btn_style": "solid",
+        "disable_lazy_loading": false,
+        "add_side_paddings": true,
+        "section_spacing_top": 0,
+        "section_spacing_bottom": 13
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main",
+    "product-details",
+    "multicolumn_whygrip",
+    "product-recommendations",
+    "image_banner_app"
+  ]
+}
