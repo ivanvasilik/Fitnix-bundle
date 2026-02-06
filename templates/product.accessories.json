@@ -87,6 +87,7 @@
         },
         "29040344-ce22-4d9d-aab8-1dcb43bb2ab5": {
           "type": "product_drawer_with_tabs",
+          "disabled": true,
           "settings": {
             "btn_style": "text",
             "popup_link_text": "Specifications",
@@ -133,20 +134,17 @@
             "color_scheme": "primary",
             "show_background": false,
             "show_in_quick_view": false,
-            "title": "Accessories to Add",
+            "title": "Save More with a Kit",
             "heading_size": "h6",
             "alignment": "left",
             "product_recommendations_type": "manually",
             "featured_collection": "",
             "featured_products": [
-              "loop-bands",
-              "jump-rope",
-              "olympus-grip-bag",
-              "olympus-grip-blue-backpack",
-              "olympus-grip-strap",
-              "phone-mount",
-              "tube-bands",
-              "x-anchor-mount"
+              "classic-complete-system-kit",
+              "classic-best-exercise-bundle",
+              "classic-tube-bands-kit",
+              "smart-strap-resistance-kit",
+              "smart-complete-system-kit"
             ],
             "img_ratio": "inherited",
             "block_layout": "carousel-with-horizontal-cards",
@@ -162,21 +160,20 @@
         },
         "c9188b10-e29c-4c63-b385-a3faa860d64a": {
           "type": "information_tag",
-          "disabled": true,
           "settings": {
             "tag_style": "solid",
-            "heading": "1 year warranty",
+            "heading": "Compatible with Olympus Grip Classic & SMART",
             "heading_size": "caption3",
-            "body": "<p>Tell more about your product, add care instructions, country of origin, or manufacturer information.</p>",
+            "body": "<p>This accessory works with all Olympus Grip models. Pair it with a kit for the best value.</p>",
             "body_size": "body4",
             "content_alignment": "left",
-            "icon": "none",
+            "icon": "checkmark",
             "icon_size": 24,
             "icon_position": "inline",
-            "tag_background_color": "#f6f6f6",
+            "tag_background_color": "#e9ffcd",
             "tag_text_color": "#141416",
             "enable_drawer": false,
-            "drawer_text": "<p>Tell more about your product, add care instructions, country of origin, or manufacturer information.</p>",
+            "drawer_text": "",
             "drawer_page": "",
             "drawer_body_size": "body3",
             "drawer_media_size": 60
@@ -193,8 +190,8 @@
         "29040344-ce22-4d9d-aab8-1dcb43bb2ab5",
         "quantity_selector",
         "buy_buttons",
-        "6d6606d5-ae7e-4306-b3d7-67030f2e4136",
-        "c9188b10-e29c-4c63-b385-a3faa860d64a"
+        "c9188b10-e29c-4c63-b385-a3faa860d64a",
+        "6d6606d5-ae7e-4306-b3d7-67030f2e4136"
       ],
       "settings": {
         "color_scheme": "default",
@@ -304,124 +301,75 @@
         "section_spacing_bottom": 64
       }
     },
-    "image_banner_PFwBrF": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "default",
-        "enable_background_around_container": false,
-        "container_size": "full-screen",
-        "desktop_ratio": 0.7,
-        "mobile_ratio": 0.7,
-        "desktop_img": "shopify://shop_images/Product_Details_Image_1_2x_a480d715-f930-41fd-ade2-dbb670b9acd4.jpg",
-        "desktop_overlay_opacity": 0,
-        "mobile_overlay_opacity": 0,
-        "caption": "",
-        "title": "",
-        "heading_size": "h2",
-        "text": "",
-        "body_size": "body3",
-        "desktop_content_position": "align-items:center;justify-content:center;",
-        "desktop_content_align": "center",
-        "content_max_width": 528,
-        "content_spacing": 116,
-        "mobile_content_position": "align-items:center;justify-content:center;",
-        "mobile_content_align": "center",
-        "desktop_content_background": "none",
-        "mobile_content_background": "none",
-        "btn_text": "",
-        "btn_url": "",
-        "btn_style": "solid",
-        "extra_btn_text": "",
-        "extra_btn_url": "",
-        "extra_btn_style": "solid",
-        "disable_lazy_loading": false,
-        "add_side_paddings": false,
-        "section_spacing_top": 13,
-        "section_spacing_bottom": 0
-      }
-    },
-    "image_banner_wngVpx": {
-      "type": "image-banner",
-      "disabled": true,
-      "settings": {
-        "color_scheme": "default",
-        "enable_background_around_container": false,
-        "container_size": "full-screen",
-        "desktop_ratio": 0.9,
-        "mobile_ratio": 1.3,
-        "desktop_img": "shopify://shop_images/Product_Details_Image_2_2x_c4f7cefe-0932-4d0b-9719-249d1b13da61.jpg",
-        "desktop_overlay_opacity": 0,
-        "mobile_overlay_opacity": 0,
-        "caption": "",
-        "title": "",
-        "heading_size": "h2",
-        "text": "",
-        "body_size": "body3",
-        "desktop_content_position": "align-items:center;justify-content:center;",
-        "desktop_content_align": "center",
-        "content_max_width": 528,
-        "content_spacing": 116,
-        "mobile_content_position": "align-items:center;justify-content:center;",
-        "mobile_content_align": "center",
-        "desktop_content_background": "none",
-        "mobile_content_background": "none",
-        "btn_text": "",
-        "btn_url": "",
-        "btn_style": "solid",
-        "extra_btn_text": "",
-        "extra_btn_url": "",
-        "extra_btn_style": "solid",
-        "disable_lazy_loading": false,
-        "add_side_paddings": false,
-        "section_spacing_top": 0,
-        "section_spacing_bottom": 0
-      }
-    },
-    "35a80c75-d4b0-4340-9552-75a9f11586de": {
-      "type": "images-with-text",
+    "multicolumn_whygrip": {
+      "type": "multicolumn",
       "blocks": {
-        "template--16729789563121__35a80c75-d4b0-4340-9552-75a9f11586de-1681824353e40c4786-0": {
-          "type": "image",
+        "col_versatility": {
+          "type": "column_with_icon",
           "settings": {
-            "image": "shopify://shop_images/Product_Details_Image_3_2x_22355436-17f5-4de4-9352-7d917f45486f.jpg"
+            "icon": "checkmark",
+            "icon_size": 64,
+            "title": "Versatility",
+            "text": "<p>The Olympus Grip enables users to perform over 800 exercises and stretches, making it suitable for strength, cardio, and flexibility training across all fitness levels.</p>",
+            "link_text": "Shop Now",
+            "link_url": "shopify://collections/all"
           }
         },
-        "template--16729789563121__35a80c75-d4b0-4340-9552-75a9f11586de-1681824353e40c4786-1": {
-          "type": "image",
+        "col_efficiency": {
+          "type": "column_with_icon",
           "settings": {
-            "image": "shopify://shop_images/Product_Details_Image_4_2x_6ca77e2a-880d-4822-a740-3c14d8c720cd.jpg"
+            "icon": "plus",
+            "icon_size": 64,
+            "title": "Efficiency",
+            "text": "<p>The Double Workout Advantage\u2122 combines strength and cardio exercises seamlessly, enabling a total body workout in less time.</p>",
+            "link_text": "Shop Now",
+            "link_url": "shopify://collections/all"
+          }
+        },
+        "col_portability": {
+          "type": "column_with_icon",
+          "settings": {
+            "icon": "briefcase",
+            "icon_size": 64,
+            "title": "Portability",
+            "text": "<p>Designed for both indoor and outdoor use, the Olympus Grip and its app let you train anywhere, from your living room to a mountain peak.</p>",
+            "link_text": "Shop Now",
+            "link_url": "shopify://collections/all"
           }
         }
       },
       "block_order": [
-        "template--16729789563121__35a80c75-d4b0-4340-9552-75a9f11586de-1681824353e40c4786-0",
-        "template--16729789563121__35a80c75-d4b0-4340-9552-75a9f11586de-1681824353e40c4786-1"
+        "col_versatility",
+        "col_efficiency",
+        "col_portability"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "default",
-        "container_size": "page-width",
-        "content_layout": "left",
-        "image_layout": "grid",
-        "img_ratio": 1,
-        "rotate_images": false,
-        "icon": "none",
-        "subheading": "IMAGES WITH TEXT",
-        "heading": "Promo with featured images",
-        "heading_size": "h2",
-        "body": "<p>Share information about your brand with your customers. Describe a product, make announcements or welcome customers to your store.</p>",
+        "container_size": "large",
+        "desktop_layout": "grid",
+        "mobile_layout": "grid",
+        "title": "Why Olympus Grip?",
+        "heading_size": "h5",
+        "text": "Achieve total body fitness with a versatile, efficient, and portable gym you can take anywhere.",
         "body_size": "body3",
-        "content_alignment": "left",
-        "desktop_content_width": 440,
-        "first_button_text": "Button label",
-        "first_button_link": "",
-        "first_button_style": "solid",
-        "second_button_text": "",
-        "second_button_link": "",
-        "second_button_style": "solid",
+        "content_alignment": "center",
+        "column_heading_size": "h6",
+        "column_body_size": "body4",
+        "column_alignment": "center",
+        "desktop_columns": 3,
+        "desktop_space_between_cards": 24,
+        "desktop_content_spacing": 24,
+        "mobile_space_between_cards": 16,
+        "mobile_content_spacing": 24,
+        "show_column_background": false,
+        "show_navigation_on_hover": true,
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "outline",
+        "autoplay_mode": "disabled",
+        "autoplay_interval": 3,
         "add_side_paddings": true,
-        "section_spacing_top": 48,
+        "section_spacing_top": 80,
         "section_spacing_bottom": 80
       }
     },
@@ -452,15 +400,40 @@
         "section_spacing_bottom": 48
       }
     },
-    "1728753387394fa7f4": {
-      "type": "apps",
+    "image_banner_app": {
+      "type": "image-banner",
       "settings": {
-        "color_scheme": "default",
-        "container_size": "large",
-        "custom_liquid": "",
+        "color_scheme": "secondary",
+        "enable_background_around_container": false,
+        "container_size": "full-screen",
+        "desktop_ratio": 0.4,
+        "mobile_ratio": 1.6,
+        "desktop_img": "shopify://shop_images/Hero_Mockup.jpg",
+        "desktop_overlay_opacity": 20,
+        "mobile_overlay_opacity": 20,
+        "caption": "",
+        "title": "Explore Hundreds of Exercises",
+        "heading_size": "h2",
+        "text": "<p>Available with the Olympus Grip App</p>",
+        "body_size": "body3",
+        "desktop_content_position": "align-items:center;justify-content:center;",
+        "desktop_content_align": "center",
+        "content_max_width": 528,
+        "content_spacing": 116,
+        "mobile_content_position": "align-items:center;justify-content:center;",
+        "mobile_content_align": "center",
+        "desktop_content_background": "none",
+        "mobile_content_background": "none",
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "outline",
+        "extra_btn_text": "",
+        "extra_btn_url": "",
+        "extra_btn_style": "solid",
+        "disable_lazy_loading": false,
         "add_side_paddings": true,
-        "section_spacing_top": 48,
-        "section_spacing_bottom": 48
+        "section_spacing_top": 0,
+        "section_spacing_bottom": 13
       }
     }
   },
@@ -468,10 +441,8 @@
     "ff03a7f7-70a4-4aa2-8e65-56be8e7dbefc",
     "main",
     "product-details",
-    "image_banner_PFwBrF",
-    "image_banner_wngVpx",
-    "35a80c75-d4b0-4340-9552-75a9f11586de",
+    "multicolumn_whygrip",
     "product-recommendations",
-    "1728753387394fa7f4"
+    "image_banner_app"
   ]
 }
