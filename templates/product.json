@@ -1,1 +1,778 @@
-{"sections":{"ff03a7f7-70a4-4aa2-8e65-56be8e7dbefc":{"type":"breadcrumbs","disabled":true,"settings":{"color_scheme":"default","container_size":"large","show_breadcrumbs_product_title":true,"add_side_paddings":true,"section_spacing_top":16,"section_spacing_bottom":0}},"main":{"type":"product","blocks":{"vendor":{"type":"vendor","disabled":true,"settings":{}},"title":{"type":"title","settings":{"heading_size":"h2"}},"price":{"type":"price","settings":{"price_size":"sm","show_tax_status":false,"show_sale_amount_badge":true,"highlight_sale_price":true}},"inventory_status":{"type":"inventory_status","disabled":true,"settings":{"show_inventory_status":"always","inventory_threshhold":11,"text_when_many_in_stock":"Many in stock","text_when_few_in_stock":"Act now, few in stock!","show_inventory_counter":false,"high_level_indicator_color":"#00c853","low_level_indicator_color":"#ff3d3d","color_inventory_label":false}},"d3d427d0-4e7d-4f81-9057-c64f65a4f183":{"type":"variant_picker","settings":{"option_type":"button-outline","show_swatches":true,"primary_swatch_option_type":"variant-images","secondary_swatch_option_type":"swatches","hide_single_value_options":true,"option_name":"","information_drawer_button_label":"","text":"","page":"","image_width":60}},"28586830-d855-4547-8946-94914bac9e85":{"type":"description","disabled":true,"settings":{"title":"","heading_size":"caption3","body_size":"body3","block_style":"static","icon":"none","icon_size":24}},"29040344-ce22-4d9d-aab8-1dcb43bb2ab5":{"type":"product_drawer_with_tabs","disabled":true,"settings":{"btn_style":"text","popup_link_text":"Specifications","heading_size":"caption3","icon":"shipping-box","custom_icon_image":"shopify:\/\/shop_images\/Product_Details_Image_1_2x_f731282a-d965-40e0-803c-c766e2c1cf80.jpg","icon_size":24,"button_background_color":"#e9ffcd","button_text_color":"#141416","tab_1_title":"Tab 1","tab_1_text":"<p>Tell more about your product, care instructions, country of origin, manufacturer information, matching colors and accessories.<\/p>","tab_1_page":"","tab_1_body_size":"body3","tab_2_title":"Tab 2","tab_2_text":"<p>Tell more about your product, care instructions, country of origin, manufacturer information, matching colors and accessories.<\/p>","tab_2_page":"","tab_2_body_size":"body3","tab_3_title":"Tab 3","tab_3_text":"<p>Tell more about your product, care instructions, country of origin, manufacturer information, matching colors and accessories.<\/p>","tab_3_page":"","tab_3_body_size":"body3"}},"quantity_selector":{"type":"quantity_selector","disabled":true,"settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"enable_pickup_availability":false,"enable_gift_card":false,"show_payment_icons":false,"show_sticky_btn_on_mobile":true,"add_to_cart_btn_style":"solid","checkout_btn_style":"outline"}},"6d6606d5-ae7e-4306-b3d7-67030f2e4136":{"type":"related_products","settings":{"color_scheme":"primary","show_background":false,"show_in_quick_view":false,"title":"Accessories to Add","heading_size":"h6","alignment":"left","product_recommendations_type":"manually","featured_collection":"","featured_products":["loop-bands","jump-rope","olympus-grip-bag","olympus-grip-blue-backpack","olympus-grip-strap","phone-mount","tube-bands","x-anchor-mount"],"img_ratio":"inherited","block_layout":"carousel-with-horizontal-cards","content_alignment":"left","products_to_show":10,"desktop_space_between_cards":12,"mobile_space_between_cards":12,"cards_color_background":false,"show_navigation_on_hover":true,"autoplay_mode":"disabled","autoplay_interval":3}},"c9188b10-e29c-4c63-b385-a3faa860d64a":{"type":"information_tag","disabled":true,"settings":{"tag_style":"solid","heading":"1 year warranty","heading_size":"caption3","body":"<p>Tell more about your product, add care instructions, country of origin, or manufacturer information.<\/p>","body_size":"body4","content_alignment":"left","icon":"none","icon_size":24,"icon_position":"inline","tag_background_color":"#f6f6f6","tag_text_color":"#141416","enable_drawer":false,"drawer_text":"<p>Tell more about your product, add care instructions, country of origin, or manufacturer information.<\/p>","drawer_page":"","drawer_body_size":"body3","drawer_media_size":60}}},"block_order":["vendor","title","price","inventory_status","d3d427d0-4e7d-4f81-9057-c64f65a4f183","28586830-d855-4547-8946-94914bac9e85","29040344-ce22-4d9d-aab8-1dcb43bb2ab5","quantity_selector","buy_buttons","6d6606d5-ae7e-4306-b3d7-67030f2e4136","c9188b10-e29c-4c63-b385-a3faa860d64a"],"settings":{"color_scheme":"default","container_size":"large","media_to_content_ratio":"fixed","img_ratio":"square","layout":"thumbnails-bottom","desktop_space_between_media":20,"thumbnails_size":88,"mobile_layout":"thumbnails-right","mobile_space_between_media":20,"show_only_selected_variants":false,"enable_image_zoom":true,"enable_video_autoplay":true,"enable_video_controls":false,"enable_video_looping":true,"scale_video":true,"add_side_paddings":true,"desktop_spacing_top":32,"desktop_spacing_bottom":48,"mobile_spacing_top":12,"mobile_spacing_bottom":12}},"product-details":{"type":"product-details","blocks":{"eaea97df-77ab-4b25-ab4d-7127a70f662c":{"type":"description","settings":{"title":"Description","heading_size":"caption2","body_size":"body3","icon":"none","icon_size":24}},"collapsible_row_tMQjqr":{"type":"collapsible_row","settings":{"title":"What's Included?","heading_size":"caption2","icon":"none","icon_size":24,"text":"<p>Basic Pack: Olympus Grip V1.0 & iPhone Mount & iOS App (250 Free Exercises + 600 Premium Exercises)<\/p><p>Standard Pack: Olympus Grip V1.0, iPhone Mount & iOS App (250 Free Exercises + 600 Premium Exercises), Olympus Grip Strap System, 2 x X-Anchors for indoor strap use, 1 x 100 lbs loop band, Backpack that comfortably stores all the items<\/p><p>Premium Pack: Olympus Grip V1.0, iPhone Mount & iOS App (250 Free Exercises + 600 Premium Exercises) Olympus Grip Strap System, 2 x 10lbs & 2 x 50lbs tube elastic bands, 1 x 100 lbs loop band, 1 lbs Nylon jump rope, Backpack that comfortably stores all the items, 2 x X-Anchor Mounts to support indoor strap resistance.<\/p>","page":"","body_size":"body3","image_width":100}},"860566f2-5be2-4ed8-9964-b27e88c6c92b":{"type":"collapsible_row","settings":{"title":"Shipping Information","heading_size":"caption2","icon":"none","icon_size":24,"text":"<p>All domestic orders are processed and fulfilled within 3 to 5 business days. For a limited time, we are offering Free Shipping on all US orders. For international orders, standard carrier rates will apply at checkout.<\/p>","page":"","body_size":"body3","image_width":100}},"collapsible_row_Vz34T4":{"type":"collapsible_row","settings":{"title":"Return Policy","heading_size":"caption2","icon":"none","icon_size":24,"text":"<p>Fitnix, LLC offer’s a 30-day, no-hassle, money-back guarantee, should you not like your product for any reason as long as it is returned in its original packaging without damage.<\/p>","page":"","body_size":"body3","image_width":100}},"collapsible_row_EANCyU":{"type":"collapsible_row","settings":{"title":"Warranty","heading_size":"caption2","icon":"none","icon_size":24,"text":"<p>Fitnix strives to make you the best product possible. If, for any reason, you are having any problems with your Olympus Grip, please contact us so we can help. We stand behind our product and offer a 365-day limited warranty.<\/p>","page":"","body_size":"body3","image_width":100}}},"block_order":["eaea97df-77ab-4b25-ab4d-7127a70f662c","collapsible_row_tMQjqr","860566f2-5be2-4ed8-9964-b27e88c6c92b","collapsible_row_Vz34T4","collapsible_row_EANCyU"],"settings":{"color_scheme":"default","enable_background_around_container":true,"container_size":"large","style":"tabs","expand_first_collapsible_row":false,"add_side_paddings":true,"section_spacing_top":64,"section_spacing_bottom":14}},"rich_text_aQ9Abq":{"type":"rich-text","blocks":{"icon_eRnAqd":{"type":"icon","disabled":true,"settings":{"icon":"none","icon_size":48}},"caption_3rdEer":{"type":"caption","disabled":true,"settings":{"caption":"RICH TEXT"}},"heading_ttwJet":{"type":"heading","settings":{"title":"The Training Device that Grows <em>with <\/em>You","heading_size":"h3"}},"text_c4tDMM":{"type":"text","settings":{"text":"<p>Discover how the Olympus Grip evolves with your fitness journey, offering beginner-friendly exercises that seamlessly transition into advanced movements as you grow stronger.<\/p>","text_2":"","text_3":"","body_size":"body3"}}},"block_order":["icon_eRnAqd","caption_3rdEer","heading_ttwJet","text_c4tDMM"],"settings":{"color_scheme":"default","enable_background_around_container":false,"container_size":"page-width","content_align":"center","add_side_paddings":false,"section_spacing_top":0,"section_spacing_bottom":0}},"1736811443c49d6078":{"type":"apps","settings":{"color_scheme":"default","container_size":"large","custom_liquid":"","add_side_paddings":true,"section_spacing_top":48,"section_spacing_bottom":48}},"before_after_images_hjXw8c":{"type":"before-after-images","settings":{"color_scheme":"default","container_size":"large","layout":"right","desktop_image_ratio":0.7,"mobile_image_ratio":1,"drag":50,"subheading":"","heading":"It's All In The Details.","heading_size":"h2","body_richtext":"<p>Every part of the Olympus Grip has been tested and optimized to push the boundaries of what a full body exercise device can do. <\/p>","body_size":"body3","btn_text":"","btn_url":"","btn_style":"solid","content_alignment":"left","before_img":"shopify:\/\/shop_images\/2.png","before_img_label":"","before_img_subheading":"","before_img_heading":"","before_img_heading_size":"h4","before_img_heading_color":"#ffffff","after_img":"shopify:\/\/shop_images\/1.png","after_img_label":"","after_img_subheading":"","after_img_heading":"","after_img_heading_size":"h4","after_img_heading_color":"#ffffff","disable_lazy_loading":false,"add_side_paddings":true,"section_spacing_top":96,"section_spacing_bottom":96}},"image_banner_PFwBrF":{"type":"image-banner","disabled":true,"settings":{"color_scheme":"default","enable_background_around_container":false,"container_size":"full-screen","desktop_ratio":0.7,"mobile_ratio":0.7,"desktop_img":"shopify:\/\/shop_images\/Product_Details_Image_1_2x_a480d715-f930-41fd-ade2-dbb670b9acd4.jpg","desktop_overlay_opacity":0,"mobile_overlay_opacity":0,"caption":"","title":"","heading_size":"h2","text":"","body_size":"body3","desktop_content_position":"align-items:center;justify-content:center;","desktop_content_align":"center","content_max_width":528,"content_spacing":116,"mobile_content_position":"align-items:center;justify-content:center;","mobile_content_align":"center","desktop_content_background":"none","mobile_content_background":"none","btn_text":"","btn_url":"","btn_style":"solid","extra_btn_text":"","extra_btn_url":"","extra_btn_style":"solid","disable_lazy_loading":false,"add_side_paddings":false,"section_spacing_top":13,"section_spacing_bottom":0}},"173532136874a7fc43":{"type":"apps","settings":{"color_scheme":"default","container_size":"large","custom_liquid":"","add_side_paddings":true,"section_spacing_top":48,"section_spacing_bottom":48}},"image_banner_wngVpx":{"type":"image-banner","disabled":true,"settings":{"color_scheme":"default","enable_background_around_container":false,"container_size":"full-screen","desktop_ratio":0.9,"mobile_ratio":1.3,"desktop_img":"shopify:\/\/shop_images\/Product_Details_Image_2_2x_c4f7cefe-0932-4d0b-9719-249d1b13da61.jpg","desktop_overlay_opacity":0,"mobile_overlay_opacity":0,"caption":"","title":"","heading_size":"h2","text":"","body_size":"body3","desktop_content_position":"align-items:center;justify-content:center;","desktop_content_align":"center","content_max_width":528,"content_spacing":116,"mobile_content_position":"align-items:center;justify-content:center;","mobile_content_align":"center","desktop_content_background":"none","mobile_content_background":"none","btn_text":"","btn_url":"","btn_style":"solid","extra_btn_text":"","extra_btn_url":"","extra_btn_style":"solid","disable_lazy_loading":false,"add_side_paddings":false,"section_spacing_top":0,"section_spacing_bottom":0}},"35a80c75-d4b0-4340-9552-75a9f11586de":{"type":"images-with-text","blocks":{"template--16729789563121__35a80c75-d4b0-4340-9552-75a9f11586de-1681824353e40c4786-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Product_Details_Image_3_2x_22355436-17f5-4de4-9352-7d917f45486f.jpg"}},"template--16729789563121__35a80c75-d4b0-4340-9552-75a9f11586de-1681824353e40c4786-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Product_Details_Image_4_2x_6ca77e2a-880d-4822-a740-3c14d8c720cd.jpg"}}},"block_order":["template--16729789563121__35a80c75-d4b0-4340-9552-75a9f11586de-1681824353e40c4786-0","template--16729789563121__35a80c75-d4b0-4340-9552-75a9f11586de-1681824353e40c4786-1"],"disabled":true,"settings":{"color_scheme":"default","container_size":"page-width","content_layout":"left","image_layout":"grid","img_ratio":1,"rotate_images":false,"icon":"none","subheading":"IMAGES WITH TEXT","heading":"Promo with featured images","heading_size":"h2","body":"<p>Share information about your brand with your customers. Describe a product, make announcements or welcome customers to your store.<\/p>","body_size":"body3","content_alignment":"left","desktop_content_width":440,"first_button_text":"Button label","first_button_link":"","first_button_style":"solid","second_button_text":"","second_button_link":"","second_button_style":"solid","add_side_paddings":true,"section_spacing_top":48,"section_spacing_bottom":80}},"product-recommendations":{"type":"product-recommendations","disabled":true,"settings":{"color_scheme":"default","container_size":"full-screen","title":"You may also like","heading_size":"h5","alignment":"center","product_recommendations_type":"auto","featured_collection":"","featured_products":[],"img_ratio":"portrait","desktop_layout":"carousel","mobile_layout":"carousel","product_card_align":"center","cards_to_show":18,"desktop_columns":4,"desktop_space_between_cards":12,"mobile_space_between_cards":16,"show_navigation_on_hover":true,"autoplay_mode":"disabled","autoplay_interval":3,"add_side_paddings":true,"section_spacing_top":48,"section_spacing_bottom":48}},"multicolumn_CAPJBz":{"type":"multicolumn","blocks":{"column_with_icon_VC3ne3":{"type":"column_with_icon","settings":{"icon":"checkmark","icon_size":64,"title":"Versatility","text":"<p>The Olympus Grip enables users to perform over 800 exercises and stretches, making it suitable for strength, cardio, and flexibility training across all fitness levels.<\/p>","link_text":"Shop Now","link_url":"shopify:\/\/collections\/all"}},"column_with_icon_zccdLq":{"type":"column_with_icon","settings":{"icon":"plus","icon_size":64,"title":"Efficiency","text":"<p> The Double Workout Advantage™ combines strength and cardio exercises seamlessly, enabling a total body workout in less time. Burn more calories while building strength, improving endurance, and enhancing overall fitness<\/p>","link_text":"Shop Now","link_url":"shopify:\/\/collections\/all"}},"column_with_icon_XghY4A":{"type":"column_with_icon","settings":{"icon":"briefcase","icon_size":64,"title":"Portability","text":"<p>Designed for both indoor and outdoor use, the Olympus Grip and its app let you train anywhere, from your living room to a mountain peak.<\/p>","link_text":"Shop Now","link_url":"shopify:\/\/collections\/all"}}},"block_order":["column_with_icon_VC3ne3","column_with_icon_zccdLq","column_with_icon_XghY4A"],"settings":{"color_scheme":"default","container_size":"large","desktop_layout":"grid","mobile_layout":"grid","title":"Why Olympus Grip?","heading_size":"h5","text":"Achieve total body fitness with a versatile, efficient, and portable gym you can take anywhere.","body_size":"body3","content_alignment":"center","column_heading_size":"h6","column_body_size":"body4","column_alignment":"center","desktop_columns":3,"desktop_space_between_cards":24,"desktop_content_spacing":24,"mobile_space_between_cards":16,"mobile_content_spacing":24,"show_column_background":false,"show_navigation_on_hover":true,"btn_text":"","btn_url":"","btn_style":"outline","autoplay_mode":"disabled","autoplay_interval":3,"add_side_paddings":true,"section_spacing_top":80,"section_spacing_bottom":80}},"instagram_QAxzAh":{"type":"instagram","blocks":{"post_bebRUP":{"type":"post","settings":{"image":"shopify:\/\/shop_images\/IMG_6276.jpg","link":"","icon":"none"}},"post_fyPjKV":{"type":"post","settings":{"image":"shopify:\/\/shop_images\/Image13_2x_c05a8f16-d746-4971-8f44-f9e66687a868.png","link":"","icon":"none"}},"post_fqpjqW":{"type":"post","settings":{"image":"shopify:\/\/shop_images\/IMG_0839_1.jpg","link":"","icon":"none"}},"post_UUB7d3":{"type":"post","settings":{"image":"shopify:\/\/shop_images\/DSC08262.jpg","link":"","icon":"none"}},"post_wfEURm":{"type":"post","settings":{"image":"shopify:\/\/shop_images\/DSC05104.jpg","link":"","icon":"none"}}},"block_order":["post_bebRUP","post_fyPjKV","post_fqpjqW","post_UUB7d3","post_wfEURm"],"settings":{"color_scheme":"default","container_size":"page-width","desktop_layout":"grid","mobile_layout":"carousel","title":"See Where Olympus Grip Goes","heading_size":"h5","text":"From living rooms to mountain trails, discover how users around the world take their fitness anywhere.","body_size":"body3","content_alignment":"center","img_ratio":1,"desktop_columns":5,"desktop_space_between_cards":16,"mobile_space_between_cards":16,"show_arrows_on_hover":true,"btn_text":"","btn_url":"","btn_style":"outline","autoplay_mode":"disabled","autoplay_interval":3,"add_side_paddings":true,"section_spacing_top":64,"section_spacing_bottom":8}},"1731968095f4f2689b":{"type":"apps","settings":{"color_scheme":"default","container_size":"large","custom_liquid":"","add_side_paddings":true,"section_spacing_top":48,"section_spacing_bottom":48}},"image_banner_E7aKPw":{"type":"image-banner","settings":{"color_scheme":"secondary","enable_background_around_container":false,"container_size":"full-screen","desktop_ratio":0.4,"mobile_ratio":1.6,"desktop_img":"shopify:\/\/shop_images\/Hero_Mockup.jpg","desktop_overlay_opacity":20,"mobile_overlay_opacity":20,"caption":"","title":"Explore Hundreds of Exercises","heading_size":"h2","text":"<p>Available with the Olympus Grip App<\/p>","body_size":"body3","desktop_content_position":"align-items:center;justify-content:center;","desktop_content_align":"center","content_max_width":528,"content_spacing":116,"mobile_content_position":"align-items:center;justify-content:center;","mobile_content_align":"center","desktop_content_background":"none","mobile_content_background":"none","btn_text":"","btn_url":"","btn_style":"outline","extra_btn_text":"","extra_btn_url":"","extra_btn_style":"solid","disable_lazy_loading":false,"add_side_paddings":true,"section_spacing_top":0,"section_spacing_bottom":13}}},"order":["ff03a7f7-70a4-4aa2-8e65-56be8e7dbefc","main","product-details","rich_text_aQ9Abq","1736811443c49d6078","before_after_images_hjXw8c","image_banner_PFwBrF","173532136874a7fc43","image_banner_wngVpx","35a80c75-d4b0-4340-9552-75a9f11586de","product-recommendations","multicolumn_CAPJBz","instagram_QAxzAh","1731968095f4f2689b","image_banner_E7aKPw"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "ff03a7f7-70a4-4aa2-8e65-56be8e7dbefc": {
+      "type": "breadcrumbs",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "show_breadcrumbs_product_title": true,
+        "add_side_paddings": true,
+        "section_spacing_top": 16,
+        "section_spacing_bottom": 0
+      }
+    },
+    "main": {
+      "type": "product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "price_size": "sm",
+            "show_tax_status": false,
+            "show_sale_amount_badge": true,
+            "highlight_sale_price": true
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "disabled": true,
+          "settings": {
+            "show_inventory_status": "always",
+            "inventory_threshhold": 11,
+            "text_when_many_in_stock": "Many in stock",
+            "text_when_few_in_stock": "Act now, few in stock!",
+            "show_inventory_counter": false,
+            "high_level_indicator_color": "#00c853",
+            "low_level_indicator_color": "#ff3d3d",
+            "color_inventory_label": false
+          }
+        },
+        "d3d427d0-4e7d-4f81-9057-c64f65a4f183": {
+          "type": "variant_picker",
+          "settings": {
+            "option_type": "button-outline",
+            "show_swatches": true,
+            "primary_swatch_option_type": "variant-images",
+            "secondary_swatch_option_type": "swatches",
+            "hide_single_value_options": true,
+            "option_name": "",
+            "information_drawer_button_label": "",
+            "text": "",
+            "page": "",
+            "image_width": 60
+          }
+        },
+        "28586830-d855-4547-8946-94914bac9e85": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "heading_size": "caption3",
+            "body_size": "body3",
+            "block_style": "static",
+            "icon": "none",
+            "icon_size": 24
+          }
+        },
+        "29040344-ce22-4d9d-aab8-1dcb43bb2ab5": {
+          "type": "product_drawer_with_tabs",
+          "disabled": true,
+          "settings": {
+            "btn_style": "text",
+            "popup_link_text": "Specifications",
+            "heading_size": "caption3",
+            "icon": "shipping-box",
+            "custom_icon_image": "shopify://shop_images/Product_Details_Image_1_2x_f731282a-d965-40e0-803c-c766e2c1cf80.jpg",
+            "icon_size": 24,
+            "button_background_color": "#e9ffcd",
+            "button_text_color": "#141416",
+            "tab_1_title": "Tab 1",
+            "tab_1_text": "<p>Tell more about your product, care instructions, country of origin, manufacturer information, matching colors and accessories.</p>",
+            "tab_1_page": "",
+            "tab_1_body_size": "body3",
+            "tab_2_title": "Tab 2",
+            "tab_2_text": "<p>Tell more about your product, care instructions, country of origin, manufacturer information, matching colors and accessories.</p>",
+            "tab_2_page": "",
+            "tab_2_body_size": "body3",
+            "tab_3_title": "Tab 3",
+            "tab_3_text": "<p>Tell more about your product, care instructions, country of origin, manufacturer information, matching colors and accessories.</p>",
+            "tab_3_page": "",
+            "tab_3_body_size": "body3"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "enable_pickup_availability": false,
+            "enable_gift_card": false,
+            "show_payment_icons": false,
+            "show_sticky_btn_on_mobile": true,
+            "add_to_cart_btn_style": "solid",
+            "checkout_btn_style": "outline"
+          }
+        },
+        "6d6606d5-ae7e-4306-b3d7-67030f2e4136": {
+          "type": "related_products",
+          "settings": {
+            "color_scheme": "primary",
+            "show_background": false,
+            "show_in_quick_view": false,
+            "title": "Accessories to Add",
+            "heading_size": "h6",
+            "alignment": "left",
+            "product_recommendations_type": "manually",
+            "featured_collection": "",
+            "featured_products": [
+              "loop-bands",
+              "jump-rope",
+              "olympus-grip-bag",
+              "olympus-grip-blue-backpack",
+              "olympus-grip-strap",
+              "phone-mount",
+              "tube-bands",
+              "x-anchor-mount"
+            ],
+            "img_ratio": "inherited",
+            "block_layout": "carousel-with-horizontal-cards",
+            "content_alignment": "left",
+            "products_to_show": 10,
+            "desktop_space_between_cards": 12,
+            "mobile_space_between_cards": 12,
+            "cards_color_background": false,
+            "show_navigation_on_hover": true,
+            "autoplay_mode": "disabled",
+            "autoplay_interval": 3
+          }
+        },
+        "c9188b10-e29c-4c63-b385-a3faa860d64a": {
+          "type": "information_tag",
+          "disabled": true,
+          "settings": {
+            "tag_style": "solid",
+            "heading": "1 year warranty",
+            "heading_size": "caption3",
+            "body": "<p>Tell more about your product, add care instructions, country of origin, or manufacturer information.</p>",
+            "body_size": "body4",
+            "content_alignment": "left",
+            "icon": "none",
+            "icon_size": 24,
+            "icon_position": "inline",
+            "tag_background_color": "#f6f6f6",
+            "tag_text_color": "#141416",
+            "enable_drawer": false,
+            "drawer_text": "<p>Tell more about your product, add care instructions, country of origin, or manufacturer information.</p>",
+            "drawer_page": "",
+            "drawer_body_size": "body3",
+            "drawer_media_size": 60
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "inventory_status",
+        "d3d427d0-4e7d-4f81-9057-c64f65a4f183",
+        "28586830-d855-4547-8946-94914bac9e85",
+        "29040344-ce22-4d9d-aab8-1dcb43bb2ab5",
+        "quantity_selector",
+        "buy_buttons",
+        "6d6606d5-ae7e-4306-b3d7-67030f2e4136",
+        "c9188b10-e29c-4c63-b385-a3faa860d64a"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "media_to_content_ratio": "fixed",
+        "img_ratio": "square",
+        "layout": "thumbnails-bottom",
+        "desktop_space_between_media": 20,
+        "thumbnails_size": 88,
+        "mobile_layout": "thumbnails-right",
+        "mobile_space_between_media": 20,
+        "show_only_selected_variants": false,
+        "enable_image_zoom": true,
+        "enable_video_autoplay": true,
+        "enable_video_controls": false,
+        "enable_video_looping": true,
+        "scale_video": true,
+        "add_side_paddings": true,
+        "desktop_spacing_top": 32,
+        "desktop_spacing_bottom": 48,
+        "mobile_spacing_top": 12,
+        "mobile_spacing_bottom": 12
+      }
+    },
+    "product-details": {
+      "type": "product-details",
+      "blocks": {
+        "eaea97df-77ab-4b25-ab4d-7127a70f662c": {
+          "type": "description",
+          "settings": {
+            "title": "Description",
+            "heading_size": "caption2",
+            "body_size": "body3",
+            "icon": "none",
+            "icon_size": 24
+          }
+        },
+        "collapsible_row_tMQjqr": {
+          "type": "collapsible_row",
+          "settings": {
+            "title": "What's Included?",
+            "heading_size": "caption2",
+            "icon": "none",
+            "icon_size": 24,
+            "text": "<p>Basic Pack: Olympus Grip V1.0 & iPhone Mount & iOS App (250 Free Exercises + 600 Premium Exercises)</p><p>Standard Pack: Olympus Grip V1.0, iPhone Mount & iOS App (250 Free Exercises + 600 Premium Exercises), Olympus Grip Strap System, 2 x X-Anchors for indoor strap use, 1 x 100 lbs loop band, Backpack that comfortably stores all the items</p><p>Premium Pack: Olympus Grip V1.0, iPhone Mount & iOS App (250 Free Exercises + 600 Premium Exercises) Olympus Grip Strap System, 2 x 10lbs & 2 x 50lbs tube elastic bands, 1 x 100 lbs loop band, 1 lbs Nylon jump rope, Backpack that comfortably stores all the items, 2 x X-Anchor Mounts to support indoor strap resistance.</p>",
+            "page": "",
+            "body_size": "body3",
+            "image_width": 100
+          }
+        },
+        "860566f2-5be2-4ed8-9964-b27e88c6c92b": {
+          "type": "collapsible_row",
+          "settings": {
+            "title": "Shipping Information",
+            "heading_size": "caption2",
+            "icon": "none",
+            "icon_size": 24,
+            "text": "<p>All domestic orders are processed and fulfilled within 3 to 5 business days. For a limited time, we are offering Free Shipping on all US orders. For international orders, standard carrier rates will apply at checkout.</p>",
+            "page": "",
+            "body_size": "body3",
+            "image_width": 100
+          }
+        },
+        "collapsible_row_Vz34T4": {
+          "type": "collapsible_row",
+          "settings": {
+            "title": "Return Policy",
+            "heading_size": "caption2",
+            "icon": "none",
+            "icon_size": 24,
+            "text": "<p>Fitnix, LLC offer’s a 30-day, no-hassle, money-back guarantee, should you not like your product for any reason as long as it is returned in its original packaging without damage.</p>",
+            "page": "",
+            "body_size": "body3",
+            "image_width": 100
+          }
+        },
+        "collapsible_row_EANCyU": {
+          "type": "collapsible_row",
+          "settings": {
+            "title": "Warranty",
+            "heading_size": "caption2",
+            "icon": "none",
+            "icon_size": 24,
+            "text": "<p>Fitnix strives to make you the best product possible. If, for any reason, you are having any problems with your Olympus Grip, please contact us so we can help. We stand behind our product and offer a 365-day limited warranty.</p>",
+            "page": "",
+            "body_size": "body3",
+            "image_width": 100
+          }
+        }
+      },
+      "block_order": [
+        "eaea97df-77ab-4b25-ab4d-7127a70f662c",
+        "collapsible_row_tMQjqr",
+        "860566f2-5be2-4ed8-9964-b27e88c6c92b",
+        "collapsible_row_Vz34T4",
+        "collapsible_row_EANCyU"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "enable_background_around_container": true,
+        "container_size": "large",
+        "style": "tabs",
+        "expand_first_collapsible_row": false,
+        "add_side_paddings": true,
+        "section_spacing_top": 64,
+        "section_spacing_bottom": 14
+      }
+    },
+    "rich_text_aQ9Abq": {
+      "type": "rich-text",
+      "blocks": {
+        "icon_eRnAqd": {
+          "type": "icon",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_size": 48
+          }
+        },
+        "caption_3rdEer": {
+          "type": "caption",
+          "disabled": true,
+          "settings": {
+            "caption": "RICH TEXT"
+          }
+        },
+        "heading_ttwJet": {
+          "type": "heading",
+          "settings": {
+            "title": "The Training Device that Grows <em>with </em>You",
+            "heading_size": "h3"
+          }
+        },
+        "text_c4tDMM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover how the Olympus Grip evolves with your fitness journey, offering beginner-friendly exercises that seamlessly transition into advanced movements as you grow stronger.</p>",
+            "text_2": "",
+            "text_3": "",
+            "body_size": "body3"
+          }
+        }
+      },
+      "block_order": [
+        "icon_eRnAqd",
+        "caption_3rdEer",
+        "heading_ttwJet",
+        "text_c4tDMM"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "enable_background_around_container": false,
+        "container_size": "page-width",
+        "content_align": "center",
+        "add_side_paddings": false,
+        "section_spacing_top": 0,
+        "section_spacing_bottom": 0
+      }
+    },
+    "1736811443c49d6078": {
+      "type": "apps",
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "custom_liquid": "",
+        "add_side_paddings": true,
+        "section_spacing_top": 48,
+        "section_spacing_bottom": 48
+      }
+    },
+    "before_after_images_hjXw8c": {
+      "type": "before-after-images",
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "layout": "right",
+        "desktop_image_ratio": 0.7,
+        "mobile_image_ratio": 1,
+        "drag": 50,
+        "subheading": "",
+        "heading": "It's All In The Details.",
+        "heading_size": "h2",
+        "body_richtext": "<p>Every part of the Olympus Grip has been tested and optimized to push the boundaries of what a full body exercise device can do. </p>",
+        "body_size": "body3",
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "solid",
+        "content_alignment": "left",
+        "before_img": "shopify://shop_images/2.png",
+        "before_img_label": "",
+        "before_img_subheading": "",
+        "before_img_heading": "",
+        "before_img_heading_size": "h4",
+        "before_img_heading_color": "#ffffff",
+        "after_img": "shopify://shop_images/1.png",
+        "after_img_label": "",
+        "after_img_subheading": "",
+        "after_img_heading": "",
+        "after_img_heading_size": "h4",
+        "after_img_heading_color": "#ffffff",
+        "disable_lazy_loading": false,
+        "add_side_paddings": true,
+        "section_spacing_top": 96,
+        "section_spacing_bottom": 96
+      }
+    },
+    "image_banner_PFwBrF": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "default",
+        "enable_background_around_container": false,
+        "container_size": "full-screen",
+        "desktop_ratio": 0.7,
+        "mobile_ratio": 0.7,
+        "desktop_img": "shopify://shop_images/Product_Details_Image_1_2x_a480d715-f930-41fd-ade2-dbb670b9acd4.jpg",
+        "desktop_overlay_opacity": 0,
+        "mobile_overlay_opacity": 0,
+        "caption": "",
+        "title": "",
+        "heading_size": "h2",
+        "text": "",
+        "body_size": "body3",
+        "desktop_content_position": "align-items:center;justify-content:center;",
+        "desktop_content_align": "center",
+        "content_max_width": 528,
+        "content_spacing": 116,
+        "mobile_content_position": "align-items:center;justify-content:center;",
+        "mobile_content_align": "center",
+        "desktop_content_background": "none",
+        "mobile_content_background": "none",
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "solid",
+        "extra_btn_text": "",
+        "extra_btn_url": "",
+        "extra_btn_style": "solid",
+        "disable_lazy_loading": false,
+        "add_side_paddings": false,
+        "section_spacing_top": 13,
+        "section_spacing_bottom": 0
+      }
+    },
+    "173532136874a7fc43": {
+      "type": "apps",
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "custom_liquid": "",
+        "add_side_paddings": true,
+        "section_spacing_top": 48,
+        "section_spacing_bottom": 48
+      }
+    },
+    "image_banner_wngVpx": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "default",
+        "enable_background_around_container": false,
+        "container_size": "full-screen",
+        "desktop_ratio": 0.9,
+        "mobile_ratio": 1.3,
+        "desktop_img": "shopify://shop_images/Product_Details_Image_2_2x_c4f7cefe-0932-4d0b-9719-249d1b13da61.jpg",
+        "desktop_overlay_opacity": 0,
+        "mobile_overlay_opacity": 0,
+        "caption": "",
+        "title": "",
+        "heading_size": "h2",
+        "text": "",
+        "body_size": "body3",
+        "desktop_content_position": "align-items:center;justify-content:center;",
+        "desktop_content_align": "center",
+        "content_max_width": 528,
+        "content_spacing": 116,
+        "mobile_content_position": "align-items:center;justify-content:center;",
+        "mobile_content_align": "center",
+        "desktop_content_background": "none",
+        "mobile_content_background": "none",
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "solid",
+        "extra_btn_text": "",
+        "extra_btn_url": "",
+        "extra_btn_style": "solid",
+        "disable_lazy_loading": false,
+        "add_side_paddings": false,
+        "section_spacing_top": 0,
+        "section_spacing_bottom": 0
+      }
+    },
+    "35a80c75-d4b0-4340-9552-75a9f11586de": {
+      "type": "images-with-text",
+      "blocks": {
+        "template--16729789563121__35a80c75-d4b0-4340-9552-75a9f11586de-1681824353e40c4786-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Product_Details_Image_3_2x_22355436-17f5-4de4-9352-7d917f45486f.jpg"
+          }
+        },
+        "template--16729789563121__35a80c75-d4b0-4340-9552-75a9f11586de-1681824353e40c4786-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Product_Details_Image_4_2x_6ca77e2a-880d-4822-a740-3c14d8c720cd.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--16729789563121__35a80c75-d4b0-4340-9552-75a9f11586de-1681824353e40c4786-0",
+        "template--16729789563121__35a80c75-d4b0-4340-9552-75a9f11586de-1681824353e40c4786-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "page-width",
+        "content_layout": "left",
+        "image_layout": "grid",
+        "img_ratio": 1,
+        "rotate_images": false,
+        "icon": "none",
+        "subheading": "IMAGES WITH TEXT",
+        "heading": "Promo with featured images",
+        "heading_size": "h2",
+        "body": "<p>Share information about your brand with your customers. Describe a product, make announcements or welcome customers to your store.</p>",
+        "body_size": "body3",
+        "content_alignment": "left",
+        "desktop_content_width": 440,
+        "first_button_text": "Button label",
+        "first_button_link": "",
+        "first_button_style": "solid",
+        "second_button_text": "",
+        "second_button_link": "",
+        "second_button_style": "solid",
+        "add_side_paddings": true,
+        "section_spacing_top": 48,
+        "section_spacing_bottom": 80
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "full-screen",
+        "title": "You may also like",
+        "heading_size": "h5",
+        "alignment": "center",
+        "product_recommendations_type": "auto",
+        "featured_collection": "",
+        "featured_products": [],
+        "img_ratio": "portrait",
+        "desktop_layout": "carousel",
+        "mobile_layout": "carousel",
+        "product_card_align": "center",
+        "cards_to_show": 18,
+        "desktop_columns": 4,
+        "desktop_space_between_cards": 12,
+        "mobile_space_between_cards": 16,
+        "show_navigation_on_hover": true,
+        "autoplay_mode": "disabled",
+        "autoplay_interval": 3,
+        "add_side_paddings": true,
+        "section_spacing_top": 48,
+        "section_spacing_bottom": 48
+      }
+    },
+    "multicolumn_CAPJBz": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_with_icon_VC3ne3": {
+          "type": "column_with_icon",
+          "settings": {
+            "icon": "checkmark",
+            "icon_size": 64,
+            "title": "Versatility",
+            "text": "<p>The Olympus Grip enables users to perform over 800 exercises and stretches, making it suitable for strength, cardio, and flexibility training across all fitness levels.</p>",
+            "link_text": "Shop Now",
+            "link_url": "shopify://collections/all"
+          }
+        },
+        "column_with_icon_zccdLq": {
+          "type": "column_with_icon",
+          "settings": {
+            "icon": "plus",
+            "icon_size": 64,
+            "title": "Efficiency",
+            "text": "<p> The Double Workout Advantage™ combines strength and cardio exercises seamlessly, enabling a total body workout in less time. Burn more calories while building strength, improving endurance, and enhancing overall fitness</p>",
+            "link_text": "Shop Now",
+            "link_url": "shopify://collections/all"
+          }
+        },
+        "column_with_icon_XghY4A": {
+          "type": "column_with_icon",
+          "settings": {
+            "icon": "briefcase",
+            "icon_size": 64,
+            "title": "Portability",
+            "text": "<p>Designed for both indoor and outdoor use, the Olympus Grip and its app let you train anywhere, from your living room to a mountain peak.</p>",
+            "link_text": "Shop Now",
+            "link_url": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "column_with_icon_VC3ne3",
+        "column_with_icon_zccdLq",
+        "column_with_icon_XghY4A"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "desktop_layout": "grid",
+        "mobile_layout": "grid",
+        "title": "Why Olympus Grip?",
+        "heading_size": "h5",
+        "text": "Achieve total body fitness with a versatile, efficient, and portable gym you can take anywhere.",
+        "body_size": "body3",
+        "content_alignment": "center",
+        "column_heading_size": "h6",
+        "column_body_size": "body4",
+        "column_alignment": "center",
+        "desktop_columns": 3,
+        "desktop_space_between_cards": 24,
+        "desktop_content_spacing": 24,
+        "mobile_space_between_cards": 16,
+        "mobile_content_spacing": 24,
+        "show_column_background": false,
+        "show_navigation_on_hover": true,
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "outline",
+        "autoplay_mode": "disabled",
+        "autoplay_interval": 3,
+        "add_side_paddings": true,
+        "section_spacing_top": 80,
+        "section_spacing_bottom": 80
+      }
+    },
+    "instagram_QAxzAh": {
+      "type": "instagram",
+      "blocks": {
+        "post_bebRUP": {
+          "type": "post",
+          "settings": {
+            "image": "shopify://shop_images/IMG_6276.jpg",
+            "link": "",
+            "icon": "none"
+          }
+        },
+        "post_fyPjKV": {
+          "type": "post",
+          "settings": {
+            "image": "shopify://shop_images/Image13_2x_c05a8f16-d746-4971-8f44-f9e66687a868.png",
+            "link": "",
+            "icon": "none"
+          }
+        },
+        "post_fqpjqW": {
+          "type": "post",
+          "settings": {
+            "image": "shopify://shop_images/IMG_0839_1.jpg",
+            "link": "",
+            "icon": "none"
+          }
+        },
+        "post_UUB7d3": {
+          "type": "post",
+          "settings": {
+            "image": "shopify://shop_images/DSC08262.jpg",
+            "link": "",
+            "icon": "none"
+          }
+        },
+        "post_wfEURm": {
+          "type": "post",
+          "settings": {
+            "image": "shopify://shop_images/DSC05104.jpg",
+            "link": "",
+            "icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "post_bebRUP",
+        "post_fyPjKV",
+        "post_fqpjqW",
+        "post_UUB7d3",
+        "post_wfEURm"
+      ],
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "page-width",
+        "desktop_layout": "grid",
+        "mobile_layout": "carousel",
+        "title": "See Where Olympus Grip Goes",
+        "heading_size": "h5",
+        "text": "From living rooms to mountain trails, discover how users around the world take their fitness anywhere.",
+        "body_size": "body3",
+        "content_alignment": "center",
+        "img_ratio": 1,
+        "desktop_columns": 5,
+        "desktop_space_between_cards": 16,
+        "mobile_space_between_cards": 16,
+        "show_arrows_on_hover": true,
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "outline",
+        "autoplay_mode": "disabled",
+        "autoplay_interval": 3,
+        "add_side_paddings": true,
+        "section_spacing_top": 64,
+        "section_spacing_bottom": 8
+      }
+    },
+    "1731968095f4f2689b": {
+      "type": "apps",
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "large",
+        "custom_liquid": "",
+        "add_side_paddings": true,
+        "section_spacing_top": 48,
+        "section_spacing_bottom": 48
+      }
+    },
+    "image_banner_E7aKPw": {
+      "type": "image-banner",
+      "settings": {
+        "color_scheme": "secondary",
+        "enable_background_around_container": false,
+        "container_size": "full-screen",
+        "desktop_ratio": 0.4,
+        "mobile_ratio": 1.6,
+        "desktop_img": "shopify://shop_images/Hero_Mockup.jpg",
+        "desktop_overlay_opacity": 20,
+        "mobile_overlay_opacity": 20,
+        "caption": "",
+        "title": "Explore Hundreds of Exercises",
+        "heading_size": "h2",
+        "text": "<p>Available with the Olympus Grip App</p>",
+        "body_size": "body3",
+        "desktop_content_position": "align-items:center;justify-content:center;",
+        "desktop_content_align": "center",
+        "content_max_width": 528,
+        "content_spacing": 116,
+        "mobile_content_position": "align-items:center;justify-content:center;",
+        "mobile_content_align": "center",
+        "desktop_content_background": "none",
+        "mobile_content_background": "none",
+        "btn_text": "",
+        "btn_url": "",
+        "btn_style": "outline",
+        "extra_btn_text": "",
+        "extra_btn_url": "",
+        "extra_btn_style": "solid",
+        "disable_lazy_loading": false,
+        "add_side_paddings": true,
+        "section_spacing_top": 0,
+        "section_spacing_bottom": 13
+      }
+    }
+  },
+  "order": [
+    "ff03a7f7-70a4-4aa2-8e65-56be8e7dbefc",
+    "main",
+    "product-details",
+    "rich_text_aQ9Abq",
+    "1736811443c49d6078",
+    "before_after_images_hjXw8c",
+    "image_banner_PFwBrF",
+    "173532136874a7fc43",
+    "image_banner_wngVpx",
+    "35a80c75-d4b0-4340-9552-75a9f11586de",
+    "product-recommendations",
+    "multicolumn_CAPJBz",
+    "instagram_QAxzAh",
+    "1731968095f4f2689b",
+    "image_banner_E7aKPw"
+  ]
+}

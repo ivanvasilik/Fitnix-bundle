@@ -1,1 +1,96 @@
-{"type":"header","name":"Header Group","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"announcement_1":{"type":"announcement","disabled":true,"settings":{"text":"<p>CYBER MONDAY DEALS ARE HERE!<\/p>","link":"shopify:\/\/products\/olympus-grip®-double-workout-advantage™","icon":"discount-outline"}},"announcement_tEgTDW":{"type":"announcement","settings":{"text":"<p>Unlock over 800 Exercises!<\/p>","link":"","icon":"none"}}},"block_order":["announcement_1","announcement_tEgTDW"],"settings":{"show_only_on_homepage":false,"color_scheme":"secondary","container_size":"full-screen","show_navigation_arrows":true,"autoplay_mode":"disabled","autoplay_interval":6,"show_language_selector":false,"show_currency_selector":false,"show_social_list":true,"add_side_paddings":true,"desktop_spacing_top":20,"desktop_spacing_bottom":0,"mobile_spacing_top":0,"mobile_spacing_bottom":0}},"header":{"type":"header","settings":{"color_scheme":"default","container_size":"full-screen","enable_sticky":"none","enable_shadow":false,"enable_border":false,"enable_transparent":false,"menu":"main-menu","menu_type":"dropdown","grid":"1","menu_trigger":"hover","color_menu_items":"Item 1:#E32417, Item 2:#F1C232","desktop_logo_img":"shopify:\/\/shop_images\/FITNIX_NavyBlue_16692d49-5f9e-4230-a204-00d7ba40ceb5.png","desktop_logo_width":140,"mobile_logo_img":"shopify:\/\/shop_images\/FITNIX_NavyBlue_16692d49-5f9e-4230-a204-00d7ba40ceb5.png","mobile_logo_width":120,"is_transparent_only_on_homepage":true,"transparent_opacity":0,"transparent_blurring":0,"transparent_background_color":"#ffffff","transparent_items_color":"#ffffff","icon_style":"round-outline","cart_icon":"bag","login_mobile_position":"in_header","show_language_selector":false,"show_currency_selector":false,"add_side_paddings":true,"desktop_spacing_top":20,"desktop_spacing_bottom":20,"mobile_spacing_top":0,"mobile_spacing_bottom":0}}},"order":["announcement-bar","header"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_1": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "<p>CYBER MONDAY DEALS ARE HERE!</p>",
+            "link": "shopify://products/olympus-grip®-double-workout-advantage™",
+            "icon": "discount-outline"
+          }
+        },
+        "announcement_tEgTDW": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>Unlock over 800 Exercises!</p>",
+            "link": "",
+            "icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_1",
+        "announcement_tEgTDW"
+      ],
+      "settings": {
+        "show_only_on_homepage": false,
+        "color_scheme": "secondary",
+        "container_size": "full-screen",
+        "show_navigation_arrows": true,
+        "autoplay_mode": "disabled",
+        "autoplay_interval": 6,
+        "show_language_selector": false,
+        "show_currency_selector": false,
+        "show_social_list": true,
+        "add_side_paddings": true,
+        "desktop_spacing_top": 20,
+        "desktop_spacing_bottom": 0,
+        "mobile_spacing_top": 0,
+        "mobile_spacing_bottom": 0
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "color_scheme": "default",
+        "container_size": "full-screen",
+        "enable_sticky": "none",
+        "enable_shadow": false,
+        "enable_border": false,
+        "enable_transparent": false,
+        "menu": "main-menu",
+        "menu_type": "dropdown",
+        "grid": "1",
+        "menu_trigger": "hover",
+        "color_menu_items": "Item 1:#E32417, Item 2:#F1C232",
+        "desktop_logo_img": "shopify://shop_images/FITNIX_NavyBlue_16692d49-5f9e-4230-a204-00d7ba40ceb5.png",
+        "desktop_logo_width": 140,
+        "mobile_logo_img": "shopify://shop_images/FITNIX_NavyBlue_16692d49-5f9e-4230-a204-00d7ba40ceb5.png",
+        "mobile_logo_width": 120,
+        "is_transparent_only_on_homepage": true,
+        "transparent_opacity": 0,
+        "transparent_blurring": 0,
+        "transparent_background_color": "#ffffff",
+        "transparent_items_color": "#ffffff",
+        "icon_style": "round-outline",
+        "cart_icon": "bag",
+        "login_mobile_position": "in_header",
+        "show_language_selector": false,
+        "show_currency_selector": false,
+        "add_side_paddings": true,
+        "desktop_spacing_top": 20,
+        "desktop_spacing_bottom": 20,
+        "mobile_spacing_top": 0,
+        "mobile_spacing_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
