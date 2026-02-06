@@ -1,0 +1,46 @@
+{
+  "layout": "ces",
+  "sections": {
+    "bundle_builder": {
+      "type": "bundle-builder",
+      "settings": {
+        "step1_heading": "Choose Your Olympus Grip",
+        "step1_subtitle": "Step 1: Select your device. Accessories come next",
+        "step1_bottom_text": "Portable handheld gym with access to 800+ exercises and 250+ workouts.",
+        "already_have_text": "Already have the Olympus Grip?",
+        "already_have_link_text": "Shop accessories compatible with both Classic and SMART",
+        "classic_title": "Olympus Grip Classic",
+        "classic_price": "$69",
+        "classic_features": "Ready to ship\nFully mechanical training\nPortable gym",
+        "classic_button_text": "Shop Classic",
+        "classic_badge": "",
+        "smart_title": "Olympus Grip SMART",
+        "smart_price": "$99",
+        "smart_features": "Pre-order\nTracks push/pull force for reps\nWireless connection to phone",
+        "smart_button_text": "Pre-Order SMART",
+        "smart_badge": "Pre-order",
+        "step2_heading": "Step 2: Choose Your Accessories",
+        "step2_subtitle": "Accessories work with both Olympus Grip Classic and SMART",
+        "path1_title": "Build Your Own (A la Carte)",
+        "path1_label": "",
+        "path1_features": "Choose accessories individually\nMaximum flexibility",
+        "path2_title": "Ready-Made Kits (Curated)",
+        "path2_label": "",
+        "path2_features": "Pre-configured for specific goals\nBest value and fastest setup",
+        "step2a_heading": "Step 2A: Build Your Own (A La Carte)",
+        "step2a_subtitle": "Select accessories using checkboxes. Add all selections at once.",
+        "step2a_btn_text": "Add Selected to Cart",
+        "step2b_heading": "Step 2B: Ready Made Kits",
+        "step2b_subtitle": "Choose one curated kit. Each kit includes a different number of accessories"
+      }
+    },
+    "as_footer_clean": {
+      "type": "as-footer",
+      "settings": {}
+    }
+  },
+  "order": [
+    "bundle_builder",
+    "as_footer_clean"
+  ]
+}

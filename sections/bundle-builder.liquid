@@ -1,0 +1,1113 @@
+{{ 'bundle-page.css' | asset_url | stylesheet_tag }}
+<!-- Swiper CSS for mobile slider -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+{% style %}
+  @media (max-width:768px) {
+    .bundle-grip-card__title {
+      font-size: 27px !important;
+    }
+  }
+ {% endstyle %}
+
+{%- liquid
+  comment
+    STEP 1 - Classic Bundle Settings
+  endcomment
+  assign classic_image = section.settings.classic_image
+  assign classic_title = section.settings.classic_title
+  assign classic_price = section.settings.classic_price
+  assign classic_features = section.settings.classic_features
+  assign classic_button_text = section.settings.classic_button_text
+  assign classic_badge = section.settings.classic_badge
+  assign classic_product = section.settings.classic_product
+
+  comment
+    STEP 1 - Smart Bundle Settings
+  endcomment
+  assign smart_image = section.settings.smart_image
+  assign smart_title = section.settings.smart_title
+  assign smart_price = section.settings.smart_price
+  assign smart_features = section.settings.smart_features
+  assign smart_button_text = section.settings.smart_button_text
+  assign smart_badge = section.settings.smart_badge
+  assign smart_product = section.settings.smart_product
+
+  comment
+    General Settings
+  endcomment
+  assign step1_heading = section.settings.step1_heading
+  assign step1_subtitle = section.settings.step1_subtitle
+  assign step1_bottom_text = section.settings.step1_bottom_text
+  assign already_have_text = section.settings.already_have_text
+  assign already_have_link_text = section.settings.already_have_link_text
+  
+  assign step2_heading = section.settings.step2_heading
+  assign step2_subtitle = section.settings.step2_subtitle
+  
+  assign step2a_heading = section.settings.step2a_heading
+  assign step2a_subtitle = section.settings.step2a_subtitle
+  assign step2a_btn_text = section.settings.step2a_btn_text
+  
+  assign step2b_heading = section.settings.step2b_heading
+  assign step2b_subtitle = section.settings.step2b_subtitle
+
+  comment
+    Path Options Settings
+  endcomment
+  assign path1_title = section.settings.path1_title
+  assign path1_label = section.settings.path1_label
+  assign path1_features = section.settings.path1_features
+  assign path2_title = section.settings.path2_title
+  assign path2_label = section.settings.path2_label
+  assign path2_features = section.settings.path2_features
+
+  comment
+    Product Lists
+  endcomment
+  assign classic_accessories = section.settings.classic_accessories
+  assign smart_accessories = section.settings.smart_accessories
+  assign classic_kits = section.settings.classic_kits
+  assign smart_kits = section.settings.smart_kits
+-%}
+
+<div class="bundle-builder">
+  
+  <!-- ============================================
+       STEP 1: CHOOSE BUNDLE (Classic or Smart)
+       ============================================ -->
+  <section class="bundle-section bundle-step active" data-step="step-1">
+    <div class="bundle-section__container">
+      
+      <div class="bundle-section__cap">
+        {% if step1_heading != blank %}
+          <h2 class="bundle-section__title">{{ step1_heading }}</h2>
+        {% endif %}
+        {% if step1_subtitle != blank %}
+          <p class="bundle-section__step-label">{{ step1_subtitle }}</p>
+        {% endif %}
+      </div>
+      
+      <div class="bundle-grip-grid">
+        
+        <!-- CLASSIC BUNDLE CARD -->
+        <div class="bundle-grip-card" 
+             data-bundle-type="classic"
+             {% if classic_product != blank %}
+               data-variant-id="{{ classic_product.selected_or_first_available_variant.id }}"
+             {% endif %}>
+          
+          {% if classic_badge != blank %}
+            <span class="bundle-grip-card__badge">{{ classic_badge }}</span>
+          {% endif %}
+          
+          <div class="bundle-grip-card__image-wrap">
+            {% if classic_image != blank %}
+              <img 
+                class="bundle-grip-card__image"
+                src="{{ classic_image | image_url: width: 600 }}"
+                alt="{{ classic_title | escape }}"
+                loading="lazy"
+                width="280"
+                height="280"
+              >
+            {% else %}
+              <div class="bundle-grip-card__image-placeholder">[Classic Image]</div>
+            {% endif %}
+          </div>
+          
+          <div class="bundle-grip-card__content">
+            <h3 class="bundle-grip-card__title">{{ classic_title | default: 'Olympus Grip Classic' }}</h3>
+            <p class="bundle-grip-card__price">{{ classic_price | default: '$69' }}</p>
+            
+            {% if classic_features != blank %}
+              <ul class="bundle-grip-card__features">
+                {%- assign features_array = classic_features | newline_to_br | split: '<br />' -%}
+                {% for feature in features_array %}
+                  {% assign feature_trimmed = feature | strip %}
+                  {% if feature_trimmed != blank %}
+                    <li>{{ feature_trimmed }}</li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endif %}
+            
+            <button class="bundle-grip-card__btn" type="button" data-action="select-bundle" data-bundle="classic">
+              {{ classic_button_text | default: 'Shop Classic' }}
+            </button>
+          </div>
+        </div>
+        
+        <!-- SMART BUNDLE CARD -->
+        <div class="bundle-grip-card" 
+             data-bundle-type="smart"
+             {% if smart_product != blank %}
+               data-variant-id="{{ smart_product.selected_or_first_available_variant.id }}"
+             {% endif %}>
+          
+          {% if smart_badge != blank %}
+            <span class="bundle-grip-card__badge">{{ smart_badge }}</span>
+          {% endif %}
+          
+          <div class="bundle-grip-card__image-wrap">
+            {% if smart_image != blank %}
+              <img 
+                class="bundle-grip-card__image"
+                src="{{ smart_image | image_url: width: 600 }}"
+                alt="{{ smart_title | escape }}"
+                loading="lazy"
+                width="280"
+                height="280"
+              >
+            {% else %}
+              <div class="bundle-grip-card__image-placeholder">[Smart Image]</div>
+            {% endif %}
+          </div>
+          
+          <div class="bundle-grip-card__content">
+            <h3 class="bundle-grip-card__title">{{ smart_title | default: 'Olympus Grip SMART' }}</h3>
+            <p class="bundle-grip-card__price">{{ smart_price | default: '$99' }}</p>
+            
+            {% if smart_features != blank %}
+              <ul class="bundle-grip-card__features">
+                {%- assign features_array = smart_features | newline_to_br | split: '<br />' -%}
+                {% for feature in features_array %}
+                  {% assign feature_trimmed = feature | strip %}
+                  {% if feature_trimmed != blank %}
+                    <li>{{ feature_trimmed }}</li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endif %}
+            
+            <button class="bundle-grip-card__btn" type="button" data-action="select-bundle" data-bundle="smart">
+              {{ smart_button_text | default: 'Pre-Order SMART' }}
+            </button>
+          </div>
+        </div>
+        
+      </div>
+      
+      {% if step1_bottom_text != blank %}
+        <p class="bundle-section__bottom-text">{{ step1_bottom_text }}</p>
+      {% endif %}
+      
+      <div class="bundle-already-have">
+        <p class="bundle-already-have__text">{{ already_have_text | default: 'Already have the Olympus Grip?' }}</p>
+        <a href="#" class="bundle-already-have__link" data-action="skip-to-step2">
+          {{ already_have_link_text | default: 'Shop accessories compatible with both Classic and SMART' }}
+        </a>
+      </div>
+      
+    </div>
+  </section>
+  
+  <!-- ============================================
+       STEP 2: CHOOSE PATH (Build Your Own or Ready-Made)
+       ============================================ -->
+  <section class="bundle-section bundle-step" data-step="step-2">
+    <div class="bundle-section__container">
+      
+      <div class="bundle-section__cap">
+        {% if step2_heading != blank %}
+          <h2 class="bundle-section__title">{{ step2_heading }}</h2>
+        {% endif %}
+        {% if step2_subtitle != blank %}
+          <p class="bundle-section__subtitle">{{ step2_subtitle }}</p>
+        {% endif %}
+      </div>
+      
+      <div class="bundle-path-grid">
+        
+        <!-- BUILD YOUR OWN -->
+        <div class="bundle-path-card" data-path="build-your-own">
+          <div class="bundle-path-card__content">
+            {% if path1_label != blank %}
+              <span class="bundle-path-card__label">{{ path1_label }}</span>
+            {% endif %}
+            <h3 class="bundle-path-card__title">{{ path1_title | default: 'Build Your Own (A la Carte)' }}</h3>
+            
+            {% if path1_features != blank %}
+              <ul class="bundle-path-card__features">
+                {%- assign features_array = path1_features | newline_to_br | split: '<br />' -%}
+                {% for feature in features_array %}
+                  {% assign feature_trimmed = feature | strip %}
+                  {% if feature_trimmed != blank %}
+                    <li>{{ feature_trimmed }}</li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </div>
+          <div class="bundle-path-card__arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        
+        <!-- READY-MADE KITS -->
+        <div class="bundle-path-card" data-path="ready-made-kits">
+          <div class="bundle-path-card__content">
+            {% if path2_label != blank %}
+              <span class="bundle-path-card__label">{{ path2_label }}</span>
+            {% endif %}
+            <h3 class="bundle-path-card__title">{{ path2_title | default: 'Ready-Made Kits (Curated)' }}</h3>
+            
+            {% if path2_features != blank %}
+              <ul class="bundle-path-card__features">
+                {%- assign features_array = path2_features | newline_to_br | split: '<br />' -%}
+                {% for feature in features_array %}
+                  {% assign feature_trimmed = feature | strip %}
+                  {% if feature_trimmed != blank %}
+                    <li>{{ feature_trimmed }}</li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </div>
+          <div class="bundle-path-card__arrow">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        
+      </div>
+      
+      <a href="#" class="bundle-back-link" data-target-step="step-1">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to Step 1
+      </a>
+      
+    </div>
+  </section>
+  
+  <!-- ============================================
+       STEP 2A: BUILD YOUR OWN (Product Cards)
+       ============================================ -->
+  <section class="bundle-section bundle-step" data-step="step-2a">
+    <div class="bundle-section__container">
+      
+      <div class="bundle-section__cap">
+        {% if step2a_heading != blank %}
+          <h2 class="bundle-section__title">{{ step2a_heading }}</h2>
+        {% endif %}
+        {% if step2a_subtitle != blank %}
+          <p class="bundle-section__subtitle">{{ step2a_subtitle }}</p>
+        {% endif %}
+      </div>
+      
+      <!-- Selection Counter Badge -->
+      <div class="bundle-selection-badge" id="selection-badge">
+        <span class="bundle-selection-badge__icon">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M8 10L9.5 11.5L12 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </span>
+        <span class="bundle-selection-badge__text"><span id="badge-count">0</span> items selected</span>
+      </div>
+      
+      <!-- Accessories Grid / Swiper on Mobile -->
+      <div class="bundle-accessories-swiper swiper" id="accessories-swiper">
+        <div class="bundle-accessories-grid swiper-wrapper">
+        
+        <!-- CLASSIC ACCESSORIES -->
+        {% for product in classic_accessories %}
+          {% if product != blank %}
+            {% assign variant = product.selected_or_first_available_variant %}
+            {% assign compare_price = variant.compare_at_price %}
+            {% assign has_discount = false %}
+            {% if compare_price > variant.price %}
+              {% assign has_discount = true %}
+              {% assign savings_percent = compare_price | minus: variant.price | times: 100 | divided_by: compare_price %}
+            {% endif %}
+            
+            <div class="swiper-slide" data-bundle-type="classic">
+            <div class="bundle-product-card" 
+                 data-bundle-type="classic"
+                 data-variant-id="{{ variant.id }}"
+                 data-price="{{ variant.price }}"
+                 data-product-title="{{ product.title | escape }}">
+              
+              <!-- Selection Checkbox (hidden but functional) -->
+              <input type="checkbox" 
+                     class="bundle-accessory-checkbox" 
+                     id="accessory-{{ variant.id }}"
+                     aria-label="Select {{ product.title }}">
+              
+              <!-- Card Click Overlay -->
+              <label class="bundle-product-card__overlay" for="accessory-{{ variant.id }}"></label>
+              
+              <!-- Selection Indicator -->
+              <div class="bundle-product-card__check">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              
+              {% if has_discount %}
+                <span class="bundle-product-card__badge">Save {{ savings_percent }}%</span>
+              {% endif %}
+              
+              <!-- Product Image -->
+              <div class="bundle-product-card__image-wrap">
+                {% if product.featured_image != blank %}
+                  <img 
+                    class="bundle-product-card__image"
+                    src="{{ product.featured_image | image_url: width: 400 }}"
+                    alt="{{ product.title | escape }}"
+                    loading="lazy"
+                    width="180"
+                    height="180"
+                  >
+                {% else %}
+                  <div class="bundle-product-card__image-placeholder">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <rect x="3" y="3" width="18" height="18" rx="2"/>
+                      <circle cx="8.5" cy="8.5" r="1.5"/>
+                      <path d="M21 15l-5-5L5 21"/>
+                    </svg>
+                  </div>
+                {% endif %}
+              </div>
+              
+              <!-- Product Info -->
+              <div class="bundle-product-card__content">
+                <h3 class="bundle-product-card__title">{{ product.title }}</h3>
+                
+                {% if product.description != blank %}
+                  <p class="bundle-product-card__desc">{{ product.description | strip_html | truncate: 60 }}</p>
+                {% endif %}
+                
+                <div class="bundle-product-card__pricing">
+                  <span class="bundle-product-card__price">{{ variant.price | money }}</span>
+                  {% if has_discount %}
+                    <span class="bundle-product-card__compare-price">{{ compare_price | money }}</span>
+                  {% endif %}
+                </div>
+              </div>
+              
+              <!-- Quick Add Indicator -->
+              <div class="bundle-product-card__action">
+                <span class="bundle-product-card__add-text">Click to add</span>
+                <span class="bundle-product-card__added-text">Added to bundle</span>
+              </div>
+            </div>
+            </div><!-- /.swiper-slide -->
+          {% endif %}
+        {% endfor %}
+        
+        <!-- SMART ACCESSORIES -->
+        {% for product in smart_accessories %}
+          {% if product != blank %}
+            {% assign variant = product.selected_or_first_available_variant %}
+            {% assign compare_price = variant.compare_at_price %}
+            {% assign has_discount = false %}
+            {% if compare_price > variant.price %}
+              {% assign has_discount = true %}
+              {% assign savings_percent = compare_price | minus: variant.price | times: 100 | divided_by: compare_price %}
+            {% endif %}
+            
+            <div class="swiper-slide" data-bundle-type="smart">
+            <div class="bundle-product-card" 
+                 data-bundle-type="smart"
+                 data-variant-id="{{ variant.id }}"
+                 data-price="{{ variant.price }}"
+                 data-product-title="{{ product.title | escape }}">
+              
+              <!-- Selection Checkbox (hidden but functional) -->
+              <input type="checkbox" 
+                     class="bundle-accessory-checkbox" 
+                     id="accessory-smart-{{ variant.id }}"
+                     aria-label="Select {{ product.title }}">
+              
+              <!-- Card Click Overlay -->
+              <label class="bundle-product-card__overlay" for="accessory-smart-{{ variant.id }}"></label>
+              
+              <!-- Selection Indicator -->
+              <div class="bundle-product-card__check">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              
+              {% if has_discount %}
+                <span class="bundle-product-card__badge">Save {{ savings_percent }}%</span>
+              {% endif %}
+              
+              <!-- Product Image -->
+              <div class="bundle-product-card__image-wrap">
+                {% if product.featured_image != blank %}
+                  <img 
+                    class="bundle-product-card__image"
+                    src="{{ product.featured_image | image_url: width: 400 }}"
+                    alt="{{ product.title | escape }}"
+                    loading="lazy"
+                    width="180"
+                    height="180"
+                  >
+                {% else %}
+                  <div class="bundle-product-card__image-placeholder">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <rect x="3" y="3" width="18" height="18" rx="2"/>
+                      <circle cx="8.5" cy="8.5" r="1.5"/>
+                      <path d="M21 15l-5-5L5 21"/>
+                    </svg>
+                  </div>
+                {% endif %}
+              </div>
+              
+              <!-- Product Info -->
+              <div class="bundle-product-card__content">
+                <h3 class="bundle-product-card__title">{{ product.title }}</h3>
+                
+                {% if product.description != blank %}
+                  <p class="bundle-product-card__desc">{{ product.description | strip_html | truncate: 60 }}</p>
+                {% endif %}
+                
+                <div class="bundle-product-card__pricing">
+                  <span class="bundle-product-card__price">{{ variant.price | money }}</span>
+                  {% if has_discount %}
+                    <span class="bundle-product-card__compare-price">{{ compare_price | money }}</span>
+                  {% endif %}
+                </div>
+              </div>
+              
+              <!-- Quick Add Indicator -->
+              <div class="bundle-product-card__action">
+                <span class="bundle-product-card__add-text">Click to add</span>
+                <span class="bundle-product-card__added-text">Added to bundle</span>
+              </div>
+            </div>
+            </div><!-- /.swiper-slide -->
+          {% endif %}
+        {% endfor %}
+        
+        </div><!-- /.swiper-wrapper -->
+        
+        <!-- Swiper Pagination (mobile only) -->
+        <div class="swiper-pagination bundle-swiper-pagination"></div>
+      </div><!-- /.swiper -->
+      
+      <!-- Sticky Add to Cart Footer -->
+      <div class="bundle-sticky-footer" id="sticky-footer">
+        <div class="bundle-sticky-footer__inner">
+          <div class="bundle-sticky-footer__info">
+            <div class="bundle-sticky-footer__count">
+              <span class="bundle-sticky-footer__count-number" id="footer-count">0</span>
+              <span class="bundle-sticky-footer__count-label">items selected</span>
+            </div>
+            <div class="bundle-sticky-footer__total">
+              <span class="bundle-sticky-footer__total-label">Total:</span>
+              <span class="bundle-sticky-footer__total-price" id="footer-total">$0.00</span>
+            </div>
+          </div>
+          <button class="bundle-sticky-footer__btn" type="button" id="add-selected-btn" disabled>
+            <span class="bundle-sticky-footer__btn-text">{{ step2a_btn_text | default: 'Add to Cart' }}</span>
+            <svg class="bundle-sticky-footer__btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M3 3H4.5L5.5 13H14.5L16 5H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="7" cy="16" r="1.5" fill="currentColor"/>
+              <circle cx="13" cy="16" r="1.5" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <a href="#" class="bundle-back-link" data-target-step="step-2">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Back to options
+      </a>
+      
+    </div>
+  </section>
+  
+  <!-- ============================================
+       STEP 2B: READY-MADE KITS
+       ============================================ -->
+  <section class="bundle-section bundle-step" data-step="step-2b">
+    <div class="bundle-section__container">
+      
+      <div class="bundle-section__cap">
+        {% if step2b_heading != blank %}
+          <h2 class="bundle-section__title">{{ step2b_heading }}</h2>
+        {% endif %}
+        {% if step2b_subtitle != blank %}
+          <p class="bundle-section__subtitle">{{ step2b_subtitle }}</p>
+        {% endif %}
+      </div>
+      
+      <!-- Kits Swiper Container -->
+      <div class="bundle-kits-swiper swiper" id="kits-swiper">
+        <div class="bundle-kits-grid swiper-wrapper">
+        
+        <!-- CLASSIC KITS -->
+        {% for product in classic_kits %}
+          {% if product != blank %}
+            {% assign variant = product.selected_or_first_available_variant %}
+            {% assign compare_price = variant.compare_at_price %}
+            {% assign has_savings = false %}
+            {% if compare_price > variant.price %}
+              {% assign has_savings = true %}
+              {% assign savings = compare_price | minus: variant.price | times: 100 | divided_by: compare_price %}
+            {% endif %}
+            
+            <div class="swiper-slide" data-bundle-type="classic">
+            <div class="bundle-kit-card"
+                 data-bundle-type="classic"
+                 data-product-id="{{ product.id }}"
+                 data-variant-id="{{ variant.id }}"
+                 data-kit-name="{{ product.title | escape }}"
+                 data-kit-price="{{ variant.price | money }}"
+                 data-kit-compare-price="{% if has_savings %}{{ compare_price | money }}{% endif %}"
+                 data-kit-savings="{% if has_savings %}{{ savings }}{% endif %}"
+                 data-kit-description="{{ product.description | escape }}"
+                 data-kit-image="{% if product.featured_image != blank %}{{ product.featured_image | image_url: width: 800 }}{% endif %}"
+                 data-kit-images="{% for image in product.images limit: 5 %}{{ image | image_url: width: 600 }}{% unless forloop.last %},{% endunless %}{% endfor %}">
+              
+              <div class="bundle-kit-card__image-wrap">
+                {% if product.featured_image != blank %}
+                  <img 
+                    class="bundle-kit-card__image"
+                    src="{{ product.featured_image | image_url: width: 400 }}"
+                    alt="{{ product.title | escape }}"
+                    loading="lazy"
+                    width="180"
+                    height="140"
+                  >
+                {% else %}
+                  <div class="bundle-kit-card__image-placeholder">[Kit image]</div>
+                {% endif %}
+              </div>
+              
+              <div class="bundle-kit-card__content">
+                <div class="bundle-kit-card__header">
+                  <h3 class="bundle-kit-card__name">{{ product.title }}</h3>
+                  {% if product.description != blank %}
+                    <p class="bundle-kit-card__desc">{{ product.description | strip_html | truncate: 100 }}</p>
+                  {% endif %}
+                </div>
+              </div>
+              
+              <div class="bundle-kit-card__actions">
+                <div class="bundle-kit-card__pricing">
+                  <span class="bundle-kit-card__price">{{ variant.price | money }}</span>
+                  {% if has_savings %}
+                    <span class="bundle-kit-card__savings">{{ savings }}% savings</span>
+                  {% endif %}
+                </div>
+                
+                <button class="bundle-kit-card__btn" type="button" data-action="open-kit-modal">
+                  Select Kit
+                </button>
+              </div>
+            </div>
+            </div><!-- /.swiper-slide -->
+          {% endif %}
+        {% endfor %}
+        
+        <!-- SMART KITS -->
+        {% for product in smart_kits %}
+          {% if product != blank %}
+            {% assign variant = product.selected_or_first_available_variant %}
+            {% assign compare_price = variant.compare_at_price %}
+            {% assign has_savings = false %}
+            {% if compare_price > variant.price %}
+              {% assign has_savings = true %}
+              {% assign savings = compare_price | minus: variant.price | times: 100 | divided_by: compare_price %}
+            {% endif %}
+            
+            <div class="swiper-slide" data-bundle-type="smart">
+            <div class="bundle-kit-card"
+                 data-bundle-type="smart"
+                 data-product-id="{{ product.id }}"
+                 data-variant-id="{{ variant.id }}"
+                 data-kit-name="{{ product.title | escape }}"
+                 data-kit-price="{{ variant.price | money }}"
+                 data-kit-compare-price="{% if has_savings %}{{ compare_price | money }}{% endif %}"
+                 data-kit-savings="{% if has_savings %}{{ savings }}{% endif %}"
+                 data-kit-description="{{ product.description | escape }}"
+                 data-kit-image="{% if product.featured_image != blank %}{{ product.featured_image | image_url: width: 800 }}{% endif %}"
+                 data-kit-images="{% for image in product.images limit: 5 %}{{ image | image_url: width: 600 }}{% unless forloop.last %},{% endunless %}{% endfor %}">
+              
+              <div class="bundle-kit-card__image-wrap">
+                {% if product.featured_image != blank %}
+                  <img 
+                    class="bundle-kit-card__image"
+                    src="{{ product.featured_image | image_url: width: 400 }}"
+                    alt="{{ product.title | escape }}"
+                    loading="lazy"
+                    width="180"
+                    height="140"
+                  >
+                {% else %}
+                  <div class="bundle-kit-card__image-placeholder">[Kit image]</div>
+                {% endif %}
+              </div>
+              
+              <div class="bundle-kit-card__content">
+                <div class="bundle-kit-card__header">
+                  <h3 class="bundle-kit-card__name">{{ product.title }}</h3>
+                  {% if product.description != blank %}
+                    <p class="bundle-kit-card__desc">{{ product.description | strip_html | truncate: 100 }}</p>
+                  {% endif %}
+                </div>
+              </div>
+              
+              <div class="bundle-kit-card__actions">
+                <div class="bundle-kit-card__pricing">
+                  <span class="bundle-kit-card__price">{{ variant.price | money }}</span>
+                  {% if has_savings %}
+                    <span class="bundle-kit-card__savings">{{ savings }}% savings</span>
+                  {% endif %}
+                </div>
+                
+                <button class="bundle-kit-card__btn" type="button" data-action="open-kit-modal">
+                  Select Kit
+                </button>
+              </div>
+            </div>
+            </div><!-- /.swiper-slide -->
+          {% endif %}
+        {% endfor %}
+        
+        </div><!-- /.swiper-wrapper -->
+        
+        <!-- Swiper Pagination (mobile only) -->
+        <div class="swiper-pagination bundle-kits-pagination"></div>
+      </div><!-- /.swiper -->
+      
+      <a href="#" class="bundle-back-link" data-target-step="step-2">Back to Step 2</a>
+      
+    </div>
+  </section>
+  
+  <!-- ============================================
+       KIT DETAIL MODAL
+       ============================================ -->
+  <div class="bundle-kit-modal" id="kit-modal">
+    <div class="bundle-kit-modal__overlay" data-action="close-modal"></div>
+    <div class="bundle-kit-modal__container">
+      <button class="bundle-kit-modal__close" type="button" data-action="close-modal" aria-label="Close">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      
+      <div class="bundle-kit-modal__content">
+        <!-- Image Gallery -->
+        <div class="bundle-kit-modal__gallery">
+          <div class="bundle-kit-modal__main-image">
+            <img id="modal-main-image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="" width="400" height="400" loading="lazy">
+          </div>
+          <div class="bundle-kit-modal__thumbnails" id="modal-thumbnails">
+            <!-- Thumbnails will be added by JS -->
+          </div>
+        </div>
+        
+        <!-- Kit Info -->
+        <div class="bundle-kit-modal__info">
+          <h2 class="bundle-kit-modal__title" id="modal-title"></h2>
+          
+          <div class="bundle-kit-modal__pricing">
+            <span class="bundle-kit-modal__price" id="modal-price"></span>
+            <span class="bundle-kit-modal__compare-price" id="modal-compare-price"></span>
+            <span class="bundle-kit-modal__savings-badge" id="modal-savings"></span>
+          </div>
+          
+          <div class="bundle-kit-modal__description" id="modal-description">
+            <!-- Description will be added by JS -->
+          </div>
+          
+          <div class="bundle-kit-modal__actions">
+            <button class="bundle-kit-modal__add-btn" type="button" id="modal-add-btn">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M3 3H4.5L5.5 13H14.5L16 5H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="7" cy="16" r="1.5" fill="currentColor"/>
+                <circle cx="13" cy="16" r="1.5" fill="currentColor"/>
+              </svg>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<script src="{{ 'bundle-page.js' | asset_url }}" defer></script>
+
+<!-- Swiper JS for mobile slider -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize Swipers only on mobile
+  let accessoriesSwiper = null;
+  let kitsSwiper = null;
+  const accessoriesContainer = document.getElementById('accessories-swiper');
+  const kitsContainer = document.getElementById('kits-swiper');
+  
+  function initSwipers() {
+    // Accessories Swiper
+    if (window.innerWidth <= 768 && !accessoriesSwiper && accessoriesContainer) {
+      accessoriesSwiper = new Swiper('#accessories-swiper', {
+        slidesPerView: 1.5,
+        spaceBetween: 16,
+        centeredSlides: false,
+        grabCursor: true,
+        pagination: {
+          el: '.bundle-swiper-pagination',
+          clickable: true,
+          dynamicBullets: true
+        },
+        breakpoints: {
+          480: {
+            slidesPerView: 2.2,
+            spaceBetween: 16
+          },
+          600: {
+            slidesPerView: 2.5,
+            spaceBetween: 20
+          }
+        }
+      });
+      console.log('Accessories Swiper initialized');
+    }
+    
+    // Kits Swiper
+    if (window.innerWidth <= 768 && !kitsSwiper && kitsContainer) {
+      kitsSwiper = new Swiper('#kits-swiper', {
+        slidesPerView: 1.15,
+        spaceBetween: 16,
+        centeredSlides: false,
+        grabCursor: true,
+        pagination: {
+          el: '.bundle-kits-pagination',
+          clickable: true,
+          dynamicBullets: true
+        },
+        breakpoints: {
+          480: {
+            slidesPerView: 1.3,
+            spaceBetween: 16
+          },
+          600: {
+            slidesPerView: 1.5,
+            spaceBetween: 20
+          }
+        }
+      });
+      console.log('Kits Swiper initialized');
+    }
+  }
+  
+  function destroySwipers() {
+    if (window.innerWidth > 768) {
+      if (accessoriesSwiper) {
+        accessoriesSwiper.destroy(true, true);
+        accessoriesSwiper = null;
+        console.log('Accessories Swiper destroyed');
+      }
+      if (kitsSwiper) {
+        kitsSwiper.destroy(true, true);
+        kitsSwiper = null;
+        console.log('Kits Swiper destroyed');
+      }
+    }
+  }
+  
+  // Initial check
+  initSwipers();
+  
+  // Handle resize
+  let resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      if (window.innerWidth <= 768) {
+        initSwipers();
+      } else {
+        destroySwipers();
+      }
+    }, 250);
+  });
+});
+</script>
+
+{% schema %}
+{
+  "name": "Bundle Builder",
+  "tag": "section",
+  "class": "bundle-builder-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Step 1: Choose Bundle"
+    },
+    {
+      "type": "text",
+      "id": "step1_heading",
+      "label": "Heading",
+      "default": "Choose Your Olympus Grip"
+    },
+    {
+      "type": "text",
+      "id": "step1_subtitle",
+      "label": "Step Label",
+      "default": "Step 1: Select your device. Accessories come next"
+    },
+    {
+      "type": "textarea",
+      "id": "step1_bottom_text",
+      "label": "Bottom Description",
+      "default": "Portable handheld gym with access to 800+ exercises and 250+ workouts."
+    },
+    {
+      "type": "text",
+      "id": "already_have_text",
+      "label": "Already Have Text",
+      "default": "Already have the Olympus Grip?"
+    },
+    {
+      "type": "text",
+      "id": "already_have_link_text",
+      "label": "Already Have Link Text",
+      "default": "Shop accessories compatible with both Classic and SMART"
+    },
+    {
+      "type": "header",
+      "content": "═══ CLASSIC BUNDLE ═══"
+    },
+    {
+      "type": "image_picker",
+      "id": "classic_image",
+      "label": "Classic Image"
+    },
+    {
+      "type": "text",
+      "id": "classic_title",
+      "label": "Classic Title",
+      "default": "Olympus Grip Classic"
+    },
+    {
+      "type": "text",
+      "id": "classic_price",
+      "label": "Classic Price",
+      "default": "$69"
+    },
+    {
+      "type": "textarea",
+      "id": "classic_features",
+      "label": "Classic Features (one per line)",
+      "default": "Ready to ship\nFully mechanical training\nPortable gym"
+    },
+    {
+      "type": "text",
+      "id": "classic_button_text",
+      "label": "Classic Button Text",
+      "default": "Shop Classic"
+    },
+    {
+      "type": "text",
+      "id": "classic_badge",
+      "label": "Classic Badge (optional)"
+    },
+    {
+      "type": "product",
+      "id": "classic_product",
+      "label": "Classic Product (for cart)"
+    },
+    {
+      "type": "header",
+      "content": "═══ SMART BUNDLE ═══"
+    },
+    {
+      "type": "image_picker",
+      "id": "smart_image",
+      "label": "Smart Image"
+    },
+    {
+      "type": "text",
+      "id": "smart_title",
+      "label": "Smart Title",
+      "default": "Olympus Grip SMART"
+    },
+    {
+      "type": "text",
+      "id": "smart_price",
+      "label": "Smart Price",
+      "default": "$99"
+    },
+    {
+      "type": "textarea",
+      "id": "smart_features",
+      "label": "Smart Features (one per line)",
+      "default": "Pre-order\nTracks push/pull force for reps\nWireless connection to phone"
+    },
+    {
+      "type": "text",
+      "id": "smart_button_text",
+      "label": "Smart Button Text",
+      "default": "Pre-Order SMART"
+    },
+    {
+      "type": "text",
+      "id": "smart_badge",
+      "label": "Smart Badge (optional)",
+      "default": "Pre-order"
+    },
+    {
+      "type": "product",
+      "id": "smart_product",
+      "label": "Smart Product (for cart)"
+    },
+    {
+      "type": "header",
+      "content": "Step 2: Choose Path"
+    },
+    {
+      "type": "text",
+      "id": "step2_heading",
+      "label": "Heading",
+      "default": "Step 2: Choose Your Accessories"
+    },
+    {
+      "type": "text",
+      "id": "step2_subtitle",
+      "label": "Subtitle",
+      "default": "Accessories work with both Olympus Grip Classic and SMART"
+    },
+    {
+      "type": "header",
+      "content": "── Path 1: Build Your Own ──"
+    },
+    {
+      "type": "text",
+      "id": "path1_title",
+      "label": "Path 1 Title",
+      "default": "Build Your Own (A la Carte)"
+    },
+    {
+      "type": "text",
+      "id": "path1_label",
+      "label": "Path 1 Label (optional)"
+    },
+    {
+      "type": "textarea",
+      "id": "path1_features",
+      "label": "Path 1 Features (one per line)",
+      "default": "Choose accessories individually\nMaximum flexibility"
+    },
+    {
+      "type": "header",
+      "content": "── Path 2: Ready-Made Kits ──"
+    },
+    {
+      "type": "text",
+      "id": "path2_title",
+      "label": "Path 2 Title",
+      "default": "Ready-Made Kits (Curated)"
+    },
+    {
+      "type": "text",
+      "id": "path2_label",
+      "label": "Path 2 Label (optional)"
+    },
+    {
+      "type": "textarea",
+      "id": "path2_features",
+      "label": "Path 2 Features (one per line)",
+      "default": "Pre-configured for specific goals\nBest value and fastest setup"
+    },
+    {
+      "type": "header",
+      "content": "Step 2A: Build Your Own"
+    },
+    {
+      "type": "text",
+      "id": "step2a_heading",
+      "label": "Heading",
+      "default": "Build Your Own (A La Carte)"
+    },
+    {
+      "type": "text",
+      "id": "step2a_subtitle",
+      "label": "Subtitle",
+      "default": "Select accessories using checkboxes. Add all selections at once."
+    },
+    {
+      "type": "text",
+      "id": "step2a_btn_text",
+      "label": "Add to Cart Button Text",
+      "default": "Add Selected to Cart"
+    },
+    {
+      "type": "header",
+      "content": "── Classic Accessories ──"
+    },
+    {
+      "type": "product_list",
+      "id": "classic_accessories",
+      "label": "Classic Build Your Own Products",
+      "info": "Select multiple products for Classic bundle accessories"
+    },
+    {
+      "type": "header",
+      "content": "── Smart Accessories ──"
+    },
+    {
+      "type": "product_list",
+      "id": "smart_accessories",
+      "label": "Smart Build Your Own Products",
+      "info": "Select multiple products for Smart bundle accessories"
+    },
+    {
+      "type": "header",
+      "content": "Step 2B: Ready-Made Kits"
+    },
+    {
+      "type": "text",
+      "id": "step2b_heading",
+      "label": "Heading",
+      "default": "Ready Made Kits"
+    },
+    {
+      "type": "text",
+      "id": "step2b_subtitle",
+      "label": "Subtitle",
+      "default": "Choose one curated kit. Each kit includes a different number of accessories"
+    },
+    {
+      "type": "header",
+      "content": "── Classic Kits ──"
+    },
+    {
+      "type": "product_list",
+      "id": "classic_kits",
+      "label": "Classic Ready-Made Kits",
+      "info": "Select products for Classic bundle kits"
+    },
+    {
+      "type": "header",
+      "content": "── Smart Kits ──"
+    },
+    {
+      "type": "product_list",
+      "id": "smart_kits",
+      "label": "Smart Ready-Made Kits",
+      "info": "Select products for Smart bundle kits"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bundle Builder"
+    }
+  ]
+}
+{% endschema %}
