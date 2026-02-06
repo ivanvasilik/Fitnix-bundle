@@ -36,14 +36,14 @@
         "classic_features": "Ready to ship\nFully mechanical training\nPortable gym",
         "classic_button_text": "Shop Classic",
         "classic_badge": "",
-        "classic_product": "",
+        "classic_product": "olympus-grip-double-workout-advantage",
         "smart_image": "shopify://shop_images/Live_Workout_Mockup_be6b3e2f-f746-493f-bf37-27125107688d.webp",
         "smart_title": "Olympus Grip SMART",
         "smart_price": "$99",
         "smart_features": "Pre-order\nTracks push/pull force for reps\nWireless connection to phone",
         "smart_button_text": "Pre-Order SMART",
         "smart_badge": "Pre-order",
-        "smart_product": "",
+        "smart_product": "olympus-grip-smart",
         "step2_heading": "Step 2: Choose Your Accessories",
         "step2_subtitle": "Accessories work with both Olympus Grip Classic and SMART",
         "path1_title": "Build Your Own (A la Carte)",
@@ -56,25 +56,35 @@
         "step2a_subtitle": "Select accessories using checkboxes. Add all selections at once.",
         "step2a_btn_text": "Add Selected to Cart",
         "classic_accessories": [
-          "loop-bands",
-          "olympus-grip-blue-backpack",
           "olympus-grip-strap",
-          "premium-package",
-          "olympus-grip-standard-package"
+          "tube-bands",
+          "loop-bands",
+          "x-anchor-mount",
+          "phone-mount",
+          "jump-rope",
+          "olympus-grip-bag",
+          "olympus-grip-blue-backpack"
         ],
         "smart_accessories": [
+          "olympus-grip-strap",
           "tube-bands",
+          "loop-bands",
           "x-anchor-mount",
-          "phone-mount"
+          "phone-mount",
+          "jump-rope",
+          "olympus-grip-bag",
+          "olympus-grip-blue-backpack"
         ],
         "step2b_heading": "Ready Made Kits",
         "step2b_subtitle": "Choose one curated kit. Each kit includes a different number of accessories",
         "classic_kits": [
-          "complete-system-kit",
-          "best-exercise-classic-bundle-1"
+          "classic-complete-system-kit",
+          "classic-best-exercise-bundle",
+          "classic-tube-bands-kit"
         ],
         "smart_kits": [
-          "strap-resistance-kit"
+          "smart-complete-system-kit",
+          "smart-strap-resistance-kit"
         ]
       }
     }
