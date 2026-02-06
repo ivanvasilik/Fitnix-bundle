@@ -23,11 +23,13 @@
         "classic_features": "Ready to ship\nFully mechanical training\nPortable gym",
         "classic_button_text": "Shop Classic",
         "classic_badge": "",
+        "classic_product": "",
         "smart_title": "Olympus Grip SMART",
         "smart_price": "$99",
         "smart_features": "Pre-order\nTracks push/pull force for reps\nWireless connection to phone",
         "smart_button_text": "Pre-Order SMART",
         "smart_badge": "Pre-order",
+        "smart_product": "",
         "step2_heading": "Step 2: Choose Your Accessories",
         "step2_subtitle": "Accessories work with both Olympus Grip Classic and SMART",
         "path1_title": "Build Your Own (A la Carte)",
@@ -39,17 +41,35 @@
         "step2a_heading": "Step 2A: Build Your Own (A La Carte)",
         "step2a_subtitle": "Select accessories using checkboxes. Add all selections at once.",
         "step2a_btn_text": "Add Selected to Cart",
+        "classic_accessories": [],
+        "smart_accessories": [],
         "step2b_heading": "Step 2B: Ready Made Kits",
-        "step2b_subtitle": "Choose one curated kit. Each kit includes a different number of accessories"
+        "step2b_subtitle": "Choose one curated kit. Each kit includes a different number of accessories",
+        "classic_kits": [],
+        "smart_kits": []
       }
     },
     "as_footer_clean": {
       "type": "as-footer",
-      "settings": {}
+      "settings": {
+        "tagline": "Push forward — stronger and smarter with the Olympus Grip.",
+        "show_divider": true,
+        "copyright": "© Fitnix LLC — Protected by U.S. Utility Patents, Design Patents, and Registered Trademarks."
+      }
+    },
+    "as_footer_RJqPMD": {
+      "type": "as-footer",
+      "name": "AS Clean Footer",
+      "settings": {
+        "tagline": "Push forward — stronger and smarter with the Olympus Grip.",
+        "show_divider": true,
+        "copyright": "© Fitnix LLC — Protected by U.S. Utility Patents, Design Patents, and Registered Trademarks."
+      }
     }
   },
   "order": [
     "bundle_builder",
-    "as_footer_clean"
+    "as_footer_clean",
+    "as_footer_RJqPMD"
   ]
 }
